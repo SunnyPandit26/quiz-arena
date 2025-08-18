@@ -252,7 +252,7 @@ router.post('/login', function(req, res, next) {
     if (!user) {
       return res.status(401).json({
         success: false,
-        message: 'Invalid username or password'
+        message: 'Invalid username or invalid password'
       });
     }
     req.logIn(user, function(err) {
