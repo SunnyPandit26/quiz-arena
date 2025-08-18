@@ -3,6 +3,7 @@ import Login from "./Login";
 import CreateAccount from "./CreateAccount";
 import ToggleSlide from "./ToggleSlide";
 import { authAPI } from "../services/api";
+import Dashboard from "./Dashboard";
 
 // Popup style (can go in CSS as well)
 const popupStyle = {
@@ -186,28 +187,7 @@ const LoginPage = () => {
 
       {user && user.isLoggedIn ? (
         // Dashboard view
-        <div className="dashboard-container">
-          <div className="dashboard-card">
-            <h1>Dashboard</h1>
-            <h2>Welcome, {user.username}!</h2>
-            {user.fullName && <p>Full Name: {user.fullName}</p>}
-            {user.email && <p>Email: {user.email}</p>}
-            {user.profilePicture && (
-              <img
-                src={user.profilePicture}
-                alt="Profile"
-                style={{ width: "100px", height: "100px", borderRadius: "50%" }}
-              />
-            )}
-            <button
-              onClick={handleLogout}
-              className="logout-btn"
-              disabled={loading}
-            >
-              {loading ? "Logging out..." : "Logout"}
-            </button>
-          </div>
-        </div>
+        <Dashboard />
       ) : (
         // Login/Register view
         <div className="login-page">
