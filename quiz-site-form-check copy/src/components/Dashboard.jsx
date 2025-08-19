@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { authAPI } from '../services/api';
+import styles from './Dashboard.module.css'
+import Navbar from './Navbar';
 
 const Dashboard = () => {
   const [user, setUser] = useState(null);
@@ -39,24 +41,13 @@ const Dashboard = () => {
   }
 
   return (
-    <div className="dashboard-container">
-      <div className="dashboard-card">
-        <h1>Dashboard</h1>
-        <h2>Welcome, {user.username}!</h2>
-        {user.fullName && <p>Full Name: {user.fullName}</p>}
-        {user.email && <p>Email: {user.email}</p>}
-        {user.profilePicture && (
-          <img 
-            src={user.profilePicture} 
-            alt="Profile" 
-            style={{ width: '100px', height: '100px', borderRadius: '50%' }}
-          />
-        )}
-        <button onClick={handleLogout} className="logout-btn">
-          Logout
-        </button>
-      </div>
-    </div>
+   <>
+    <Navbar />
+     <h1>
+      hello hwllo
+    </h1>
+    
+   </>
   );
 };
 
