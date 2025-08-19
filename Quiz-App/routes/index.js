@@ -120,8 +120,8 @@ router.post('/register', async function (req, res) {
     console.log('- newUsername:', newUsername);
     console.log('- email:', email);
     console.log('- newPassword:', newPassword ? 'PROVIDED' : 'MISSING');
-    
-    // Validation
+      
+    // Validation 
     if (!newUsername || typeof newUsername !== 'string' || newUsername.trim() === '') {
       return res.status(400).json({
         success: false,
