@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+
+
+
+@layer base{
+   body{
+    background-color:rgb(166, 163, 229);
+   } 
+}

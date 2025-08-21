@@ -25,7 +25,7 @@ body{
 }
 img {
   width: 100%;         /* 40% of viewport width */
-
+max-width: 100%;/* Maximum width limit */
   height:100% ;       
   object-fit: cover;   
   
@@ -138,17 +138,17 @@ color: rgb(139, 139, 140);
 }
 
 .item:nth-child(1){ 
-z-index: 1;
+z-index: 2;
 }
 
 
- 
-.item:nth-child(1) .title,
+.carousel.next.content .item:nth-child(1) .author,
+.carousel.prev .item:nth-child(1) .title,
  .item:nth-child(1) .topic,
 .item:nth-child(1) .des,
  .item:nth-child(1) .buttons{
 opacity: 0;
-filter: blur(50px);
+filter: blur(20px);
 transform: translateY(50px);
 animation : showContent 0.5s 1s linear 1 forwards;
 }
@@ -172,7 +172,6 @@ animation-delay: 1.6s;
 .item:nth-child(1) .buttons{
 animation-delay: 2s;
 }
-
 /*effect next click*/
 .next:nth-child(1) .img{
 width: 150px;
@@ -220,7 +219,7 @@ to{
 
 /*effect previous click*/
 .item:nth-child(2){
-z-index: 1;
+z-index: 2;
 }
 .prev:nth-child(2) .img{
  
@@ -239,7 +238,7 @@ animation: outImage 0.5s linear 1 forwards;
     left: 50%;
   }
 }
-.item:nth-child(2){
+.item:nth-child(1){
   width: 0;
   overflow: hidden;
   opacity: 0;
@@ -294,9 +293,15 @@ left: 0;
 .btn1   { width: 32px; height: 32px; font-size: 16px; }
 }
 
+/* add anywhere near the top of slider.module.css */
+
+/* fires while NEXT animation is playing */
+.next {
+pointer-events: none;          /* block clicks during motion */
+}
 
 /* fires while PREV animation is playing */
-.prev .next{
+.prev {
 pointer-events: none;
 }
 

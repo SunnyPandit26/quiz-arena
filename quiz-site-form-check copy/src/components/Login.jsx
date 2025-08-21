@@ -51,7 +51,7 @@ const Login = ({ onLogin, formData, setFormData, loading }) => {
         </div>
         <button 
           type="submit" 
-          className="submitBtn" 
+          className="submitBtn " 
           style={{ 
             pointerEvents: 'auto', 
             zIndex: 10,

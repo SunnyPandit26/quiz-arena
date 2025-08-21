@@ -2,6 +2,7 @@ import "./App.css";
 import React from "react";
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import LoginPage from "./components/LoginPage";
+import "bootstrap/dist/css/bootstrap.min.css"
 
 function App() {
   return (

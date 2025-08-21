@@ -1,3 +1,4 @@
+@import "tailwindcss";
 *{
     margin: 0;
     padding: 0;
@@ -5,12 +6,18 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+
 body{
+    
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(90deg ,#cf8b8b,#768fe0);
+}
+
+.login-page{
+    width: 60vw;
 }
 .container{
     position: relative;
