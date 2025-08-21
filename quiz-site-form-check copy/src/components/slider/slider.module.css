@@ -1,5 +1,5 @@
 body{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
   margin: 0;
   padding: 0;
   overflow-y: visible;
@@ -115,7 +115,8 @@ height: 10px;
 max-width: 30%;
 display: flex;
 gap:10px;
-size: 50px;
+size: 60px;
+font-weight: 400;
 z-index: 100;
 }
 .btn1{
