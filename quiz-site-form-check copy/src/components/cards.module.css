@@ -1,0 +1,84 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  padding: clamp(12px, 3vw, 24px);
+}
+
+.courseCard {
+  background: #0b1220;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  color: #e6e9ef;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.25);
+  transition: transform 0.2s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.courseCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(2,6,23,0.35);
+  border-color: rgba(255,255,255,0.15);
+}
+
+.courseImageContainer {
+  position: relative;
+  aspect-ratio: 16/9;
+  background: #0f172a;
+  overflow: hidden;
+}
+
+.courseImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.courseLabel {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.courseTitle {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin: 14px 14px 8px;
+  letter-spacing: -0.02em;
+}
+
+.courseDescription {
+  font-size: 0.92rem;
+  color: #c7cbd4;
+  margin: 0 14px 14px;
+  line-height: 1.5;
+  min-height: 58px;
+}
+
+.levelBadge {
+  margin: 0 14px 16px;
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+  color: #0b1220;
+  background: #ffd700;
+  border: none;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .2s ease;
+}
+.levelBadge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(255,215,0,0.25);
+}

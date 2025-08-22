@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What will be the output of: print(class(5)) in R?",
+    "options": ["\"numeric\"", "\"integer\"", "\"double\"", "\"character\""],
+    "correct": "\"numeric\""
+  },
+  {
+    "question": "Which operator is commonly used for assignment in R?",
+    "options": ["=", "<-", "=>", ":="],
+    "correct": "<-"
+  },
+  {
+    "question": "What will be the output of: length(c(10, 20, 30, 40))?",
+    "options": ["3", "4", "5", "Error"],
+    "correct": "4"
+  },
+  {
+    "question": "How do you create a sequence from 1 to 5 in R?",
+    "options": ["seq(1:5)", "1..5", "1:5", "range(1,5)"],
+    "correct": "1:5"
+  },
+  {
+    "question": "What will be the value of x after: x <- c(2, 4); x[2] <- 10?",
+    "options": ["c(2, 4)", "c(10, 4)", "c(2, 10)", "c(10, 10)"],
+    "correct": "c(2, 10)"
+  },
+  {
+    "question": "Which function combines values into a vector?",
+    "options": ["vec()", "c()", "combine()", "list()"],
+    "correct": "c()"
+  },
+  {
+    "question": "What will be the output of: sum(c(1, 2, 3, 4))?",
+    "options": ["10", "24", "6", "Error"],
+    "correct": "10"
+  },
+  {
+    "question": "How do you check the structure of an object in R?",
+    "options": ["type()", "class()", "str()", "info()"],
+    "correct": "str()"
+  },
+  {
+    "question": "What is the correct way to create a data frame with columns a = c(1,2) and b = c(\"x\",\"y\")?",
+    "options": ["df(a(1,2), b(\"x\",\"y\"))", "data.frame(a=c(1,2), b=c(\"x\",\"y\"))", "frame(a=[1,2], b=[\"x\",\"y\"])", "tibble(a(1,2), b(\"x\",\"y\"))"],
+    "correct": "data.frame(a=c(1,2), b=c(\"x\",\"y\"))"
+  },
+  {
+    "question": "What will be the output of: typeof(TRUE)?",
+    "options": ["\"logical\"", "\"boolean\"", "\"numeric\"", "\"character\""],
+    "correct": "\"logical\""
+  }
+]

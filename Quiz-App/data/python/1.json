@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What is the correct way to create a list in Python?",
+    "options": ["list = (1, 2, 3)", "list = [1, 2, 3]", "list = {1, 2, 3}", "list = <1, 2, 3>"],
+    "correct": "list = [1, 2, 3]"
+  },
+  {
+    "question": "Which of the following is used to define a function in Python?",
+    "options": ["function", "def", "define", "func"],
+    "correct": "def"
+  },
+  {
+    "question": "What will be the output of: print(type([]))?",
+    "options": ["<class 'tuple'>", "<class 'list'>", "<class 'dict'>", "<class 'set'>"],
+    "correct": "<class 'list'>"
+  },
+  {
+    "question": "Which operator is used for exponentiation in Python?",
+    "options": ["^", "**", "exp", "pow"],
+    "correct": "**"
+  },
+  {
+    "question": "What is the correct syntax for a while loop in Python?",
+    "options": ["while (condition) { }", "while condition:", "while: condition", "loop while condition:"],
+    "correct": "while condition:"
+  },
+  {
+    "question": "Which method is used to add an element to the end of a list?",
+    "options": ["add()", "insert()", "append()", "push()"],
+    "correct": "append()"
+  },
+  {
+    "question": "What is the output of: len('Hello World')?",
+    "options": ["10", "11", "12", "9"],
+    "correct": "11"
+  },
+  {
+    "question": "Which of the following is NOT a valid Python data type?",
+    "options": ["int", "float", "char", "bool"],
+    "correct": "char"
+  },
+  {
+    "question": "What is the correct way to import the math module in Python?",
+    "options": ["include math", "import math", "using math", "require math"],
+    "correct": "import math"
+  },
+  {
+    "question": "What will be the result of: 5 // 2?",
+    "options": ["2.5", "2", "3", "2.0"],
+    "correct": "2"
+  }
+]

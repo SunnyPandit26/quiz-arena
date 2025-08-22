@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What is the correct way to print Hello World in Julia?",
+    "options": ["print('Hello World')", "println(\"Hello World\")", "System.out.println(\"Hello World\")", "echo \"Hello World\""],
+    "correct": "println(\"Hello World\")"
+  },
+  {
+    "question": "Which file extension is used for Julia source files?",
+    "options": [".jl", ".ju", ".julia", ".jj"],
+    "correct": ".jl"
+  },
+  {
+    "question": "What is the result of typeof(3.14) in Julia?",
+    "options": ["Int64", "Float64", "Number", "String"],
+    "correct": "Float64"
+  },
+  {
+    "question": "How do you create a 1-to-5 range in Julia?",
+    "options": ["1..5", "range(1,5)", "1:5", "[1..5]"],
+    "correct": "1:5"
+  },
+  {
+    "question": "Which of the following creates an array of integers from 1 to 3?",
+    "options": ["(1,2,3)", "Dict(1=>2, 3=>4)", "[1,2,3]", "{1,2,3}"],
+    "correct": "[1,2,3]"
+  },
+  {
+    "question": "What is the correct syntax to define a simple function f that returns x + y?",
+    "options": [
+      "def f(x,y): return x + y",
+      "function f(x,y) x + y end",
+      "fn f(x,y) { x + y }",
+      "func f(x,y) -> x + y"
+    ],
+    "correct": "function f(x,y) x + y end"
+  },
+  {
+    "question": "What will the following print?\n\nx = 10\nif x > 5\n    println(\"big\")\nelse\n    println(\"small\")\nend",
+    "options": ["small", "big", "10", "Error"],
+    "correct": "big"
+  },
+  {
+    "question": "Which collection is immutable in Julia?",
+    "options": ["Array", "Tuple", "Dict", "Set"],
+    "correct": "Tuple"
+  },
+  {
+    "question": "How do you access the first element of an array a = [10,20,30] in Julia?",
+    "options": ["a[0]", "a(1)", "a[9]", "first(a) only"],
+    "correct": "a[9]"
+  },
+  {
+    "question": "Which code correctly creates a dictionary mapping \"a\" to 1 and \"b\" to 2?",
+    "options": [
+      "{\"a\":1, \"b\":2}",
+      "Dict(\"a\" => 1, \"b\" => 2)",
+      "dict(\"a\" = 1, \"b\" = 2)",
+      "Map(\"a\" -> 1, \"b\" -> 2)"
+    ],
+    "correct": "Dict(\"a\" => 1, \"b\" => 2)"
+  }
+]

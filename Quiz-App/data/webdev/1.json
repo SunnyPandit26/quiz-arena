@@ -1,0 +1,58 @@
+[
+  {
+    "question": "What does HTML stand for?",
+    "options": [
+      "HyperText Markup Language",
+      "HighText Machine Language",
+      "Hyperlink and Text Markup Language",
+      "Hyper Trainer Marking Language"
+    ],
+    "correct": "HyperText Markup Language"
+  },
+  {
+    "question": "Which tag is used to create a hyperlink in HTML?",
+    "options": ["<a>", "<img>", "<link>", "<href>"],
+    "correct": "<a>"
+  },
+  {
+    "question": "Which of the following is used to apply styles to a web page?",
+    "options": ["CSS", "HTML", "Java", "Python"],
+    "correct": "CSS"
+  },
+  {
+    "question": "Inside which HTML element do we put JavaScript code?",
+    "options": ["<script>", "<javascript>", "<js>", "<code>"],
+    "correct": "<script>"
+  },
+  {
+    "question": "Which CSS property is used to change the text color?",
+    "options": ["font-size", "text-color", "color", "background-color"],
+    "correct": "color"
+  },
+  {
+    "question": "What is the correct HTML tag for the largest heading?",
+    "options": ["<h6>", "<h1>", "<head>", "<header>"],
+    "correct": "<h1>"
+  },
+  {
+    "question": "Which symbol is used for IDs in CSS selectors?",
+    "options": ["#", ".", "*", "$"],
+    "correct": "#"
+  },
+  {
+    "question": "Which of these is a JavaScript data type?",
+    "options": ["Integer", "Boolean", "Character", "Double"],
+    "correct": "Boolean"
+  },
+  {
+    "question": "Which HTML tag is used to display an image?",
+    "options": ["<picture>", "<image>", "<img>", "<src>"],
+    "correct": "<img>"
+  },
+  {
+    "question": "In JavaScript, what will typeof [] return?",
+    "options": ["'object'", "'array'", "'list'", "'tuple'"],
+    "correct": "'object'"
+  }
+]
+    

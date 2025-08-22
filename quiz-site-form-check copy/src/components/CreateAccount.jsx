@@ -96,51 +96,9 @@ const CreateAccount = ({ onCreateAccount, formData, setFormData, loading }) => {
             />
           </button>
           
-          {/* Facebook Button */}
-          <button 
-            type="button"
-            className="social facebook-btn"
-            disabled={loading}
-            onClick={() => console.log('Facebook login not implemented')}
-            style={{
-              pointerEvents: 'auto',
-              opacity: loading ? 0.6 : 1,
-              cursor: loading ? 'not-allowed' : 'pointer'
-            }}
-          >
-            <img 
-              src="/images/facebook.png" 
-              alt="Facebook"
-              style={{
-                width: '24px',
-                height: '24px',
-                objectFit: 'contain'
-              }}
-            />
-          </button>
+         
           
-          {/* LinkedIn Button */}
-          <button 
-            type="button"
-            className="social linkedin-btn"
-            disabled={loading}
-            onClick={() => console.log('LinkedIn login not implemented')}
-            style={{
-              pointerEvents: 'auto',
-              opacity: loading ? 0.6 : 1,
-              cursor: loading ? 'not-allowed' : 'pointer'
-            }}
-          >
-            <img 
-              src="/images/linkdin.png" 
-              alt="LinkedIn"
-              style={{
-                width: '24px',
-                height: '24px',
-                objectFit: 'contain'
-              }}
-            />
-          </button>
+        
         </div>
       </form>
     </div>

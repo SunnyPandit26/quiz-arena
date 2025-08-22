@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Which HTTP method is used to update existing data on a server?",
+    "options": ["GET", "POST", "PUT", "DELETE"],
+    "correct": "PUT"
+  },
+  {
+    "question": "Which CSS position value will keep an element fixed relative to the browser window?",
+    "options": ["relative", "sticky", "absolute", "fixed"],
+    "correct": "fixed"
+  },
+  {
+    "question": "What does DOM stand for in web development?",
+    "options": [
+      "Data Object Model",
+      "Document Object Model",
+      "Digital Ordinance Model",
+      "Dynamic Object Management"
+    ],
+    "correct": "Document Object Model"
+  },
+  {
+    "question": "Which JavaScript keyword is used to declare a constant?",
+    "options": ["let", "var", "constant", "const"],
+    "correct": "const"
+  },
+  {
+    "question": "Which HTML attribute is used to make an input field mandatory?",
+    "options": ["required", "validate", "must", "check"],
+    "correct": "required"
+  },
+  {
+    "question": "Which CSS property controls the spacing between lines of text?",
+    "options": ["letter-spacing", "line-spacing", "line-height", "spacing"],
+    "correct": "line-height"
+  },
+  {
+    "question": "Which JavaScript method is used to convert a JSON string into an object?",
+    "options": ["JSON.convert()", "JSON.parse()", "JSON.stringify()", "JSON.object()"],
+    "correct": "JSON.parse()"
+  },
+  {
+    "question": "What is the correct order of CSS specificity (from lowest to highest)?",
+    "options": [
+      "Inline styles < IDs < Classes < Elements",
+      "Elements < Classes < IDs < Inline styles",
+      "IDs < Classes < Elements < Inline styles",
+      "Classes < Elements < Inline styles < IDs"
+    ],
+    "correct": "Elements < Classes < IDs < Inline styles"
+  },
+  {
+    "question": "Which HTML5 element is used to draw graphics using JavaScript?",
+    "options": ["<graphic>", "<canvas>", "<draw>", "<svg>"],
+    "correct": "<canvas>"
+  },
+  {
+    "question": "In JavaScript, which of the following is NOT a primitive data type?",
+    "options": ["String", "Number", "Object", "Boolean"],
+    "correct": "Object"
+  }
+]
