@@ -1,201 +1,231 @@
 import React, { useState, useEffect, useRef } from 'react';
-import styles from "./slider.module.css";
-import { GrFormPrevious } from "react-icons/gr";
-import { MdNavigateNext } from "react-icons/md";
+import styles from './Slider.module.css';
+import { GrFormPrevious } from 'react-icons/gr';
+import { MdNavigateNext } from 'react-icons/md';
+
 const Slider = () => {
-  // Slide data - same as your original structure
   const slides = [
     {
-      image: "/images/photo3.jpg",
-      author: "Author",
-      title: "course 1",
-      topic: "topic name", 
-      description: "description..........",
-      thumbnailTitle: "name slider",
-      thumbnailDesc: "description....."
+      id: 1,
+      image: '/images/image1.jpg',
+      author: 'John Smith',
+      title: 'Python Programming',
+      topic: 'Learn Coding',
+      description:
+        'Master Python from basics to advanced concepts. Build real projects and gain practical experience.',
+      thumbnailTitle: 'Python Course',
+      thumbnailDesc: 'Beginner to Advanced',
     },
     {
-      image: "/images/photo4.jpg", 
-      author: "",
-      title: "course 2",
-      topic: "topic name",
-      description: "description..........",
-      thumbnailTitle: "name slider", 
-      thumbnailDesc: "description....."
+      id: 2,
+      image: '/images/image2.png',
+      author: 'Sarah Johnson',
+      title: 'Web Development',
+      topic: 'Frontend Skills',
+      description:
+        'Create stunning websites with HTML, CSS, JavaScript and modern frameworks like React.',
+      thumbnailTitle: 'Web Dev Course',
+      thumbnailDesc: 'Full Stack Focus',
     },
     {
-      image: "/images/photo5.jpg",
-      author: "",
-      title: "course 3", 
-      topic: "topic name",
-      description: "description..........",
-      thumbnailTitle: "name slider",
-      thumbnailDesc: "description....."
+      id: 3,
+      image: '/images/image4.png',
+      author: 'Mike Wilson',
+      title: 'Data Science',
+      topic: 'Analytics & AI',
+      description:
+        'Dive deep into data analysis, machine learning, and artificial intelligence concepts.',
+      thumbnailTitle: 'Data Science',
+      thumbnailDesc: 'ML & Analytics',
     },
     {
-      image: "/images/photo6.jpg",
-      author: "",
-      title: "course 4",
-      topic: "topic name", 
-      description: "description..........",
-      thumbnailTitle: "name slider",
-      thumbnailDesc: "description....."
+      id: 4,
+      image: '/images/image3.png',
+      author: 'Emma Davis',
+      title: 'Mobile Apps',
+      topic: 'React Native',
+      description:
+        'Build cross-platform mobile applications for iOS and Android using React Native.',
+      thumbnailTitle: 'Mobile Dev',
+      thumbnailDesc: 'Cross Platform',
     },
-    {
-      image: "/images/photo7.jpg",
-      author: "",
-      title: "course 5",
-      topic: "topic name",
-      description: "description..........",
-      thumbnailTitle: "name slider", 
-      thumbnailDesc: "description....."
-    }
   ];
 
-  // State to manage slides order (same as DOM manipulation in original)
   const [currentSlides, setCurrentSlides] = useState(slides);
-  const [carouselClass, setCarouselClass] = useState('');
-  
-  // Refs for timeouts (same as original variables)
-  const runTimeOutRef = useRef(null);
-  const runAutoRunRef = useRef(null);
-  
-  // Same timing as original JavaScript
-  const timeRunning = 3000;
-  const timeAutoNext = 7000;
+  const [isAnimating, setIsAnimating] = useState(false);
 
-  // Auto-advance functionality (same as original setTimeout)
+  const timeoutRef = useRef(null);
+  const autoPlayRef = useRef(null);
+
+  const ANIMATION_DURATION = 600;
+  const AUTO_PLAY_DELAY = 5000;
+
   useEffect(() => {
-    runAutoRunRef.current = setTimeout(() => {
-      handleNext(); // Same as nextDom.click() in original
-    }, timeAutoNext);
+    startAutoPlay();
+    return () => stopAutoPlay();
+  }, []);
 
-    return () => {
-      if (runAutoRunRef.current) {
-        clearTimeout(runAutoRunRef.current);
-      }
-    };
-  }, [currentSlides]);
-
-  // Same showSlider function logic converted to React
-  const showSlider = (type) => {
-    if (type === 'next') {
-      // Same as: listItemDom.appendChild(itemSlider[0])
-      setCurrentSlides(prev => {
-        const newSlides = [...prev];
-        const firstItem = newSlides.shift(); // Remove first item
-        newSlides.push(firstItem); // Add to end
-        return newSlides;
-      });
-      setCarouselClass('next'); // Same as: carouselDom.classList.add('next')
-    } else {
-      // Same as: listItemDom.prepend(itemSlider[positionLastItem])
-      setCurrentSlides(prev => {
-        const newSlides = [...prev];
-        const lastItem = newSlides.pop(); // Remove last item
-        newSlides.unshift(lastItem); // Add to beginning
-        return newSlides;
-      });
-      setCarouselClass('prev'); // Same as: carouselDom.classList.add('prev')
-    }
-
-    // Same timeout logic as original
-    if (runTimeOutRef.current) {
-      clearTimeout(runTimeOutRef.current);
-    }
-    
-    runTimeOutRef.current = setTimeout(() => {
-      setCarouselClass(''); // Same as removing 'next' and 'prev' classes
-    }, timeRunning);
-
-    // Same auto-run reset logic
-    if (runAutoRunRef.current) {
-      clearTimeout(runAutoRunRef.current);
-    }
-    
-    runAutoRunRef.current = setTimeout(() => {
-      handleNext(); // Same as nextDom.click()
-    }, timeAutoNext);
+  const startAutoPlay = () => {
+    stopAutoPlay();
+    autoPlayRef.current = setTimeout(() => {
+      if (!isAnimating) nextSlide();
+    }, AUTO_PLAY_DELAY);
   };
 
-  // Same as: nextDom.onclick = function(){ showSlider('next'); }
-  const handleNext = () => {
-    showSlider('next');
+  const stopAutoPlay = () => {
+    if (autoPlayRef.current) {
+      clearTimeout(autoPlayRef.current);
+      autoPlayRef.current = null;
+    }
   };
 
-  // Same as: prevDom.onclick = function(){ showSlider('prev'); }
-  const handlePrev = () => {
-    showSlider('prev');
+  const nextSlide = () => {
+    if (isAnimating) return;
+    setIsAnimating(true);
+
+    setCurrentSlides(prev => {
+      const arr = [...prev];
+      const first = arr.shift();
+      arr.push(first);
+      return arr;
+    });
+
+    timeoutRef.current = setTimeout(() => {
+      setIsAnimating(false);
+      startAutoPlay();
+    }, ANIMATION_DURATION);
   };
 
-  // Cleanup timeouts on unmount
+  const prevSlide = () => {
+    if (isAnimating) return;
+    setIsAnimating(true);
+
+    setCurrentSlides(prev => {
+      const arr = [...prev];
+      const last = arr.pop();
+      arr.unshift(last);
+      return arr;
+    });
+
+    timeoutRef.current = setTimeout(() => {
+      setIsAnimating(false);
+      startAutoPlay();
+    }, ANIMATION_DURATION);
+  };
+
+  const handleThumbnailClick = clickedIndex => {
+    if (isAnimating || clickedIndex === 0) return;
+    setIsAnimating(true);
+    stopAutoPlay();
+
+    setCurrentSlides(prev => {
+      const arr = [...prev];
+      const clicked = arr[clickedIndex];
+      const before = arr.slice(0, clickedIndex);
+      const after = arr.slice(clickedIndex + 1);
+      return [clicked, ...after, ...before];
+    });
+
+    timeoutRef.current = setTimeout(() => {
+      setIsAnimating(false);
+      startAutoPlay();
+    }, ANIMATION_DURATION);
+  };
+
   useEffect(() => {
     return () => {
-      if (runTimeOutRef.current) {
-        clearTimeout(runTimeOutRef.current);
-      }
-      if (runAutoRunRef.current) {
-        clearTimeout(runAutoRunRef.current);
-      }
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+      if (autoPlayRef.current) clearTimeout(autoPlayRef.current);
     };
   }, []);
 
   return (
-    <div>
-      {/* Main carousel - same structure with dynamic class */}
-      <div className={`${styles.carousel} ${carouselClass ? styles[carouselClass] : ''}`}>
-        <div className={styles.List}>
-          {currentSlides.map((slide, index) => (
-            <div key={`${slide.image}-${index}`} className={styles.item}>
-              <img className={styles.img} src={slide.image} alt={slide.title} />
-              <div className={styles.content}>
-                <div className={styles.author}>{slide.author}</div>
-                <div className={styles.title}>{slide.title}</div>
-                <div className={styles.topic}>{slide.topic}</div>
-                <div className={styles.des}>{slide.description}</div>
-                <div className={styles.buttons}>
-                  <button className={styles.btn}>see more</button>
-                  <button className={styles.btn}>click here</button>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Thumbnail section - same structure */}
-      <div className={styles.thumbnail}>
+    <div className={styles.carousel}>
+      {/* Main slider */}
+      <div className={styles.sliderWrapper}>
         {currentSlides.map((slide, index) => (
-          <div key={`thumb-${slide.image}-${index}`} className={styles.item1}>
-            <img className={styles.img1} src={slide.image} alt={slide.thumbnailTitle} />
-            <div className={styles.content1}>
-              <div className="title">{slide.thumbnailTitle}</div>
-              <div className="des">{slide.thumbnailDesc}</div>
+          <div
+            key={`${slide.id}-${index}`}
+            className={`${styles.slide} ${index === 0 ? styles.active : ''}`}
+          >
+            {/* Centered, fully visible image */}
+            <div className={styles.mediaBox}>
+              <img
+                src={slide.image}
+                alt={slide.title}
+                className={styles.slideImage}
+                loading="eager"
+              />
+            </div>
+
+            {/* Overlay content */}
+            <div className={styles.slideContent}>
+              <div className={styles.author}>{slide.author}</div>
+              <h1 className={styles.title}>{slide.title}</h1>
+              <h2 className={styles.topic}>{slide.topic}</h2>
+              <p className={styles.description}>{slide.description}</p>
+              <div className={styles.buttonGroup}>
+                <button className={styles.primaryBtn}>See More</button>
+                <button className={styles.secondaryBtn}>Subscribe</button>
+              </div>
             </div>
           </div>
         ))}
       </div>
 
-      {/* Arrows - same IDs and functionality */}
-      <div className={styles.arrows}>
-        <button 
-          className={styles.btn1} 
-          id="prev"
-          onClick={handlePrev}
+      {/* Thumbnails */}
+      <div className={styles.thumbnails}>
+        {currentSlides.slice(0, 3).map((slide, index) => (
+          <div
+            key={`thumb-${slide.id}-${index}`}
+            className={`${styles.thumbnail} ${
+              index === 0 ? styles.activeThumbnail : ''
+            } ${!isAnimating ? styles.clickable : ''}`}
+            onClick={() => handleThumbnailClick(index)}
+          >
+            <img
+              src={slide.image}
+              alt={slide.thumbnailTitle}
+              className={styles.thumbnailImage}
+              loading="lazy"
+            />
+            <div className={styles.thumbnailContent}>
+              <h4 className={styles.thumbnailTitle}>{slide.thumbnailTitle}</h4>
+              <p className={styles.thumbnailDesc}>{slide.thumbnailDesc}</p>
+            </div>
+            {index !== 0 && !isAnimating && (
+              <div className={styles.clickIndicator}>
+                <span>Click to view</span>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+
+      {/* Navigation */}
+      <div className={styles.navigation}>
+        <button
+          className={styles.navBtn}
+          onClick={prevSlide}
+          disabled={isAnimating}
+          aria-label="Previous slide"
         >
           <GrFormPrevious />
         </button>
-        <button 
-          className={styles.btn1} 
-          id="next"
-          onClick={handleNext}
+        <button
+          className={styles.navBtn}
+          onClick={nextSlide}
+          disabled={isAnimating}
+          aria-label="Next slide"
         >
           <MdNavigateNext />
         </button>
       </div>
 
-      {/* Progress bar */}
-      <div className={styles.time}></div>
+      {/* Progress */}
+      <div className={styles.progressBar}>
+        <div className={styles.progress}></div>
+      </div>
     </div>
   );
 };

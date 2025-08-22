@@ -2,71 +2,67 @@ import React, { useEffect, useState } from 'react';
 import { authAPI } from '../services/api';
 import Navbar from './Navbar';
 import Footer from './footer';
-import Slider from "/Users/priyasidhu/Desktop/quiz-arena/quiz-site-form-check copy/src/components/slider/slider.jsx";
-import Cards from "./cards";
+import Slider from '/src/components/slider/slider.jsx';
+import Cards from './Cards';
+import styles from './Dashboard.module.css';
 
 const Dashboard = () => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  // Check authentication on mount
   useEffect(() => {
-    checkAuthStatus();
+    (async () => {
+      try {
+        const response = await authAPI.getProfile();
+        if (response?.success) setUser(response.user);
+      } catch {
+        console.error('Not authenticated');
+      } finally {
+        setLoading(false);
+      }
+    })();
   }, []);
 
-  const checkAuthStatus = async () => {
-    try {
-      const response = await authAPI.getProfile();
-      if (response.success) {
-        setUser(response.user);
-      }
-    } catch (error) {
-      console.error('Not authenticated');
-    } finally {
-      setLoading(false);
-    }
-  };
-
+  // Logout
   const handleLogout = async () => {
     try {
       await authAPI.logout();
       window.location.href = '/';
-    } catch (error) {
+    } catch {
       console.error('Logout failed');
     }
   };
 
-  if (loading) return <div>Loading...</div>;
+  // Loading screen
+  if (loading) return <div className={styles.loader}>Loading...</div>;
 
+  // If not logged in, redirect
   if (!user) {
     window.location.href = '/';
     return null;
   }
 
   return (
-   <>
-    <div className="dashboard-container">
-      <div className="dashboard-card">
+    <div className={styles.dashboard}>
       <Navbar />
-      <Slider/>
-        <h2>Welcome, {user.username}!</h2>
-        {user.fullName && <p>Full Name: {user.fullName}</p>}
-        {user.email && <p>Email: {user.email}</p>}
-        {user.profilePicture && (
-          <img 
-            src={user.profilePicture} 
-            alt="Profile" 
-            style={{ width: '100px', height: '100px', borderRadius: '50%' }}
-          />
-        )}
-        
-        <Cards/>
-            <Footer/>
-        <button onClick={handleLogout} className="btn logout-btn">
-          Logout
-        </button>
-      </div>
+
+ 
+
+    
+      <section className={styles.hero}>
+        <Slider />
+      </section>
+
+      {/* Cards Content */}
+      <main className={styles.main}>
+        <div className={styles.cardsWrap}>
+          <Cards />
+        </div>
+      </main>
+
+      <Footer />
     </div>
-   </>
   );
 };
 

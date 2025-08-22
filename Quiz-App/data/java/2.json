@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What will be the output?\n\npublic class Main {\n  public static void main(String[] args) {\n    for(int i=1; i<=3; i++) {\n      System.out.print(i + \" \");\n    }\n  }\n}\n",
+    "options": ["1 2 3", "0 1 2", "1 2 3 4", "Error"],
+    "correct": "1 2 3"
+  },
+  {
+    "question": "Which keyword is used to inherit a class in Java?",
+    "options": ["super", "this", "extends", "implements"],
+    "correct": "extends"
+  },
+  {
+    "question": "Predict the output:\n\npublic class Main {\n  public static void main(String[] args) {\n    int[] arr = {10, 20, 30};\n    System.out.println(arr[1]);\n  }\n}\n",
+    "options": ["10", "20", "30", "Error"],
+    "correct": "20"
+  },
+  {
+    "question": "How many times will 'Hello' be printed?\n\npublic class Main {\n  public static void main(String[] args) {\n    int i = 1;\n    while(i <= 3) {\n      System.out.println(\"Hello\");\n      i++;\n    }\n  }\n}\n",
+    "options": ["1", "2", "3", "Infinite loop"],
+    "correct": "3"
+  },
+  {
+    "question": "Which method is the entry point of any Java program?",
+    "options": ["start()", "main()", "init()", "run()"],
+    "correct": "main()"
+  },
+  {
+    "question": "What will the following code print?\n\npublic class Main {\n  public static void main(String[] args) {\n    String s = \"Java\";\n    System.out.println(s.length());\n  }\n}\n",
+    "options": ["3", "4", "5", "Error"],
+    "correct": "4"
+  },
+  {
+    "question": "Which keyword is used to prevent a method from being overridden?\n",
+    "options": ["static", "final", "abstract", "private"],
+    "correct": "final"
+  },
+  {
+    "question": "Output of the code?\n\npublic class Main {\n  public static void sayHi() {\n    System.out.println(\"Hi\");\n  }\n  public static void main(String[] args) {\n    sayHi();\n  }\n}\n",
+    "options": ["Hi", "Hello", "Nothing", "Error"],
+    "correct": "Hi"
+  },
+  {
+    "question": "Which keyword is used for creating an interface in Java?",
+    "options": ["implements", "abstract", "interface", "class"],
+    "correct": "interface"
+  },
+  {
+    "question": "What will be printed?\n\nclass Animal {\n  void sound() { System.out.println(\"Animal sound\"); }\n}\nclass Dog extends Animal {\n  void sound() { System.out.println(\"Bark\"); }\n}\npublic class Main {\n  public static void main(String[] args) {\n    Animal a = new Dog();\n    a.sound();\n  }\n}\n",
+    "options": ["Animal sound", "Bark", "Error", "Nothing"],
+    "correct": "Bark"
+  }
+]

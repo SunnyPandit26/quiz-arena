@@ -1,207 +1,194 @@
-/* ExitNavbar.module.css */
-
+/* ==== NAVBAR CONTAINER ==== */
 .navbar {
-    background: transparent;
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(14, 13, 15, 0.2);
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    padding: 0.75rem 0;
-    transition: all 0.3s ease;
-    
-  }
-  
-  .navbarContainer {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1.5rem;
-  }
-  
-  .navbarLogo {
-    font-weight: 600;
-    font-size: 1.25rem;
-    color: #1f2937;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  transition: background 0.3s ease-in-out;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ==== LOGO ==== */
+.navbarLogo span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.navbarLogo span:hover {
+  transform: scale(1.05);
+}
+
+/* ==== NAV LINKS (Desktop) ==== */
+.navbarLinks {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease-in-out;
+  position: relative;
+}
+
+.navLink::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.navLink:hover {
+  color: #f1f1f1;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+/* ==== LOGOUT BUTTON ==== */
+.logoutBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff;
+  color: #4e54c8;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.logoutBtn:hover {
+  background: #ffeaa7;
+  transform: translateY(-2px);
+}
+
+/* ==== ACTION ICONS ==== */
+.navbarActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.iconBtn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.iconBtn:hover {
+  color: #ffeaa7;
+  transform: scale(1.1);
+}
+
+/* ==== MOBILE MENU BUTTON ==== */
+.mobileMenuBtn {
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* ==== MOBILE MENU ==== */
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(25, 25, 35, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.mobileMenuContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+}
+
+.mobileNavLink {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.mobileNavLink:hover {
+  color: #ffeaa7;
+}
+
+.mobileLogoutBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff;
+  color: #4e54c8;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobileLogoutBtn:hover {
+  background: #ffeaa7;
+  transform: scale(1.05);
+}
+
+/* ==== RESPONSIVE ==== */
+@media screen and (max-width: 992px) {
   .navbarLinks {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+    display: none;
   }
-  
-  .navLink {
-    color: #dfe6f5;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
-    position: relative;
-  }
-  
-  .navLink:hover {
-    color: #3b82f6;
-  }
-  
-  .navLink::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -4px;
-    left: 50%;
-    background-color: #254d8d;
-    transition: all 0.3s ease;
-    transform: translateX(-50%);
-  }
-  
-  .navLink:hover::after {
-    width: 100%;
-  }
-  
-  .navbarActions {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-  }
-  
-  .iconBtn {
-    background: none;
-    border: none;
-    color: #6b7280;
-    cursor: pointer;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .iconBtn:hover {
-    background: rgba(59, 130, 246, 0.1);
-    color: #3b82f6;
-  }
-  
+
   .mobileMenuBtn {
-    background: none;
-    border: none;
-    color: #6b7280;
-    cursor: pointer;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    transition: all 0.3s ease;
-    display: none;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .mobileMenuBtn:hover {
-    background: rgba(59, 130, 246, 0.1);
-    color: #3b82f6;
-  }
-  
-  .mobileMenu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(4px);
-    z-index: 999;
-    display: none;
-    animation: fadeIn 0.3s ease;
-  }
-  
-  .mobileMenuContent {
-    background: white;
-    margin: 4rem 1rem 0;
-    border-radius: 1rem;
-    padding: 2rem;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-    animation: slideDown 0.3s ease;
-  }
-  
-  .mobileNavLink {
     display: block;
-    color: #374151;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 1rem 0;
-    border-bottom: 1px solid #f3f4f6;
-    transition: color 0.3s ease;
   }
-  
-  .mobileNavLink:last-child {
-    border-bottom: none;
+}
+
+/* ==== ANIMATIONS ==== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
   }
-  
-  .mobileNavLink:hover {
-    color: #3b82f6;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-  
-  @keyframes slideDown {
-    from {
-      opacity: 0;
-      transform: translateY(-1rem);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Tablet styles */
-  @media (max-width: 1024px) {
-    .navbarLinks {
-      gap: 1.5rem;
-    }
-    
-    .navLink {
-      font-size: 0.85rem;
-    }
-  }
-  
-  /* Mobile styles */
-  @media (max-width: 768px) {
-    .navbarLinks {
-      display: none;
-    }
-  
-    .mobileMenuBtn {
-      display: flex;
-    }
-  
-    .mobileMenu {
-      display: block;
-    }
-  
-    .navbarContainer {
-      padding: 0 1rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .navbarLogo {
-      font-size: 1.1rem;
-    }
-    
-    .navbarActions {
-      gap: 0.5rem;
-    }
-    
-    .iconBtn {
-      padding: 0.4rem;
-    }
-  }
+}

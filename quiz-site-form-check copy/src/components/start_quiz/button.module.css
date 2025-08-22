@@ -1,0 +1,29 @@
+.div {
+  height: 60px;
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  font-size: 1.1rem;
+  background: linear-gradient(120deg, #0886F9 60%, #05c9d8 100%);
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(8, 134, 249, 0.13);
+  letter-spacing: 0.5px;
+  transition: background 0.2s, transform 0.18s, box-shadow 0.18s;
+}
+
+.btn:hover,
+.btn:focus {
+  background: linear-gradient(120deg, #05c9d8 40%, #0886F9 100%);
+  transform: scale(1.04);
+  box-shadow: 0 4px 16px rgba(8,134,249,0.22);
+}

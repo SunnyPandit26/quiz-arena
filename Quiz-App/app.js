@@ -24,12 +24,44 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 // *** CRITICAL: CORS MUST BE FIRST ***
+// app.js (replace the CORS and session blocks)
+
 app.use(cors({
   origin: "http://localhost:5173",
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
+
+app.use(express.json({ limit: '10mb' }));
+app.use(express.urlencoded({ extended: true, limit: '10mb' }));
+
+app.use(logger('dev'));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.set('trust proxy', 1); // if behind proxy in dev/production
+
+app.use(expressSession({
+  name: 'sid',
+  secret: process.env.SESSION_SECRET || "heloo",
+  resave: false,
+  saveUninitialized: false,
+  cookie: {
+    httpOnly: true,
+    sameSite: 'lax',   // keeps compatibility with localhost cross-origin
+    secure: false,     // set true if you serve over https
+    maxAge: 1000 * 60 * 60 * 24 * 7 // 7 days
+  }
+}));
+
+app.use(passport.initialize());
+app.use(passport.session());
+
+// Passport serialization using the User model exported by routes/users.js
+passport.serializeUser(usersRouter.serializeUser());
+passport.deserializeUser(usersRouter.deserializeUser());
+
 
 // *** CRITICAL: BODY PARSERS BEFORE EVERYTHING ***
 app.use(express.json({ limit: '10mb' }));

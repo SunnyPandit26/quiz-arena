@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What will be the levels of: factor(c('b','a','b','c'), levels = c('a','b','c'))?",
+    "options": ["c('b','a','c')", "c('a','b','c')", "alphabetical by data only", "No levels"],
+    "correct": "c('a','b','c')"
+  },
+  {
+    "question": "What is the dimension of: matrix(1:6, nrow = 2, byrow = TRUE)?",
+    "options": ["c(2, 3)", "c(3, 2)", "c(6, 1)", "c(1, 6)"],
+    "correct": "c(2, 3)"
+  },
+  {
+    "question": "Given df <- data.frame(x = 1:3, y = c(2, NA, 4)), what is nrow(na.omit(df))?",
+    "options": ["1", "2", "3", "Error"],
+    "correct": "2"
+  },
+  {
+    "question": "What does apply(m, 1, sum) do for a numeric matrix m?",
+    "options": ["Sums columns", "Sums rows", "Sums diagonals", "Returns overall sum"],
+    "correct": "Sums rows"
+  },
+  {
+    "question": "Which function safely applies a function over a list and returns a vector if possible?",
+    "options": ["apply()", "lapply()", "sapply()", "tapply()"],
+    "correct": "sapply()"
+  },
+  {
+    "question": "How to select rows where column x > 5 in a data.frame df?",
+    "options": ["df[df$x > 5, ]", "df[x > 5, ]", "subset(df, > 5)", "df[, df$x > 5]"],
+    "correct": "df[df$x > 5, ]"
+  },
+  {
+    "question": "What will be the output type of tapply(x, g, mean) where x is numeric and g is a factor?",
+    "options": ["numeric vector named by levels", "matrix", "list", "data.frame"],
+    "correct": "numeric vector named by levels"
+  },
+  {
+    "question": "Which function replaces NA values in a vector v with 0?",
+    "options": ["v[is.na(v)] <- 0", "replaceNA(v, 0)", "na.rm=TRUE", "fillNA(v, 0)"],
+    "correct": "v[is.na(v)] <- 0"
+  },
+  {
+    "question": "What does the expression df[ , 'x', drop = FALSE] return?",
+    "options": ["A vector of column x", "A one-column data.frame", "An error", "A list"],
+    "correct": "A one-column data.frame"
+  },
+  {
+    "question": "Which base R function makes a simple scatter plot of x vs y?",
+    "options": ["barplot(x, y)", "plot(x, y)", "ggplot(x, y)", "hist(x, y)"],
+    "correct": "plot(x, y)"
+  }
+]

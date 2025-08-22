@@ -1,6 +1,7 @@
-// ExitNavbar.jsx
+// Navbar.jsx
 import React, { useState } from 'react';
-import { X, Menu, Search, User } from 'lucide-react';
+import { X, Menu, Search, User, LogOut } from 'lucide-react';
+import { authAPI } from '../services/api';   // ✅ import your API
 import styles from './navbar.module.css';
 
 const Navbar = () => {
@@ -10,12 +11,21 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleLogout = async () => {
+    try {
+      await authAPI.logout();
+      window.location.href = '/'; // redirect to homepage/login
+    } catch (error) {
+      console.error('Logout failed', error);
+    }
+  };
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbarContainer}>
         {/* Logo */}
         <div className={styles.navbarLogo}>
-          <span>Logo</span>
+          <span>MyBrand</span>
         </div>
 
         {/* Desktop Navigation Links */}
@@ -25,6 +35,11 @@ const Navbar = () => {
           <a href="#services" className={styles.navLink}>Services</a>
           <a href="#featured" className={styles.navLink}>Featured</a>
           <a href="#contact" className={styles.navLink}>Contact Me</a>
+
+          {/* Logout Button (desktop) */}
+          <button onClick={handleLogout} className={styles.logoutBtn}>
+            <LogOut size={18} /> Logout
+          </button>
         </div>
 
         {/* Right side icons */}
@@ -56,6 +71,11 @@ const Navbar = () => {
             <a href="#services" className={styles.mobileNavLink} onClick={toggleMenu}>Services</a>
             <a href="#featured" className={styles.mobileNavLink} onClick={toggleMenu}>Featured</a>
             <a href="#contact" className={styles.mobileNavLink} onClick={toggleMenu}>Contact Me</a>
+
+            {/* Logout Button (mobile) */}
+            <button onClick={() => { handleLogout(); toggleMenu(); }} className={styles.mobileLogoutBtn}>
+              <LogOut size={18} /> Logout
+            </button>
           </div>
         </div>
       )}

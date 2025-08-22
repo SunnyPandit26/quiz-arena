@@ -23,13 +23,8 @@ const popupStyle = {
   textAlign: "center",
 };
 
-const successStyle = {
-  backgroundColor: "#22b96e",
-};
-
-const errorStyle = {
-  backgroundColor: "#e82a2a",
-};
+const successStyle = { backgroundColor: "#22b96e" };
+const errorStyle = { backgroundColor: "#e82a2a" };
 
 const LoginPage = () => {
   // Toggle state for switching between login and create account
@@ -49,7 +44,6 @@ const LoginPage = () => {
 
   // Message state for notifications
   const [message, setMessage] = useState("");
-  // Track type of message for styling (success/error)
   const [messageType, setMessageType] = useState("success");
 
   // Loading state
@@ -63,20 +57,17 @@ const LoginPage = () => {
   const checkAuthStatus = async () => {
     try {
       const response = await authAPI.getProfile();
-      if (response.success) {
-        setUser({
-          ...response.user,
-          isLoggedIn: true
-        });
+      if (response?.success) {
+        setUser({ ...response.user, isLoggedIn: true });
+      } else {
+        setUser(null);
       }
-    } catch (error) {
-      // User not logged in, which is fine
-      console.log("User not logged in");
+    } catch {
+      setUser(null);
     }
   };
 
   /* ---------- MESSAGE POPUP LOGIC ---------- */
-  // One function to show popups
   const showMessage = (text, type = "success") => {
     setMessage(text);
     setMessageType(type);
@@ -93,20 +84,16 @@ const LoginPage = () => {
     setLoading(true);
     try {
       const response = await authAPI.login(loginData.username, loginData.password);
-      if (response.success) {
-        setUser({
-          ...response.user,
-          isLoggedIn: true
-        });
-        showMessage(response.message, "success");
-        setFormData(prev => ({
-          ...prev,
-          username: "",
-          password: ""
-        }));
+      if (response?.success) {
+        // Ensure server session is established by re-checking profile
+        await checkAuthStatus();
+        showMessage(response.message || "Login successful", "success");
+        setFormData(prev => ({ ...prev, username: "", password: "" }));
+      } else {
+        showMessage(response?.message || "Login failed", "error");
       }
     } catch (error) {
-      showMessage(error.message || "Login failed", "error");
+      showMessage(error?.message || "Login failed", "error");
     } finally {
       setLoading(false);
     }
@@ -126,34 +113,27 @@ const LoginPage = () => {
         accountData.email,
         accountData.newPassword
       );
-      if (response.success) {
-        setUser({
-          ...response.user,
-          isLoggedIn: true
-        });
-        showMessage(response.message, "success");
-        setFormData(prev => ({
-          ...prev,
-          newUsername: "",
-          email: "",
-          newPassword: ""
-        }));
+      if (response?.success) {
+        // Ensure session is active after register
+        await checkAuthStatus();
+        showMessage(response.message || "Account created successfully", "success");
+        setFormData(prev => ({ ...prev, newUsername: "", email: "", newPassword: "" }));
         setIsActive(false);
       } else {
-        showMessage(response.message || "Registration failed", "error");
+        showMessage(response?.message || "Registration failed", "error");
       }
     } catch (error) {
-      showMessage(error.message || "Registration failed", "error");
+      showMessage(error?.message || "Registration failed", "error");
     } finally {
       setLoading(false);
     }
   };
 
-  // Handle logout
+  // Handle logout (hard redirect to fully clear client state)
   const handleLogout = async () => {
     setLoading(true);
     try {
-      await authAPI.logout();
+      await authAPI.logout(); // must send credentials inside authAPI
       setUser(null);
       showMessage("Logged out successfully", "success");
       setFormData({
@@ -164,18 +144,21 @@ const LoginPage = () => {
         newPassword: ""
       });
       setIsActive(false);
+      // Hard redirect ensures any lingering state is cleared
+      window.location.href = "/";
     } catch (error) {
-      showMessage(error.message || "Logout failed", "error");
+      showMessage(error?.message || "Logout failed", "error");
     } finally {
       setLoading(false);
     }
   };
 
-  // --- The "popup" MESSAGE renders just ONCE at the TOP LEVEL here ---
   return (
     <>
       {message && (
         <div
+          role="status"
+          aria-live="polite"
           style={{
             ...popupStyle,
             ...(messageType === "success" ? successStyle : errorStyle),
@@ -186,10 +169,8 @@ const LoginPage = () => {
       )}
 
       {user && user.isLoggedIn ? (
-        // Dashboard view
-        <Dashboard />
+        <Dashboard onLogout={handleLogout} />
       ) : (
-        // Login/Register view
         <div className="login-page">
           <div className={`container ${isActive ? "active" : ""}`}>
             <div className="form-container">

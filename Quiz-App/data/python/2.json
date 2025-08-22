@@ -1,0 +1,122 @@
+[
+  {
+    "question": "What is the output?\n\n#include <iostream>\nint add(int a, int b = 2) { return a + b; }\nint main(){ std::cout << add(3); }\n",
+    "options": ["2", "3", "5", "Compilation error"],
+    "correct": "5"
+  },
+  {
+    "question": "What will this print?\n\n#include <iostream>\nvoid f(int &x){ x += 5; }\nint main(){ int a = 10; f(a); std::cout << a; }\n",
+    "options": ["10", "15", "Undefined behavior", "Compilation error"],
+    "correct": "15"
+  },
+  {
+    "question": "Which declaration correctly creates a dynamic array of 5 ints?",
+    "options": [
+      "int a = new int[5];",
+      "int* a = new int(5);",
+      "int* a = new int[5];",
+      "auto a = make_array<int>(5);"
+    ],
+    "correct": "int* a = new int[5];"
+  },
+  {
+    "question": "Choose the correct smart pointer usage to manage a dynamic int.",
+    "options": [
+      "std::unique_ptr<int> p(new int{42});",
+      "std::auto_ptr<int> p(new int{42});",
+      "std::shared_ptr p = 42;",
+      "unique_ptr<int> p = make_unique(42);"
+    ],
+    "correct": "std::unique_ptr<int> p(new int{42});"
+  },
+  {
+    "question": "What is the output?\n\n#include <iostream>\nint main(){ int x = 5; std::cout << ++x << \" \" << x++; }\n",
+    "options": ["5 5", "6 6", "6 5", "6 6 (UB)"],
+    "correct": "6 6"
+  },
+  {
+    "question": "Which statement about references is true?",
+    "options": [
+      "A reference must be initialized when declared.",
+      "References can be reseated to refer to another object.",
+      "A reference can be null in standard C++.",
+      "References require explicit delete."
+    ],
+    "correct": "A reference must be initialized when declared."
+  },
+  {
+    "question": "What is the effect of the const in this signature?\n\nint sum(const int a, const int b);\n",
+    "options": [
+      "Prevents modifying a and b inside the function.",
+      "Makes return value constant.",
+      "Prevents inlining.",
+      "Forces pass-by-reference."
+    ],
+    "correct": "Prevents modifying a and b inside the function."
+  },
+  {
+    "question": "Which overload will be preferred for a literal \"hello\"?",
+    "options": [
+      "void f(const char*);",
+      "void f(std::string);",
+      "void f(std::string_view);",
+      "Ambiguous"
+    ],
+    "correct": "void f(const char*)"
+  },
+  {
+    "question": "What will this code print?\n\n#include <iostream>\n#include <vector>\nint main(){ std::vector<int> v{1,2,3}; for(const auto& x : v) std::cout << x << ' '; }\n",
+    "options": ["1 2 3 ", "0 1 2 ", "Undefined", "Compilation error"],
+    "correct": "1 2 3 "
+  },
+  {
+    "question": "Which range-based for changes elements of v?",
+    "options": [
+      "for (auto x : v) x += 1;",
+      "for (auto& x : v) x += 1;",
+      "for (const auto& x : v) x += 1;",
+      "for (auto&& x : v) { const int y = x; x = y + 1; } // always ok"
+    ],
+    "correct": "for (auto& x : v) x += 1;"
+  },
+  {
+    "question": "What is the output?\n\n#include <iostream>\n#include <string>\nint main(){ std::string s = \"abc\"; s += 'd'; std::cout << s.size(); }\n",
+    "options": ["3", "4", "Compilation error", "Undefined behavior"],
+    "correct": "4"
+  },
+  {
+    "question": "Pick the correct function template that returns the larger of two values.",
+    "options": [
+      "template<typename T> T max(T a, T b){ return a > b ? a : b; }",
+      "template<class T> T& max(T a, T b){ return a > b ? a : b; }",
+      "template<typename T> auto max(T a, T b) -> void { return a > b ? a : b; }",
+      "template<typename T> T max(T& a, T& b) = delete;"
+    ],
+    "correct": "template<typename T> T max(T a, T b){ return a > b ? a : b; }"
+  },
+  {
+    "question": "What happens here?\n\n#include <iostream>\nvoid g(int&& x){ std::cout << x; }\nint main(){ int a = 7; g(std::move(a)); }\n",
+    "options": [
+      "Copies a into g.",
+      "Binds rvalue reference parameter to moved-from a; prints 7.",
+      "Undefined behavior because a is moved.",
+      "Compilation error: cannot bind rvalue ref."
+    ],
+    "correct": "Binds rvalue reference parameter to moved-from a; prints 7."
+  },
+  {
+    "question": "Which is a correct lambda capturing by value and returning sum?",
+    "options": [
+      "auto f = [=](int x, int y) { return x + y; };",
+      "auto f = [](int x, int y) -> int { return x + y; };",
+      "auto f = [&](int x, int y) => x + y;",
+      "auto f = [x,y]{ x + y; }; // without parameters"
+    ],
+    "correct": "auto f = [=](int x, int y) { return x + y; };"
+  },
+  {
+    "question": "What does this print?\n\n#include <iostream>\nstruct A{ A(){ std::cout << \"A\"; } ~A(){ std::cout << \"D\"; } };\nint main(){ { A a; std::cout << \"M\"; } std::cout << \"E\"; }\n",
+    "options": ["AMDE", "AMED", "AEMD", "MADE"],
+    "correct": "AMDE"
+  }
+]

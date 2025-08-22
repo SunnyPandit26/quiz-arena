@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What will be the output?\n\npublic class Main {\n  public static void main(String[] args) {\n    System.out.println(\"Hello Java\");\n  }\n}\n",
+    "options": ["Hello", "Java", "Hello Java", "Error"],
+    "correct": "Hello Java"
+  },
+  {
+    "question": "Which data type is used to store whole numbers in Java?",
+    "options": ["float", "String", "int", "double"],
+    "correct": "int"
+  },
+  {
+    "question": "What will be the output?\n\npublic class Main {\n  public static void main(String[] args) {\n    int x = 5;\n    System.out.println(x++);\n  }\n}\n",
+    "options": ["4", "5", "6", "Error"],
+    "correct": "5"
+  },
+  {
+    "question": "Which symbol is used to start a single-line comment in Java?",
+    "options": ["//", "/*", "#", "--"],
+    "correct": "//"
+  },
+  {
+    "question": "What does JVM stand for in Java?",
+    "options": ["Java Virtual Machine", "Java Variable Method", "Java Vendor Model", "Java Visual Module"],
+    "correct": "Java Virtual Machine"
+  },
+  {
+    "question": "What will the following code print?\n\npublic class Main {\n  public static void main(String[] args) {\n    int a = 10, b = 20;\n    System.out.println(a + b);\n  }\n}\n",
+    "options": ["10", "20", "30", "Error"],
+    "correct": "30"
+  },
+  {
+    "question": "Which keyword is used to create an object in Java?",
+    "options": ["init", "create", "object", "new"],
+    "correct": "new"
+  },
+  {
+    "question": "Which of these is NOT a Java primitive data type?",
+    "options": ["int", "float", "String", "boolean"],
+    "correct": "String"
+  },
+  {
+    "question": "What will be the output?\n\npublic class Main {\n  public static void main(String[] args) {\n    boolean flag = true;\n    System.out.println(flag);\n  }\n}\n",
+    "options": ["true", "false", "1", "0"],
+    "correct": "true"
+  },
+  {
+    "question": "Which of the following is used to print text in Java?",
+    "options": ["console.log()", "print()", "System.out.println()", "echo"],
+    "correct": "System.out.println()"
+  }
+]

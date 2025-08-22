@@ -1,0 +1,102 @@
+[
+  {
+    "question": "Which header is needed to use std::cout in C++?",
+    "options": ["#include <stdio.h>", "#include <iostream>", "#include <string>", "#include <stream>"],
+    "correct": "#include <iostream>"
+  },
+  {
+    "question": "What is the correct way to print Hello World in C++?",
+    "options": [
+      "printf(\"Hello World\\n\");",
+      "std::cout << \"Hello World\" << std::endl;",
+      "Console.WriteLine(\"Hello World\");",
+      "print(\"Hello World\")"
+    ],
+    "correct": "std::cout << \"Hello World\" << std::endl;"
+  },
+  {
+    "question": "How do you declare an integer variable x initialized to 10?",
+    "options": ["int x = 10;", "int x(10);", "auto x = 10;", "All of the above"],
+    "correct": "All of the above"
+  },
+  {
+    "question": "Which of the following is the correct main function signature?",
+    "options": ["int main()", "void main()", "public static void main()", "main() -> int"],
+    "correct": "int main()"
+  },
+  {
+    "question": "Which line correctly reads an integer from standard input into x?",
+    "options": ["cin >> x;", "std::cin >> x;", "scanf(\"%d\", &x);", "input(x);"],
+    "correct": "std::cin >> x;"
+  },
+  {
+    "question": "What is the correct way to include the string library?",
+    "options": ["#include <strings>", "#include <string>", "#include \"string.h\"", "#use <string>"],
+    "correct": "#include <string>"
+  },
+  {
+    "question": "Which of the following creates a vector of ints named v?",
+    "options": [
+      "vector<int> v;",
+      "std::vector<int> v;",
+      "int vector v;",
+      "list<int> v;"
+    ],
+    "correct": "std::vector<int> v;"
+  },
+  {
+    "question": "What is the correct way to write a single-line comment in C++?",
+    "options": ["/* comment */", "// comment", "# comment", "<!-- comment -->"],
+    "correct": "// comment"
+  },
+  {
+    "question": "Which operator is used to access members of an object through a pointer?",
+    "options": [".", "->", "::", ":"],
+    "correct": "->"
+  },
+  {
+    "question": "What does this program print?\n\n#include <iostream>\nint main(){ int a = 3, b = 4; std::cout << a + b; }\n",
+    "options": ["3", "4", "7", "34"],
+    "correct": "7"
+  },
+  {
+    "question": "Choose the correct way to define a function that returns the sum of two ints.",
+    "options": [
+      "int sum(a, b) { return a + b; }",
+      "int sum(int a, int b) { return a + b; }",
+      "sum(int a, int b) -> int { a + b; }",
+      "function int sum(int a, int b) { return a + b; }"
+    ],
+    "correct": "int sum(int a, int b) { return a + b; }"
+  },
+  {
+    "question": "Which keyword creates a constant integer named n with value 5?",
+    "options": ["let int n = 5;", "final int n = 5;", "const int n = 5;", "immutable int n = 5;"],
+    "correct": "const int n = 5;"
+  },
+  {
+    "question": "What is the correct way to read a full line of text into std::string s?",
+    "options": [
+      "scanf(\"%s\", &s);",
+      "std::getline(std::cin, s);",
+      "cin.getline(s);",
+      "inputline(s);"
+    ],
+    "correct": "std::getline(std::cin, s);"
+  },
+  {
+    "question": "Which loop prints numbers 0 to 4?",
+      "options": [
+        "for (int i = 0; i <= 5; i++) std::cout << i;",
+        "for (int i = 0; i < 5; i++) std::cout << i;",
+      "for (i in 0..4) std::cout << i;",
+      "while (i < 5) print(i);"
+    ],
+    "correct": "for (int i = 0; i < 5; i++) std::cout << i;"
+  },
+  {
+    "question": "What is the output?\n\n#include <iostream>\nint main(){ bool ok = (5 > 2); std::cout << ok; }\n",
+    "options": ["true", "false", "1", "0"],
+    "correct": "1"
+  }
+]
