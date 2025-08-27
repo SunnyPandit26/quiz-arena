@@ -17,7 +17,7 @@ const Footer = () => {
             >
               {" "}
               <svg className="bi me-2" width="40" height="32" aria-hidden="true">
-                <use xlink:href="#bootstrap"></use>
+                <use xlinkHref="#bootstrap"></use>
               </svg>{" "}
             </a>{" "}
             <p className="text-body-secondary">© 2025</p>{" "}

@@ -1,1 +1,60 @@
-/* fill it later */
+/* src/components/start_quiz/Start.module.css */
+.grid {
+    padding: 16px;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  
+  .loading {
+    padding: 16px;
+    color: #e6e9ef;
+  }
+  
+  /* ---- box ---- */
+  .box {
+    background: #0b1220;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 16px;
+    color: #e6e9ef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  
+  .level {
+    font-weight: 800;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  
+  /* ---- button ---- */
+  .button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 800;
+    transition: transform 0.1s ease;
+  }
+  
+  .button:active:not(:disabled) {
+    transform: scale(0.97);
+  }
+  
+  .start {
+    background: #ffd700;
+    color: #0b1220;
+    cursor: pointer;
+  }
+  
+  .locked {
+    background: #5b6070;
+    color: #1b1f2a;
+    cursor: not-allowed;
+  }
+  

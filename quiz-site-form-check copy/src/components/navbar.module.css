@@ -1,39 +1,34 @@
-/* ==== NAVBAR CONTAINER ==== */
+/* ===== GLOBAL NAVBAR ===== */
 .navbar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
   background: linear-gradient(90deg, #4e54c8, #8f94fb);
   box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-  transition: background 0.3s ease-in-out;
 }
 
 .navbarContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 15px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
-  max-width: 1400px;
-  margin: 0 auto;
 }
 
-/* ==== LOGO ==== */
+/* ===== Logo ===== */
 .navbarLogo span {
   font-size: 1.5rem;
   font-weight: 700;
   color: #fff;
-  letter-spacing: 1px;
   cursor: pointer;
-  transition: transform 0.2s ease-in-out;
 }
 
-.navbarLogo span:hover {
-  transform: scale(1.05);
-}
+.navbarLogo span:hover { transform: scale(1.05); }
 
-/* ==== NAV LINKS (Desktop) ==== */
+/* ===== Desktop links ===== */
 .navbarLinks {
   display: flex;
   gap: 28px;
@@ -41,47 +36,49 @@
 }
 
 .navLink {
+  position: relative;
   text-decoration: none;
   color: #ffffff;
-  font-weight: 500;
   font-size: 0.95rem;
-  transition: color 0.3s ease-in-out;
-  position: relative;
+  font-weight: 500;
+  transition: color .3s;
 }
 
 .navLink::after {
   content: "";
   position: absolute;
+  left: 0;
+  bottom: -4px;
   width: 0%;
   height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: white;
-  transition: width 0.3s ease-in-out;
+  background: #fff;
+  transition: width .3s;
 }
 
-.navLink:hover {
-  color: #f1f1f1;
+.navLink:hover       { color: #f1f1f1; }
+.navLink:hover::after{ width: 100%;    }
+
+/* ===== Welcome text & Logout ===== */
+.welcomeText {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
 }
 
-.navLink:hover::after {
-  width: 100%;
-}
-
-/* ==== LOGOUT BUTTON ==== */
 .logoutBtn {
   display: flex;
   align-items: center;
   gap: 6px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
   background: #ffffff;
   color: #4e54c8;
-  border: none;
   cursor: pointer;
-  padding: 8px 16px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  border-radius: 20px;
-  transition: all 0.3s ease;
+  transition: background .3s, transform .3s;
 }
 
 .logoutBtn:hover {
@@ -89,47 +86,36 @@
   transform: translateY(-2px);
 }
 
-/* ==== ACTION ICONS ==== */
+/* ===== Actions (search, user, burger) ===== */
 .navbarActions {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.iconBtn {
+.iconBtn, .mobileMenuBtn {
   background: none;
   border: none;
-  color: white;
+  color: #ffffff;
   cursor: pointer;
-  transition: transform 0.25s ease, color 0.25s ease;
+  transition: transform .25s, color .25s;
 }
 
-.iconBtn:hover {
-  color: #ffeaa7;
-  transform: scale(1.1);
-}
+.iconBtn:hover { color:#ffeaa7; transform:scale(1.1); }
 
-/* ==== MOBILE MENU BUTTON ==== */
-.mobileMenuBtn {
-  display: none;
-  background: transparent;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
+/* Burger visible only on mobile */
+.mobileMenuBtn { display: none; }
 
-/* ==== MOBILE MENU ==== */
+/* ===== Mobile overlay ===== */
 .mobileMenu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: rgba(25, 25, 35, 0.95);
+  position: absolute;
+  top: 55px; left: 70%; right: 0;
+  width: 200px;
+  height: 400px;
+  background: rgba(99, 99, 126, 0.95);
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeIn 0.3s ease;
 }
 
 .mobileMenuContent {
@@ -140,29 +126,34 @@
 }
 
 .mobileNavLink {
-  color: white;
+  color: #ffffff;
   font-size: 1.2rem;
   font-weight: 500;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color .3s;
 }
 
-.mobileNavLink:hover {
-  color: #ffeaa7;
+.mobileNavLink:hover { color:#ffeaa7; }
+
+.mobileWelcomeText {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 8px 0;
 }
 
 .mobileLogoutBtn {
   display: flex;
   align-items: center;
   gap: 6px;
-  background: #ffffff;
-  color: #4e54c8;
   padding: 10px 20px;
-  border: none;
   border-radius: 25px;
   font-size: 1rem;
+  background: #ffffff;
+  color: #4e54c8;
+  border: none;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: background .3s, transform .3s;
 }
 
 .mobileLogoutBtn:hover {
@@ -170,25 +161,30 @@
   transform: scale(1.05);
 }
 
-/* ==== RESPONSIVE ==== */
-@media screen and (max-width: 992px) {
-  .navbarLinks {
-    display: none;
-  }
-
-  .mobileMenuBtn {
-    display: block;
-  }
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .navbarLinks   { display:none; }
+  .mobileMenuBtn { display:block; }
 }
 
-/* ==== ANIMATIONS ==== */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* NEW: group for logo + welcome */
+.leftGroup {
+  display: flex;
+  align-items: center;
+  gap: 16px;          /* space between logo and username */
+}
+
+/* tweak container stays the same (space-between already pushes right group) */
+.navbarContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;   /*  left ─ center ─ right  */
+  align-items: center;
+}
+
+/* optional: shrink welcome text on small widths */
+@media (max-width: 768px) {
+  .welcomeText { font-size: 0.8rem; }
 }
