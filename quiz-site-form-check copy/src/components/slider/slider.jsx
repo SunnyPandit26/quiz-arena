@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import styles from './Slider.module.css';
 import { GrFormPrevious } from 'react-icons/gr';
 import { MdNavigateNext } from 'react-icons/md';
+import {useNavigate} from 'react-router-dom';
+
 
 const Slider = () => {
   const slides = [
@@ -139,6 +141,8 @@ const Slider = () => {
     };
   }, []);
 
+  const navigate = useNavigate();
+
   return (
     <div className={styles.carousel}>
       {/* Main slider */}
@@ -165,7 +169,7 @@ const Slider = () => {
               <h2 className={styles.topic}>{slide.topic}</h2>
               <p className={styles.description}>{slide.description}</p>
               <div className={styles.buttonGroup}>
-                <button className={styles.primaryBtn}>See More</button>
+                <button className={styles.primaryBtn} onClick={()=>navigate('/login')}>login/signup</button>
                 <button className={styles.secondaryBtn}>Subscribe</button>
               </div>
             </div>

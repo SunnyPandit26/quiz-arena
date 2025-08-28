@@ -1,15 +1,21 @@
 // src/components/start_quiz/Start.jsx
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams, useLocation } from 'react-router-dom';
+import styles from './Start.module.css';
 
 function Box({ level, types, onStart, locked = false }) {
   return (
-    <div style={{ background:'#0b1220', border:'1px solid rgba(255,255,255,0.08)', borderRadius:12, padding:16, color:'#e6e9ef', display:'flex', alignItems:'center', justifyContent:'space-between', gap:12 }}>
+    <div className={styles.box}>
       <div>
-        <div style={{ fontWeight: 800 }}>{level}</div>
-        <div style={{ fontSize: 14, opacity: 0.8 }}>{types}</div>
+        <div className={styles.level}>{level}</div>
+        <div className={styles.subtitle}>{types}</div>
       </div>
-      <button disabled={locked} onClick={onStart} style={{ padding:'10px 14px', borderRadius:10, border:'none', fontWeight:800, cursor: locked ? 'not-allowed' : 'pointer', background: locked ? '#5b6070' : '#ffd700', color: locked ? '#1b1f2a' : '#0b1220' }}>
+
+      <button
+        className={`${styles.button} ${locked ? styles.locked : styles.start}`}
+        disabled={locked}
+        onClick={onStart}
+      >
         {locked ? 'Locked' : 'Start'}
       </button>
     </div>
@@ -17,46 +23,54 @@ function Box({ level, types, onStart, locked = false }) {
 }
 
 export default function Start() {
-  const navigate = useNavigate();
+  const navigate  = useNavigate();
   const { subject } = useParams();
-  const location = useLocation();
+  const location  = useLocation();
+
   const [highest, setHighest] = useState(1);
   const [loading, setLoading] = useState(true);
 
-  const fetchProgress = () => {
-    setLoading(true);
-    fetch(`http://localhost:3000/progress?subject=${encodeURIComponent(subject)}`, { credentials: 'include' })
-      .then(r => r.json())
-      .then(d => setHighest(d.highestUnlocked || 1))
-      .catch(() => setHighest(1))
-      .finally(() => setLoading(false));
-  };
-
+  // fetch highest unlocked level
   useEffect(() => {
-    fetchProgress();
+    (async () => {
+      try {
+        setLoading(true);
+        const res   = await fetch(
+          `http://localhost:3000/progress?subject=${encodeURIComponent(subject)}`,
+          { credentials: 'include' }
+        );
+        const data  = await res.json();
+        setHighest(data.highestUnlocked || 1);
+      } catch {
+        setHighest(1);
+      } finally {
+        setLoading(false);
+      }
+    })();
   }, [subject, location.key]);
 
   const boxes = Array.from({ length: 100 }, (_, i) => ({
-    label: `Level ${i + 1}`,
-    subtitle: `Face more questions to become Level ${i + 2}`,
-    levelNumber: i + 1
+    label       : `Level ${i + 1}`,
+    subtitle    : `Face more questions to become Level ${i + 2}`,
+    levelNumber : i + 1,
   }));
 
-  const goToQuiz = (levelNumber) => {
-    navigate(`/quiz/${encodeURIComponent(subject)}?level=${levelNumber}`, { state: { ts: Date.now() } });
-  };
+  const goToQuiz = (levelNumber) =>
+    navigate(`/quiz/${encodeURIComponent(subject)}?level=${levelNumber}`, {
+      state: { ts: Date.now() },
+    });
 
-  if (loading) return <div style={{ padding: 16 }}>Loading levels…</div>;
+  if (loading) return <div className={styles.loading}>Loading levels…</div>;
 
   return (
-    <div style={{ padding:16, display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(260px, 1fr))', gap:16 }}>
-      {boxes.map((box) => (
+    <div className={styles.grid}>
+      {boxes.map(({ levelNumber, label, subtitle }) => (
         <Box
-          key={box.levelNumber}
-          level={box.label}
-          types={box.subtitle}
-          onStart={() => goToQuiz(box.levelNumber)}
-          locked={box.levelNumber > highest}
+          key={levelNumber}
+          level={label}
+          types={subtitle}
+          onStart={() => goToQuiz(levelNumber)}
+          locked={levelNumber > highest}
         />
       ))}
     </div>

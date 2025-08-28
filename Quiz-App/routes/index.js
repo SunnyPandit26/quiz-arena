@@ -118,7 +118,7 @@ router.get('/profile', isLoggedIn, function (req, res) {
     success: true,
     user: {
       username: req.user.username,
-      fullName: req.user.fullName,
+       fullName: req.user.fullName,
       email: req.user.email,
       profilePicture: req.user.profilePicture
     }

@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { authAPI } from '../services/api';
+// src/components/Dashboard.jsx
+import React from 'react';
+import { useAuth } from '../contexts/AuthContext';
 import Navbar from './Navbar';
 import Footer from './footer';
 import Slider from '/src/components/slider/slider.jsx';
@@ -7,54 +8,26 @@ import Cards from './Cards';
 import styles from './Dashboard.module.css';
 
 const Dashboard = () => {
-  const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const { user, loading } = useAuth();
 
-  // Check authentication on mount
-  useEffect(() => {
-    (async () => {
-      try {
-        const response = await authAPI.getProfile();
-        if (response?.success) setUser(response.user);
-      } catch {
-        console.error('Not authenticated');
-      } finally {
-        setLoading(false);
-      }
-    })();
-  }, []);
-
-  // Logout
-  const handleLogout = async () => {
-    try {
-      await authAPI.logout();
-      window.location.href = '/';
-    } catch {
-      console.error('Logout failed');
-    }
-  };
-
-  // Loading screen
+  // Loading screen (only shows briefly while checking auth status)
   if (loading) return <div className={styles.loader}>Loading...</div>;
 
-  // If not logged in, redirect
-  if (!user) {
-    window.location.href = '/';
-    return null;
-  }
+  // ✅ MAIN CHANGE: No redirect logic - this is now the public home page
+  // ❌ REMOVED: All the authentication checking and redirect logic
+  // ❌ REMOVED: handleLogout function (now handled in AuthContext)
+  // ❌ REMOVED: useEffect with authAPI.getProfile()
+  // ❌ REMOVED: user state management (now from AuthContext)
 
   return (
     <div className={styles.dashboard}>
-      <Navbar />
-
- 
-
     
+      
       <section className={styles.hero}>
         <Slider />
       </section>
 
-      {/* Cards Content */}
+      {/* Cards Content - Now accessible to everyone */}
       <main className={styles.main}>
         <div className={styles.cardsWrap}>
           <Cards />

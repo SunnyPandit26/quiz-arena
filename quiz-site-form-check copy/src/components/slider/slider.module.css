@@ -192,8 +192,8 @@
 .thumbnail:nth-child(n+4) { display: none; }
 
 .thumbnail {
-  width: 120px;
-  height: 160px;
+  width: 150px;
+  height: 220px;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
@@ -233,11 +233,11 @@
 /* Navigation */
 .navigation {
   position: absolute;
-  top: 40%;
-  right: 30px;
+  top: 85%;
+  right : 52%;
   transform: translateY(-50%);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1rem;
   z-index: 15;
 }

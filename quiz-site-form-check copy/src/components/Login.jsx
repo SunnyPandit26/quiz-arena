@@ -1,6 +1,7 @@
 import React from "react";
 import { authAPI } from "../services/api";
 
+
 const Login = ({ onLogin, formData, setFormData, loading }) => {
   const handleInputChange = (e) => {
     setFormData({
@@ -36,6 +37,7 @@ const Login = ({ onLogin, formData, setFormData, loading }) => {
             required
             disabled={loading}
             autoComplete="username"
+            
           />
         </div>
 
