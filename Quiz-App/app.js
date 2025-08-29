@@ -62,6 +62,33 @@ app.use(passport.session());
 passport.serializeUser(usersRouter.serializeUser());
 passport.deserializeUser(usersRouter.deserializeUser());
 
+app.use('/quiz_results', express.static(path.join(__dirname, 'quiz_results')));
+
+app.get('/debug/files', (req, res) => {
+  const fs = require('fs');
+  const quizDir = path.join(__dirname, 'quiz_results');
+  
+  if (fs.existsSync(quizDir)) {
+    const files = fs.readdirSync(quizDir);
+    res.json({
+      success: true,
+      directory: quizDir,
+      files: files.map(file => ({
+        name: file,
+        size: fs.statSync(path.join(quizDir, file)).size,
+        url: `http://localhost:3000/quiz_results/${file}`
+      })),
+      totalFiles: files.length
+    });
+  } else {
+    res.json({
+      success: false,
+      message: 'Quiz results directory not found',
+      directory: quizDir
+    });
+  }
+});
+  
 
 // *** CRITICAL: BODY PARSERS BEFORE EVERYTHING ***
 app.use(express.json({ limit: '10mb' }));

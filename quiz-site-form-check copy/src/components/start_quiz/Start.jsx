@@ -31,23 +31,28 @@ export default function Start() {
   const [loading, setLoading] = useState(true);
 
   // fetch highest unlocked level
-  useEffect(() => {
-    (async () => {
-      try {
-        setLoading(true);
-        const res   = await fetch(
-          `http://localhost:3000/progress?subject=${encodeURIComponent(subject)}`,
-          { credentials: 'include' }
-        );
-        const data  = await res.json();
-        setHighest(data.highestUnlocked || 1);
-      } catch {
-        setHighest(1);
-      } finally {
-        setLoading(false);
-      }
-    })();
-  }, [subject, location.key]);
+// In Start.jsx useEffect
+useEffect(() => {
+  (async () => {
+    try {
+      setLoading(true);
+      const res = await fetch(
+        `http://localhost:3000/progress?subject=${encodeURIComponent(subject)}`,
+        { credentials: 'include' }
+      );
+      const data = await res.json();
+      console.log('Progress API Response:', data); // ADD THIS
+      setHighest(data.highestUnlocked || 1);
+      console.log('Highest set to:', data.highestUnlocked || 1); // ADD THIS
+    } catch (error) {
+      console.error('Progress fetch error:', error); // ADD THIS
+      setHighest(1);
+    } finally {
+      setLoading(false);
+    }
+  })();
+}, [subject, location.key]);
+
 
   const boxes = Array.from({ length: 100 }, (_, i) => ({
     label       : `Level ${i + 1}`,

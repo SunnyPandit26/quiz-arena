@@ -61,7 +61,8 @@
 /* ===== Welcome text & Logout ===== */
 .welcomeText {
   color: #ffffff;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
+  color: black;
   font-weight: 500;
   white-space: nowrap;
 }
