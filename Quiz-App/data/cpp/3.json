@@ -1,0 +1,8 @@
+[
+  {
+    "question": "Which header is needed to use std::cout in C++?",
+    "options": ["#include <stdio.h>", "#include <iostream>", "#include <string>", "#include <stream>"],
+    "correct": "#include <iostream>"
+  }
+]
+    

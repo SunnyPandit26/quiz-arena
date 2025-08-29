@@ -1,0 +1,442 @@
+userId,username,subject,level,questionNumber,question,userAnswer,correctAnswer,isCorrect,timestamp,totalScore,totalQuestions
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","1","What is the correct way to create a list in Python?","Not Answered","list = [1, 2, 3]","false","2025-08-28T17:20:43.405Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","2","Which of the following is used to define a function in Python?","Not Answered","def","false","2025-08-28T17:20:43.405Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","3","What will be the output of: print(type([]))?","Not Answered","<class 'list'>","false","2025-08-28T17:20:43.405Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","4","Which operator is used for exponentiation in Python?","Not Answered","**","false","2025-08-28T17:20:43.405Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","5","What is the correct syntax for a while loop in Python?","Not Answered","while condition:","false","2025-08-28T17:20:43.405Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","6","Which method is used to add an element to the end of a list?","Not Answered","append()","false","2025-08-28T17:20:43.405Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","7","What is the output of: len('Hello World')?","Not Answered","11","false","2025-08-28T17:20:43.405Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","8","Which of the following is NOT a valid Python data type?","Not Answered","char","false","2025-08-28T17:20:43.405Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","9","What is the correct way to import the math module in Python?","Not Answered","import math","false","2025-08-28T17:20:43.405Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","10","What will be the result of: 5 // 2?","Not Answered","2","false","2025-08-28T17:20:43.405Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","java","1","1","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(""Hello Java"");
+  }
+}
+","Hello Java","Hello Java","true","2025-08-28T17:46:50.206Z","10","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","java","1","2","Which data type is used to store whole numbers in Java?","int","int","true","2025-08-28T17:46:50.206Z","10","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","java","1","3","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x++);
+  }
+}
+","5","5","true","2025-08-28T17:46:50.206Z","10","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","java","1","4","Which symbol is used to start a single-line comment in Java?","//","//","true","2025-08-28T17:46:50.206Z","10","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","java","1","5","What does JVM stand for in Java?","Java Virtual Machine","Java Virtual Machine","true","2025-08-28T17:46:50.206Z","10","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","java","1","6","What will the following code print?
+
+public class Main {
+  public static void main(String[] args) {
+    int a = 10, b = 20;
+    System.out.println(a + b);
+  }
+}
+","30","30","true","2025-08-28T17:46:50.206Z","10","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","java","1","7","Which keyword is used to create an object in Java?","new","new","true","2025-08-28T17:46:50.206Z","10","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","java","1","8","Which of these is NOT a Java primitive data type?","String","String","true","2025-08-28T17:46:50.206Z","10","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","java","1","9","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    boolean flag = true;
+    System.out.println(flag);
+  }
+}
+","true","true","true","2025-08-28T17:46:50.206Z","10","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","java","1","10","Which of the following is used to print text in Java?","System.out.println()","System.out.println()","true","2025-08-28T17:46:50.206Z","10","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","1","What is the correct way to create a list in Python?","list = [1, 2, 3]","list = [1, 2, 3]","true","2025-08-28T17:52:55.629Z","2","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","2","Which of the following is used to define a function in Python?","def","def","true","2025-08-28T17:52:55.629Z","2","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","1","What is the correct way to create a list in Python?","list = [1, 2, 3]","list = [1, 2, 3]","true","2025-08-28T17:54:56.404Z","7","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","2","Which of the following is used to define a function in Python?","def","def","true","2025-08-28T17:54:56.404Z","7","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","3","What will be the output of: print(type([]))?","<class 'list'>","<class 'list'>","true","2025-08-28T17:54:56.404Z","7","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","4","Which operator is used for exponentiation in Python?","**","**","true","2025-08-28T17:54:56.404Z","7","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","5","What is the correct syntax for a while loop in Python?","while condition:","while condition:","true","2025-08-28T17:54:56.404Z","7","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","6","Which method is used to add an element to the end of a list?","insert()","append()","false","2025-08-28T17:54:56.404Z","7","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","7","What is the output of: len('Hello World')?","11","11","true","2025-08-28T17:54:56.404Z","7","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","8","Which of the following is NOT a valid Python data type?","float","char","false","2025-08-28T17:54:56.404Z","7","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","9","What is the correct way to import the math module in Python?","import math","import math","true","2025-08-28T17:54:56.404Z","7","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","10","What will be the result of: 5 // 2?","2.0","2","false","2025-08-28T17:54:56.404Z","7","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","1","What is the correct way to print Hello World in Julia?","println("Hello World")","println("Hello World")","true","2025-08-28T17:55:45.239Z","4","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","2","Which file extension is used for Julia source files?",".ju",".jl","false","2025-08-28T17:55:45.239Z","4","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","3","What is the result of typeof(3.14) in Julia?","Number","Float64","false","2025-08-28T17:55:45.239Z","4","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","4","How do you create a 1-to-5 range in Julia?","[1..5]","1:5","false","2025-08-28T17:55:45.239Z","4","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","5","Which of the following creates an array of integers from 1 to 3?","[1,2,3]","[1,2,3]","true","2025-08-28T17:55:45.239Z","4","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","6","What is the correct syntax to define a simple function f that returns x + y?","fn f(x,y) { x + y }","function f(x,y) x + y end","false","2025-08-28T17:55:45.239Z","4","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","7","What will the following print?
+
+x = 10
+if x > 5
+    println(""big"")
+else
+    println(""small"")
+end","big","big","true","2025-08-28T17:55:45.239Z","4","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","8","Which collection is immutable in Julia?","Not Answered","Tuple","false","2025-08-28T17:55:45.239Z","4","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","9","How do you access the first element of an array a = [10,20,30] in Julia?","a[9]","a[9]","true","2025-08-28T17:55:45.239Z","4","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","10","Which code correctly creates a dictionary mapping ""a"" to 1 and ""b"" to 2?","Not Answered","Dict("a" => 1, "b" => 2)","false","2025-08-28T17:55:45.239Z","4","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","1","What is the correct way to print Hello World in Julia?","Not Answered","println("Hello World")","false","2025-08-28T17:55:58.179Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","2","Which file extension is used for Julia source files?","Not Answered",".jl","false","2025-08-28T17:55:58.179Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","3","What is the result of typeof(3.14) in Julia?","Not Answered","Float64","false","2025-08-28T17:55:58.179Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","4","How do you create a 1-to-5 range in Julia?","Not Answered","1:5","false","2025-08-28T17:55:58.179Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","5","Which of the following creates an array of integers from 1 to 3?","Not Answered","[1,2,3]","false","2025-08-28T17:55:58.179Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","6","What is the correct syntax to define a simple function f that returns x + y?","Not Answered","function f(x,y) x + y end","false","2025-08-28T17:55:58.179Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","7","What will the following print?
+
+x = 10
+if x > 5
+    println(""big"")
+else
+    println(""small"")
+end","Not Answered","big","false","2025-08-28T17:55:58.179Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","8","Which collection is immutable in Julia?","Not Answered","Tuple","false","2025-08-28T17:55:58.179Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","9","How do you access the first element of an array a = [10,20,30] in Julia?","Not Answered","a[9]","false","2025-08-28T17:55:58.179Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","10","Which code correctly creates a dictionary mapping ""a"" to 1 and ""b"" to 2?","Not Answered","Dict("a" => 1, "b" => 2)","false","2025-08-28T17:55:58.179Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","1","What is the correct way to print Hello World in Julia?","Not Answered","println("Hello World")","false","2025-08-28T17:56:09.021Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","2","Which file extension is used for Julia source files?","Not Answered",".jl","false","2025-08-28T17:56:09.021Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","3","What is the result of typeof(3.14) in Julia?","Not Answered","Float64","false","2025-08-28T17:56:09.021Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","4","How do you create a 1-to-5 range in Julia?","Not Answered","1:5","false","2025-08-28T17:56:09.021Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","5","Which of the following creates an array of integers from 1 to 3?","Not Answered","[1,2,3]","false","2025-08-28T17:56:09.021Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","6","What is the correct syntax to define a simple function f that returns x + y?","Not Answered","function f(x,y) x + y end","false","2025-08-28T17:56:09.021Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","7","What will the following print?
+
+x = 10
+if x > 5
+    println(""big"")
+else
+    println(""small"")
+end","Not Answered","big","false","2025-08-28T17:56:09.021Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","8","Which collection is immutable in Julia?","Not Answered","Tuple","false","2025-08-28T17:56:09.021Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","9","How do you access the first element of an array a = [10,20,30] in Julia?","Not Answered","a[9]","false","2025-08-28T17:56:09.021Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","julia","1","10","Which code correctly creates a dictionary mapping ""a"" to 1 and ""b"" to 2?","Not Answered","Dict("a" => 1, "b" => 2)","false","2025-08-28T17:56:09.021Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","1","What is the correct way to create a list in Python?","Not Answered","list = [1, 2, 3]","false","2025-08-28T18:04:19.746Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","2","Which of the following is used to define a function in Python?","Not Answered","def","false","2025-08-28T18:04:19.746Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","3","What will be the output of: print(type([]))?","Not Answered","<class 'list'>","false","2025-08-28T18:04:19.746Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","4","Which operator is used for exponentiation in Python?","Not Answered","**","false","2025-08-28T18:04:19.746Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","5","What is the correct syntax for a while loop in Python?","Not Answered","while condition:","false","2025-08-28T18:04:19.746Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","6","Which method is used to add an element to the end of a list?","Not Answered","append()","false","2025-08-28T18:04:19.746Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","7","What is the output of: len('Hello World')?","Not Answered","11","false","2025-08-28T18:04:19.746Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","8","Which of the following is NOT a valid Python data type?","Not Answered","char","false","2025-08-28T18:04:19.746Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","9","What is the correct way to import the math module in Python?","Not Answered","import math","false","2025-08-28T18:04:19.746Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","10","What will be the result of: 5 // 2?","Not Answered","2","false","2025-08-28T18:04:19.746Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","1","What is the correct way to create a list in Python?","Not Answered","list = [1, 2, 3]","false","2025-08-28T18:04:43.975Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","2","Which of the following is used to define a function in Python?","Not Answered","def","false","2025-08-28T18:04:43.975Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","3","What will be the output of: print(type([]))?","Not Answered","<class 'list'>","false","2025-08-28T18:04:43.975Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","4","Which operator is used for exponentiation in Python?","Not Answered","**","false","2025-08-28T18:04:43.975Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","5","What is the correct syntax for a while loop in Python?","Not Answered","while condition:","false","2025-08-28T18:04:43.975Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","6","Which method is used to add an element to the end of a list?","Not Answered","append()","false","2025-08-28T18:04:43.975Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","7","What is the output of: len('Hello World')?","Not Answered","11","false","2025-08-28T18:04:43.975Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","8","Which of the following is NOT a valid Python data type?","Not Answered","char","false","2025-08-28T18:04:43.975Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","9","What is the correct way to import the math module in Python?","Not Answered","import math","false","2025-08-28T18:04:43.975Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","10","What will be the result of: 5 // 2?","Not Answered","2","false","2025-08-28T18:04:43.975Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","1","What is the correct way to create a list in Python?","list = [1, 2, 3]","list = [1, 2, 3]","true","2025-08-28T18:04:56.167Z","2","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","2","Which of the following is used to define a function in Python?","def","def","true","2025-08-28T18:04:56.167Z","2","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","3","What will be the output of: print(type([]))?","Not Answered","<class 'list'>","false","2025-08-28T18:04:56.167Z","2","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","4","Which operator is used for exponentiation in Python?","Not Answered","**","false","2025-08-28T18:04:56.167Z","2","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","5","What is the correct syntax for a while loop in Python?","Not Answered","while condition:","false","2025-08-28T18:04:56.167Z","2","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","6","Which method is used to add an element to the end of a list?","Not Answered","append()","false","2025-08-28T18:04:56.167Z","2","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","7","What is the output of: len('Hello World')?","Not Answered","11","false","2025-08-28T18:04:56.167Z","2","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","8","Which of the following is NOT a valid Python data type?","Not Answered","char","false","2025-08-28T18:04:56.167Z","2","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","9","What is the correct way to import the math module in Python?","Not Answered","import math","false","2025-08-28T18:04:56.167Z","2","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","10","What will be the result of: 5 // 2?","Not Answered","2","false","2025-08-28T18:04:56.167Z","2","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","1","What is the correct way to create a list in Python?","list = [1, 2, 3]","list = [1, 2, 3]","true","2025-08-28T18:05:26.533Z","3","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","2","Which of the following is used to define a function in Python?","def","def","true","2025-08-28T18:05:26.533Z","3","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","3","What will be the output of: print(type([]))?","<class 'list'>","<class 'list'>","true","2025-08-28T18:05:26.533Z","3","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","4","Which operator is used for exponentiation in Python?","exp","**","false","2025-08-28T18:05:26.533Z","3","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","5","What is the correct syntax for a while loop in Python?","loop while condition:","while condition:","false","2025-08-28T18:05:26.533Z","3","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","6","Which method is used to add an element to the end of a list?","push()","append()","false","2025-08-28T18:05:26.533Z","3","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","7","What is the output of: len('Hello World')?","9","11","false","2025-08-28T18:05:26.533Z","3","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","8","Which of the following is NOT a valid Python data type?","bool","char","false","2025-08-28T18:05:26.533Z","3","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","9","What is the correct way to import the math module in Python?","require math","import math","false","2025-08-28T18:05:26.533Z","3","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","10","What will be the result of: 5 // 2?","2.0","2","false","2025-08-28T18:05:26.533Z","3","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","1","What is the correct way to create a list in Python?","Not Answered","list = [1, 2, 3]","false","2025-08-28T18:05:44.127Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","2","Which of the following is used to define a function in Python?","Not Answered","def","false","2025-08-28T18:05:44.127Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","3","What will be the output of: print(type([]))?","Not Answered","<class 'list'>","false","2025-08-28T18:05:44.127Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","4","Which operator is used for exponentiation in Python?","Not Answered","**","false","2025-08-28T18:05:44.127Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","5","What is the correct syntax for a while loop in Python?","Not Answered","while condition:","false","2025-08-28T18:05:44.127Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","6","Which method is used to add an element to the end of a list?","Not Answered","append()","false","2025-08-28T18:05:44.127Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","7","What is the output of: len('Hello World')?","Not Answered","11","false","2025-08-28T18:05:44.127Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","8","Which of the following is NOT a valid Python data type?","Not Answered","char","false","2025-08-28T18:05:44.127Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","9","What is the correct way to import the math module in Python?","Not Answered","import math","false","2025-08-28T18:05:44.127Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","10","What will be the result of: 5 // 2?","Not Answered","2","false","2025-08-28T18:05:44.127Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","1","What is the correct way to create a list in Python?","list = [1, 2, 3]","list = [1, 2, 3]","true","2025-08-28T18:06:21.538Z","9","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","2","Which of the following is used to define a function in Python?","def","def","true","2025-08-28T18:06:21.538Z","9","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","3","What will be the output of: print(type([]))?","<class 'list'>","<class 'list'>","true","2025-08-28T18:06:21.538Z","9","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","4","Which operator is used for exponentiation in Python?","**","**","true","2025-08-28T18:06:21.538Z","9","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","5","What is the correct syntax for a while loop in Python?","while condition:","while condition:","true","2025-08-28T18:06:21.538Z","9","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","6","Which method is used to add an element to the end of a list?","append()","append()","true","2025-08-28T18:06:21.538Z","9","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","7","What is the output of: len('Hello World')?","11","11","true","2025-08-28T18:06:21.538Z","9","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","8","Which of the following is NOT a valid Python data type?","char","char","true","2025-08-28T18:06:21.538Z","9","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","9","What is the correct way to import the math module in Python?","import math","import math","true","2025-08-28T18:06:21.538Z","9","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","10","What will be the result of: 5 // 2?","2.0","2","false","2025-08-28T18:06:21.538Z","9","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","1","What is the correct way to create a list in Python?","Not Answered","list = [1, 2, 3]","false","2025-08-28T18:10:11.029Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","2","Which of the following is used to define a function in Python?","Not Answered","def","false","2025-08-28T18:10:11.029Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","3","What will be the output of: print(type([]))?","Not Answered","<class 'list'>","false","2025-08-28T18:10:11.029Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","4","Which operator is used for exponentiation in Python?","Not Answered","**","false","2025-08-28T18:10:11.029Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","5","What is the correct syntax for a while loop in Python?","Not Answered","while condition:","false","2025-08-28T18:10:11.029Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","6","Which method is used to add an element to the end of a list?","Not Answered","append()","false","2025-08-28T18:10:11.029Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","7","What is the output of: len('Hello World')?","Not Answered","11","false","2025-08-28T18:10:11.029Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","8","Which of the following is NOT a valid Python data type?","Not Answered","char","false","2025-08-28T18:10:11.029Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","9","What is the correct way to import the math module in Python?","Not Answered","import math","false","2025-08-28T18:10:11.029Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","10","What will be the result of: 5 // 2?","Not Answered","2","false","2025-08-28T18:10:11.029Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","1","What is the correct way to create a list in Python?","list = [1, 2, 3]","list = [1, 2, 3]","true","2025-08-28T18:11:17.134Z","2","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","2","Which of the following is used to define a function in Python?","def","def","true","2025-08-28T18:11:17.134Z","2","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","1","What is the correct way to create a list in Python?","Not Answered","list = [1, 2, 3]","false","2025-08-28T18:11:56.431Z","0","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","2","Which of the following is used to define a function in Python?","Not Answered","def","false","2025-08-28T18:11:56.431Z","0","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","1","What is the correct way to create a list in Python?","list = [1, 2, 3]","list = [1, 2, 3]","true","2025-08-28T18:12:08.346Z","2","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","2","Which of the following is used to define a function in Python?","def","def","true","2025-08-28T18:12:08.346Z","2","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","1","What is the correct way to create a list in Python?","list = [1, 2, 3]","list = [1, 2, 3]","true","2025-08-28T18:12:23.800Z","2","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","2","Which of the following is used to define a function in Python?","def","def","true","2025-08-28T18:12:23.800Z","2","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","1","What is the correct way to create a list in Python?","list = [1, 2, 3]","list = [1, 2, 3]","true","2025-08-28T18:13:00.073Z","2","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","2","Which of the following is used to define a function in Python?","def","def","true","2025-08-28T18:13:00.073Z","2","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","1","What is the correct way to create a list in Python?","list = [1, 2, 3]","list = [1, 2, 3]","true","2025-08-28T18:13:16.934Z","2","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","2","Which of the following is used to define a function in Python?","def","def","true","2025-08-28T18:13:16.934Z","2","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","1","What is the correct way to create a list in Python?","list = [1, 2, 3]","list = [1, 2, 3]","true","2025-08-28T18:17:30.547Z","2","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","2","Which of the following is used to define a function in Python?","def","def","true","2025-08-28T18:17:30.547Z","2","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","1","What is the correct way to create a list in Python?","list = [1, 2, 3]","list = [1, 2, 3]","true","2025-08-28T18:19:07.749Z","2","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","2","Which of the following is used to define a function in Python?","def","def","true","2025-08-28T18:19:07.749Z","2","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","1","What is the output?
+
+#include <iostream>
+int add(int a, int b = 2) { return a + b; }
+int main(){ std::cout << add(3); }
+","Not Answered","5","false","2025-08-28T18:19:20.978Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","2","What will this print?
+
+#include <iostream>
+void f(int &x){ x += 5; }
+int main(){ int a = 10; f(a); std::cout << a; }
+","Not Answered","15","false","2025-08-28T18:19:20.978Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","3","Which declaration correctly creates a dynamic array of 5 ints?","Not Answered","int* a = new int[5];","false","2025-08-28T18:19:20.978Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","4","Choose the correct smart pointer usage to manage a dynamic int.","Not Answered","std::unique_ptr<int> p(new int{42});","false","2025-08-28T18:19:20.978Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","5","What is the output?
+
+#include <iostream>
+int main(){ int x = 5; std::cout << ++x << "" "" << x++; }
+","Not Answered","6 6","false","2025-08-28T18:19:20.978Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","6","Which statement about references is true?","Not Answered","A reference must be initialized when declared.","false","2025-08-28T18:19:20.978Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","7","What is the effect of the const in this signature?
+
+int sum(const int a, const int b);
+","Not Answered","Prevents modifying a and b inside the function.","false","2025-08-28T18:19:20.978Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","8","Which overload will be preferred for a literal ""hello""?","Not Answered","void f(const char*)","false","2025-08-28T18:19:20.978Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","9","What will this code print?
+
+#include <iostream>
+#include <vector>
+int main(){ std::vector<int> v{1,2,3}; for(const auto& x : v) std::cout << x << ' '; }
+","Not Answered","1 2 3 ","false","2025-08-28T18:19:20.978Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","10","Which range-based for changes elements of v?","Not Answered","for (auto& x : v) x += 1;","false","2025-08-28T18:19:20.978Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","11","What is the output?
+
+#include <iostream>
+#include <string>
+int main(){ std::string s = ""abc""; s += 'd'; std::cout << s.size(); }
+","Not Answered","4","false","2025-08-28T18:19:20.978Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","12","Pick the correct function template that returns the larger of two values.","Not Answered","template<typename T> T max(T a, T b){ return a > b ? a : b; }","false","2025-08-28T18:19:20.978Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","13","What happens here?
+
+#include <iostream>
+void g(int&& x){ std::cout << x; }
+int main(){ int a = 7; g(std::move(a)); }
+","Not Answered","Binds rvalue reference parameter to moved-from a; prints 7.","false","2025-08-28T18:19:20.978Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","14","Which is a correct lambda capturing by value and returning sum?","Not Answered","auto f = [=](int x, int y) { return x + y; };","false","2025-08-28T18:19:20.978Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","15","What does this print?
+
+#include <iostream>
+struct A{ A(){ std::cout << ""A""; } ~A(){ std::cout << ""D""; } };
+int main(){ { A a; std::cout << ""M""; } std::cout << ""E""; }
+","Not Answered","AMDE","false","2025-08-28T18:19:20.978Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","1","What is the correct way to create a list in Python?","list = [1, 2, 3]","list = [1, 2, 3]","true","2025-08-28T18:39:39.308Z","2","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","2","Which of the following is used to define a function in Python?","def","def","true","2025-08-28T18:39:39.308Z","2","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","1","What is the correct way to create a list in Python?","list = [1, 2, 3]","list = [1, 2, 3]","true","2025-08-28T18:58:36.421Z","2","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","2","Which of the following is used to define a function in Python?","def","def","true","2025-08-28T18:58:36.421Z","2","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","1","What is the correct way to create a list in Python?","list = [1, 2, 3]","list = [1, 2, 3]","true","2025-08-28T19:03:30.070Z","2","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","2","Which of the following is used to define a function in Python?","def","def","true","2025-08-28T19:03:30.070Z","2","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","1","What is the correct way to create a list in Python?","Not Answered","list = [1, 2, 3]","false","2025-08-28T19:08:01.821Z","0","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","2","Which of the following is used to define a function in Python?","Not Answered","def","false","2025-08-28T19:08:01.821Z","0","2"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","r","1","1","What will be the output of: print(class(5)) in R?","Not Answered",""numeric"","false","2025-08-28T19:09:07.458Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","r","1","2","Which operator is commonly used for assignment in R?","Not Answered","<-","false","2025-08-28T19:09:07.458Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","r","1","3","What will be the output of: length(c(10, 20, 30, 40))?","Not Answered","4","false","2025-08-28T19:09:07.458Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","r","1","4","How do you create a sequence from 1 to 5 in R?","Not Answered","1:5","false","2025-08-28T19:09:07.458Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","r","1","5","What will be the value of x after: x <- c(2, 4); x[2] <- 10?","Not Answered","c(2, 10)","false","2025-08-28T19:09:07.458Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","r","1","6","Which function combines values into a vector?","Not Answered","c()","false","2025-08-28T19:09:07.458Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","r","1","7","What will be the output of: sum(c(1, 2, 3, 4))?","Not Answered","10","false","2025-08-28T19:09:07.458Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","r","1","8","How do you check the structure of an object in R?","Not Answered","str()","false","2025-08-28T19:09:07.458Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","r","1","9","What is the correct way to create a data frame with columns a = c(1,2) and b = c(""x"",""y"")?","Not Answered","data.frame(a=c(1,2), b=c("x","y"))","false","2025-08-28T19:09:07.458Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","r","1","10","What will be the output of: typeof(TRUE)?","Not Answered",""logical"","false","2025-08-28T19:09:07.458Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","1","What is the correct way to create a list in Python?","list = [1, 2, 3]","list = [1, 2, 3]","true","2025-08-28T19:10:33.899Z","5","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","2","Which of the following is used to define a function in Python?","def","def","true","2025-08-28T19:10:33.899Z","5","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","3","What will be the output of: print(type([]))?","<class 'list'>","<class 'list'>","true","2025-08-28T19:10:33.899Z","5","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","4","Which operator is used for exponentiation in Python?","exp","**","false","2025-08-28T19:10:33.899Z","5","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","5","What is the correct syntax for a while loop in Python?","while: condition","while condition:","false","2025-08-28T19:10:33.899Z","5","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","6","Which method is used to add an element to the end of a list?","append()","append()","true","2025-08-28T19:10:33.899Z","5","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","7","What is the output of: len('Hello World')?","11","11","true","2025-08-28T19:10:33.899Z","5","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","8","Which of the following is NOT a valid Python data type?","bool","char","false","2025-08-28T19:10:33.899Z","5","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","9","What is the correct way to import the math module in Python?","include math","import math","false","2025-08-28T19:10:33.899Z","5","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","10","What will be the result of: 5 // 2?","3","2","false","2025-08-28T19:10:33.899Z","5","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","webdev","2","1","Which HTTP method is used to update existing data on a server?","PUT","PUT","true","2025-08-28T19:13:42.108Z","7","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","webdev","2","2","Which CSS position value will keep an element fixed relative to the browser window?","sticky","fixed","false","2025-08-28T19:13:42.108Z","7","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","webdev","2","3","What does DOM stand for in web development?","Document Object Model","Document Object Model","true","2025-08-28T19:13:42.108Z","7","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","webdev","2","4","Which JavaScript keyword is used to declare a constant?","const","const","true","2025-08-28T19:13:42.108Z","7","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","webdev","2","5","Which HTML attribute is used to make an input field mandatory?","required","required","true","2025-08-28T19:13:42.108Z","7","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","webdev","2","6","Which CSS property controls the spacing between lines of text?","letter-spacing","line-height","false","2025-08-28T19:13:42.108Z","7","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","webdev","2","7","Which JavaScript method is used to convert a JSON string into an object?","JSON.parse()","JSON.parse()","true","2025-08-28T19:13:42.108Z","7","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","webdev","2","8","What is the correct order of CSS specificity (from lowest to highest)?","Elements < Classes < IDs < Inline styles","Elements < Classes < IDs < Inline styles","true","2025-08-28T19:13:42.108Z","7","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","webdev","2","9","Which HTML5 element is used to draw graphics using JavaScript?","<canvas>","<canvas>","true","2025-08-28T19:13:42.108Z","7","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","webdev","2","10","In JavaScript, which of the following is NOT a primitive data type?","String","Object","false","2025-08-28T19:13:42.108Z","7","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","1","Which header is needed to use std::cout in C++?","Not Answered","#include <iostream>","false","2025-08-29T04:57:45.683Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","2","What is the correct way to print Hello World in C++?","Not Answered","std::cout << "Hello World" << std::endl;","false","2025-08-29T04:57:45.683Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","3","How do you declare an integer variable x initialized to 10?","Not Answered","All of the above","false","2025-08-29T04:57:45.683Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","4","Which of the following is the correct main function signature?","Not Answered","int main()","false","2025-08-29T04:57:45.683Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","5","Which line correctly reads an integer from standard input into x?","Not Answered","std::cin >> x;","false","2025-08-29T04:57:45.683Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","6","What is the correct way to include the string library?","Not Answered","#include <string>","false","2025-08-29T04:57:45.683Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","7","Which of the following creates a vector of ints named v?","Not Answered","std::vector<int> v;","false","2025-08-29T04:57:45.683Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","8","What is the correct way to write a single-line comment in C++?","Not Answered","// comment","false","2025-08-29T04:57:45.683Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","9","Which operator is used to access members of an object through a pointer?","Not Answered","->","false","2025-08-29T04:57:45.683Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","10","What does this program print?
+
+#include <iostream>
+int main(){ int a = 3, b = 4; std::cout << a + b; }
+","Not Answered","7","false","2025-08-29T04:57:45.683Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","11","Choose the correct way to define a function that returns the sum of two ints.","Not Answered","int sum(int a, int b) { return a + b; }","false","2025-08-29T04:57:45.683Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","12","Which keyword creates a constant integer named n with value 5?","Not Answered","const int n = 5;","false","2025-08-29T04:57:45.683Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","13","What is the correct way to read a full line of text into std::string s?","Not Answered","std::getline(std::cin, s);","false","2025-08-29T04:57:45.683Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","14","Which loop prints numbers 0 to 4?","Not Answered","for (int i = 0; i < 5; i++) std::cout << i;","false","2025-08-29T04:57:45.683Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","15","What is the output?
+
+#include <iostream>
+int main(){ bool ok = (5 > 2); std::cout << ok; }
+","Not Answered","1","false","2025-08-29T04:57:45.683Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","1","Which header is needed to use std::cout in C++?","Not Answered","#include <iostream>","false","2025-08-29T05:07:20.167Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","2","What is the correct way to print Hello World in C++?","Not Answered","std::cout << "Hello World" << std::endl;","false","2025-08-29T05:07:20.167Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","3","How do you declare an integer variable x initialized to 10?","Not Answered","All of the above","false","2025-08-29T05:07:20.167Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","4","Which of the following is the correct main function signature?","Not Answered","int main()","false","2025-08-29T05:07:20.167Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","5","Which line correctly reads an integer from standard input into x?","Not Answered","std::cin >> x;","false","2025-08-29T05:07:20.167Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","6","What is the correct way to include the string library?","Not Answered","#include <string>","false","2025-08-29T05:07:20.167Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","7","Which of the following creates a vector of ints named v?","Not Answered","std::vector<int> v;","false","2025-08-29T05:07:20.167Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","8","What is the correct way to write a single-line comment in C++?","Not Answered","// comment","false","2025-08-29T05:07:20.167Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","9","Which operator is used to access members of an object through a pointer?","Not Answered","->","false","2025-08-29T05:07:20.167Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","10","What does this program print?
+
+#include <iostream>
+int main(){ int a = 3, b = 4; std::cout << a + b; }
+","Not Answered","7","false","2025-08-29T05:07:20.167Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","1","Which header is needed to use std::cout in C++?","Not Answered","#include <iostream>","false","2025-08-29T05:36:51.501Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","2","What is the correct way to print Hello World in C++?","Not Answered","std::cout << "Hello World" << std::endl;","false","2025-08-29T05:36:51.501Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","3","How do you declare an integer variable x initialized to 10?","Not Answered","All of the above","false","2025-08-29T05:36:51.501Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","4","Which of the following is the correct main function signature?","Not Answered","int main()","false","2025-08-29T05:36:51.501Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","5","Which line correctly reads an integer from standard input into x?","Not Answered","std::cin >> x;","false","2025-08-29T05:36:51.501Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","6","What is the correct way to include the string library?","Not Answered","#include <string>","false","2025-08-29T05:36:51.501Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","7","Which of the following creates a vector of ints named v?","Not Answered","std::vector<int> v;","false","2025-08-29T05:36:51.501Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","8","What is the correct way to write a single-line comment in C++?","Not Answered","// comment","false","2025-08-29T05:36:51.501Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","9","Which operator is used to access members of an object through a pointer?","Not Answered","->","false","2025-08-29T05:36:51.501Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","10","What does this program print?
+
+#include <iostream>
+int main(){ int a = 3, b = 4; std::cout << a + b; }
+","Not Answered","7","false","2025-08-29T05:36:51.501Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","1","Which header is needed to use std::cout in C++?","Not Answered","#include <iostream>","false","2025-08-29T05:37:56.009Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","2","What is the correct way to print Hello World in C++?","Not Answered","std::cout << "Hello World" << std::endl;","false","2025-08-29T05:37:56.009Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","3","How do you declare an integer variable x initialized to 10?","Not Answered","All of the above","false","2025-08-29T05:37:56.009Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","4","Which of the following is the correct main function signature?","Not Answered","int main()","false","2025-08-29T05:37:56.009Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","5","Which line correctly reads an integer from standard input into x?","Not Answered","std::cin >> x;","false","2025-08-29T05:37:56.009Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","6","What is the correct way to include the string library?","Not Answered","#include <string>","false","2025-08-29T05:37:56.009Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","7","Which of the following creates a vector of ints named v?","Not Answered","std::vector<int> v;","false","2025-08-29T05:37:56.009Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","8","What is the correct way to write a single-line comment in C++?","Not Answered","// comment","false","2025-08-29T05:37:56.009Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","9","Which operator is used to access members of an object through a pointer?","Not Answered","->","false","2025-08-29T05:37:56.009Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","10","What does this program print?
+
+#include <iostream>
+int main(){ int a = 3, b = 4; std::cout << a + b; }
+","Not Answered","7","false","2025-08-29T05:37:56.009Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","11","Choose the correct way to define a function that returns the sum of two ints.","Not Answered","int sum(int a, int b) { return a + b; }","false","2025-08-29T05:37:56.009Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","12","Which keyword creates a constant integer named n with value 5?","Not Answered","const int n = 5;","false","2025-08-29T05:37:56.009Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","13","What is the correct way to read a full line of text into std::string s?","Not Answered","std::getline(std::cin, s);","false","2025-08-29T05:37:56.009Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","14","Which loop prints numbers 0 to 4?","Not Answered","for (int i = 0; i < 5; i++) std::cout << i;","false","2025-08-29T05:37:56.009Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","15","What is the output?
+
+#include <iostream>
+int main(){ bool ok = (5 > 2); std::cout << ok; }
+","Not Answered","1","false","2025-08-29T05:37:56.009Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","1","Which header is needed to use std::cout in C++?","Not Answered","#include <iostream>","false","2025-08-29T06:05:44.105Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","2","What is the correct way to print Hello World in C++?","Not Answered","std::cout << "Hello World" << std::endl;","false","2025-08-29T06:05:44.105Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","3","How do you declare an integer variable x initialized to 10?","Not Answered","All of the above","false","2025-08-29T06:05:44.105Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","4","Which of the following is the correct main function signature?","Not Answered","int main()","false","2025-08-29T06:05:44.105Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","5","Which line correctly reads an integer from standard input into x?","Not Answered","std::cin >> x;","false","2025-08-29T06:05:44.105Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","6","What is the correct way to include the string library?","Not Answered","#include <string>","false","2025-08-29T06:05:44.105Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","7","Which of the following creates a vector of ints named v?","Not Answered","std::vector<int> v;","false","2025-08-29T06:05:44.105Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","8","What is the correct way to write a single-line comment in C++?","Not Answered","// comment","false","2025-08-29T06:05:44.105Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","9","Which operator is used to access members of an object through a pointer?","Not Answered","->","false","2025-08-29T06:05:44.105Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","10","What does this program print?
+
+#include <iostream>
+int main(){ int a = 3, b = 4; std::cout << a + b; }
+","Not Answered","7","false","2025-08-29T06:05:44.105Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","11","Choose the correct way to define a function that returns the sum of two ints.","Not Answered","int sum(int a, int b) { return a + b; }","false","2025-08-29T06:05:44.105Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","12","Which keyword creates a constant integer named n with value 5?","Not Answered","const int n = 5;","false","2025-08-29T06:05:44.105Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","13","What is the correct way to read a full line of text into std::string s?","Not Answered","std::getline(std::cin, s);","false","2025-08-29T06:05:44.105Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","14","Which loop prints numbers 0 to 4?","Not Answered","for (int i = 0; i < 5; i++) std::cout << i;","false","2025-08-29T06:05:44.105Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","15","What is the output?
+
+#include <iostream>
+int main(){ bool ok = (5 > 2); std::cout << ok; }
+","Not Answered","1","false","2025-08-29T06:05:44.105Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","1","What is the output?
+
+#include <iostream>
+int add(int a, int b = 2) { return a + b; }
+int main(){ std::cout << add(3); }
+","Not Answered","5","false","2025-08-29T06:10:42.401Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","2","What will this print?
+
+#include <iostream>
+void f(int &x){ x += 5; }
+int main(){ int a = 10; f(a); std::cout << a; }
+","Not Answered","15","false","2025-08-29T06:10:42.401Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","3","Which declaration correctly creates a dynamic array of 5 ints?","Not Answered","int* a = new int[5];","false","2025-08-29T06:10:42.401Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","4","Choose the correct smart pointer usage to manage a dynamic int.","Not Answered","std::unique_ptr<int> p(new int{42});","false","2025-08-29T06:10:42.401Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","5","What is the output?
+
+#include <iostream>
+int main(){ int x = 5; std::cout << ++x << "" "" << x++; }
+","6 6 (UB)","6 6","false","2025-08-29T06:10:42.401Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","6","Which statement about references is true?","Not Answered","A reference must be initialized when declared.","false","2025-08-29T06:10:42.401Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","7","What is the effect of the const in this signature?
+
+int sum(const int a, const int b);
+","Not Answered","Prevents modifying a and b inside the function.","false","2025-08-29T06:10:42.401Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","8","Which overload will be preferred for a literal ""hello""?","Not Answered","void f(const char*)","false","2025-08-29T06:10:42.401Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","9","What will this code print?
+
+#include <iostream>
+#include <vector>
+int main(){ std::vector<int> v{1,2,3}; for(const auto& x : v) std::cout << x << ' '; }
+","Not Answered","1 2 3 ","false","2025-08-29T06:10:42.401Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","10","Which range-based for changes elements of v?","Not Answered","for (auto& x : v) x += 1;","false","2025-08-29T06:10:42.401Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","11","What is the output?
+
+#include <iostream>
+#include <string>
+int main(){ std::string s = ""abc""; s += 'd'; std::cout << s.size(); }
+","Not Answered","4","false","2025-08-29T06:10:42.401Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","12","Pick the correct function template that returns the larger of two values.","Not Answered","template<typename T> T max(T a, T b){ return a > b ? a : b; }","false","2025-08-29T06:10:42.401Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","13","What happens here?
+
+#include <iostream>
+void g(int&& x){ std::cout << x; }
+int main(){ int a = 7; g(std::move(a)); }
+","Not Answered","Binds rvalue reference parameter to moved-from a; prints 7.","false","2025-08-29T06:10:42.401Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","14","Which is a correct lambda capturing by value and returning sum?","Not Answered","auto f = [=](int x, int y) { return x + y; };","false","2025-08-29T06:10:42.401Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","15","What does this print?
+
+#include <iostream>
+struct A{ A(){ std::cout << ""A""; } ~A(){ std::cout << ""D""; } };
+int main(){ { A a; std::cout << ""M""; } std::cout << ""E""; }
+","Not Answered","AMDE","false","2025-08-29T06:10:42.401Z","0","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","1","Which header is needed to use std::cout in C++?","#include <iostream>","#include <iostream>","true","2025-08-29T07:23:38.943Z","1","1"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","2","1","Which header is needed to use std::cout in C++?","#include <iostream>","#include <iostream>","true","2025-08-29T07:23:46.935Z","1","1"

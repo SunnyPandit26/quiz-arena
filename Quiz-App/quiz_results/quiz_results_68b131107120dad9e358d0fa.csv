@@ -1,0 +1,1625 @@
+userId,username,subject,level,questionNumber,question,userAnswer,correctAnswer,isCorrect,timestamp,totalScore,totalQuestions
+"68b131107120dad9e358d0fa","Ritika","cpp","1","1","Which header is needed to use std::cout in C++?","#include <iostream>","#include <iostream>","true","2025-08-29T04:52:46.027Z","12","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","2","What is the correct way to print Hello World in C++?","std::cout << "Hello World" << std::endl;","std::cout << "Hello World" << std::endl;","true","2025-08-29T04:52:46.027Z","12","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","3","How do you declare an integer variable x initialized to 10?","int x = 10;","All of the above","false","2025-08-29T04:52:46.027Z","12","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","4","Which of the following is the correct main function signature?","int main()","int main()","true","2025-08-29T04:52:46.027Z","12","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","5","Which line correctly reads an integer from standard input into x?","std::cin >> x;","std::cin >> x;","true","2025-08-29T04:52:46.027Z","12","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","6","What is the correct way to include the string library?","#include <string>","#include <string>","true","2025-08-29T04:52:46.027Z","12","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","7","Which of the following creates a vector of ints named v?","std::vector<int> v;","std::vector<int> v;","true","2025-08-29T04:52:46.027Z","12","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","8","What is the correct way to write a single-line comment in C++?","// comment","// comment","true","2025-08-29T04:52:46.027Z","12","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","9","Which operator is used to access members of an object through a pointer?","->","->","true","2025-08-29T04:52:46.027Z","12","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","10","What does this program print?
+
+#include <iostream>
+int main(){ int a = 3, b = 4; std::cout << a + b; }
+","7","7","true","2025-08-29T04:52:46.027Z","12","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","11","Choose the correct way to define a function that returns the sum of two ints.","int sum(int a, int b) { return a + b; }","int sum(int a, int b) { return a + b; }","true","2025-08-29T04:52:46.027Z","12","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","12","Which keyword creates a constant integer named n with value 5?","const int n = 5;","const int n = 5;","true","2025-08-29T04:52:46.027Z","12","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","13","What is the correct way to read a full line of text into std::string s?","cin.getline(s);","std::getline(std::cin, s);","false","2025-08-29T04:52:46.027Z","12","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","14","Which loop prints numbers 0 to 4?","for (int i = 0; i <= 5; i++) std::cout << i;","for (int i = 0; i < 5; i++) std::cout << i;","false","2025-08-29T04:52:46.027Z","12","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","15","What is the output?
+
+#include <iostream>
+int main(){ bool ok = (5 > 2); std::cout << ok; }
+","1","1","true","2025-08-29T04:52:46.027Z","12","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","1","Which header is needed to use std::cout in C++?","Not Answered","#include <iostream>","false","2025-08-29T04:54:56.472Z","1","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","2","What is the correct way to print Hello World in C++?","Not Answered","std::cout << "Hello World" << std::endl;","false","2025-08-29T04:54:56.472Z","1","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","3","How do you declare an integer variable x initialized to 10?","Not Answered","All of the above","false","2025-08-29T04:54:56.472Z","1","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","4","Which of the following is the correct main function signature?","Not Answered","int main()","false","2025-08-29T04:54:56.472Z","1","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","5","Which line correctly reads an integer from standard input into x?","Not Answered","std::cin >> x;","false","2025-08-29T04:54:56.472Z","1","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","6","What is the correct way to include the string library?","Not Answered","#include <string>","false","2025-08-29T04:54:56.472Z","1","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","7","Which of the following creates a vector of ints named v?","Not Answered","std::vector<int> v;","false","2025-08-29T04:54:56.472Z","1","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","8","What is the correct way to write a single-line comment in C++?","Not Answered","// comment","false","2025-08-29T04:54:56.472Z","1","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","9","Which operator is used to access members of an object through a pointer?","Not Answered","->","false","2025-08-29T04:54:56.472Z","1","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","10","What does this program print?
+
+#include <iostream>
+int main(){ int a = 3, b = 4; std::cout << a + b; }
+","7","7","true","2025-08-29T04:54:56.472Z","1","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","11","Choose the correct way to define a function that returns the sum of two ints.","Not Answered","int sum(int a, int b) { return a + b; }","false","2025-08-29T04:54:56.472Z","1","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","12","Which keyword creates a constant integer named n with value 5?","Not Answered","const int n = 5;","false","2025-08-29T04:54:56.472Z","1","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","13","What is the correct way to read a full line of text into std::string s?","Not Answered","std::getline(std::cin, s);","false","2025-08-29T04:54:56.472Z","1","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","14","Which loop prints numbers 0 to 4?","Not Answered","for (int i = 0; i < 5; i++) std::cout << i;","false","2025-08-29T04:54:56.472Z","1","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","15","What is the output?
+
+#include <iostream>
+int main(){ bool ok = (5 > 2); std::cout << ok; }
+","Not Answered","1","false","2025-08-29T04:54:56.472Z","1","15"
+"68b131107120dad9e358d0fa","Ritika","julia","1","1","What is the correct way to print Hello World in Julia?","Not Answered","println("Hello World")","false","2025-08-29T04:55:45.732Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","julia","1","2","Which file extension is used for Julia source files?","Not Answered",".jl","false","2025-08-29T04:55:45.732Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","julia","1","3","What is the result of typeof(3.14) in Julia?","Not Answered","Float64","false","2025-08-29T04:55:45.732Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","julia","1","4","How do you create a 1-to-5 range in Julia?","Not Answered","1:5","false","2025-08-29T04:55:45.732Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","julia","1","5","Which of the following creates an array of integers from 1 to 3?","Not Answered","[1,2,3]","false","2025-08-29T04:55:45.732Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","julia","1","6","What is the correct syntax to define a simple function f that returns x + y?","Not Answered","function f(x,y) x + y end","false","2025-08-29T04:55:45.732Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","julia","1","7","What will the following print?
+
+x = 10
+if x > 5
+    println(""big"")
+else
+    println(""small"")
+end","Not Answered","big","false","2025-08-29T04:55:45.732Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","julia","1","8","Which collection is immutable in Julia?","Not Answered","Tuple","false","2025-08-29T04:55:45.732Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","julia","1","9","How do you access the first element of an array a = [10,20,30] in Julia?","Not Answered","a[9]","false","2025-08-29T04:55:45.732Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","julia","1","10","Which code correctly creates a dictionary mapping ""a"" to 1 and ""b"" to 2?","Not Answered","Dict("a" => 1, "b" => 2)","false","2025-08-29T04:55:45.732Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","1","Which header is needed to use std::cout in C++?","Not Answered","#include <iostream>","false","2025-08-29T04:59:41.749Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","2","What is the correct way to print Hello World in C++?","Not Answered","std::cout << "Hello World" << std::endl;","false","2025-08-29T04:59:41.749Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","3","How do you declare an integer variable x initialized to 10?","Not Answered","All of the above","false","2025-08-29T04:59:41.749Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","4","Which of the following is the correct main function signature?","Not Answered","int main()","false","2025-08-29T04:59:41.749Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","5","Which line correctly reads an integer from standard input into x?","Not Answered","std::cin >> x;","false","2025-08-29T04:59:41.749Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","6","What is the correct way to include the string library?","Not Answered","#include <string>","false","2025-08-29T04:59:41.749Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","7","Which of the following creates a vector of ints named v?","Not Answered","std::vector<int> v;","false","2025-08-29T04:59:41.749Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","8","What is the correct way to write a single-line comment in C++?","Not Answered","// comment","false","2025-08-29T04:59:41.749Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","9","Which operator is used to access members of an object through a pointer?","Not Answered","->","false","2025-08-29T04:59:41.749Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","10","What does this program print?
+
+#include <iostream>
+int main(){ int a = 3, b = 4; std::cout << a + b; }
+","Not Answered","7","false","2025-08-29T04:59:41.749Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","r","1","1","What will be the output of: print(class(5)) in R?","Not Answered",""numeric"","false","2025-08-29T05:02:20.458Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","r","1","2","Which operator is commonly used for assignment in R?","Not Answered","<-","false","2025-08-29T05:02:20.458Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","r","1","3","What will be the output of: length(c(10, 20, 30, 40))?","Not Answered","4","false","2025-08-29T05:02:20.458Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","r","1","4","How do you create a sequence from 1 to 5 in R?","Not Answered","1:5","false","2025-08-29T05:02:20.458Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","r","1","5","What will be the value of x after: x <- c(2, 4); x[2] <- 10?","Not Answered","c(2, 10)","false","2025-08-29T05:02:20.458Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","r","1","6","Which function combines values into a vector?","Not Answered","c()","false","2025-08-29T05:02:20.458Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","r","1","7","What will be the output of: sum(c(1, 2, 3, 4))?","Not Answered","10","false","2025-08-29T05:02:20.458Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","r","1","8","How do you check the structure of an object in R?","Not Answered","str()","false","2025-08-29T05:02:20.458Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","r","1","9","What is the correct way to create a data frame with columns a = c(1,2) and b = c(""x"",""y"")?","Not Answered","data.frame(a=c(1,2), b=c("x","y"))","false","2025-08-29T05:02:20.458Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","r","1","10","What will be the output of: typeof(TRUE)?","Not Answered",""logical"","false","2025-08-29T05:02:20.458Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","webdev","1","1","What does HTML stand for?","Not Answered","HyperText Markup Language","false","2025-08-29T05:03:25.612Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","webdev","1","2","Which tag is used to create a hyperlink in HTML?","Not Answered","<a>","false","2025-08-29T05:03:25.612Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","webdev","1","3","Which of the following is used to apply styles to a web page?","Not Answered","CSS","false","2025-08-29T05:03:25.612Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","webdev","1","4","Inside which HTML element do we put JavaScript code?","Not Answered","<script>","false","2025-08-29T05:03:25.612Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","webdev","1","5","Which CSS property is used to change the text color?","Not Answered","color","false","2025-08-29T05:03:25.612Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","webdev","1","6","What is the correct HTML tag for the largest heading?","Not Answered","<h1>","false","2025-08-29T05:03:25.612Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","webdev","1","7","Which symbol is used for IDs in CSS selectors?","Not Answered","#","false","2025-08-29T05:03:25.612Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","webdev","1","8","Which of these is a JavaScript data type?","Not Answered","Boolean","false","2025-08-29T05:03:25.612Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","webdev","1","9","Which HTML tag is used to display an image?","Not Answered","<img>","false","2025-08-29T05:03:25.612Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","webdev","1","10","In JavaScript, what will typeof [] return?","Not Answered","'object'","false","2025-08-29T05:03:25.612Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","webdev","1","1","What does HTML stand for?","HyperText Markup Language","HyperText Markup Language","true","2025-08-29T05:42:37.687Z","7","10"
+"68b131107120dad9e358d0fa","Ritika","webdev","1","2","Which tag is used to create a hyperlink in HTML?","<a>","<a>","true","2025-08-29T05:42:37.687Z","7","10"
+"68b131107120dad9e358d0fa","Ritika","webdev","1","3","Which of the following is used to apply styles to a web page?","CSS","CSS","true","2025-08-29T05:42:37.687Z","7","10"
+"68b131107120dad9e358d0fa","Ritika","webdev","1","4","Inside which HTML element do we put JavaScript code?","<script>","<script>","true","2025-08-29T05:42:37.687Z","7","10"
+"68b131107120dad9e358d0fa","Ritika","webdev","1","5","Which CSS property is used to change the text color?","color","color","true","2025-08-29T05:42:37.687Z","7","10"
+"68b131107120dad9e358d0fa","Ritika","webdev","1","6","What is the correct HTML tag for the largest heading?","<head>","<h1>","false","2025-08-29T05:42:37.687Z","7","10"
+"68b131107120dad9e358d0fa","Ritika","webdev","1","7","Which symbol is used for IDs in CSS selectors?","#","#","true","2025-08-29T05:42:37.687Z","7","10"
+"68b131107120dad9e358d0fa","Ritika","webdev","1","8","Which of these is a JavaScript data type?","Integer","Boolean","false","2025-08-29T05:42:37.687Z","7","10"
+"68b131107120dad9e358d0fa","Ritika","webdev","1","9","Which HTML tag is used to display an image?","<img>","<img>","true","2025-08-29T05:42:37.687Z","7","10"
+"68b131107120dad9e358d0fa","Ritika","webdev","1","10","In JavaScript, what will typeof [] return?","'array'","'object'","false","2025-08-29T05:42:37.687Z","7","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","1","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 10;
+    cout << ++x;
+    return 0;
+}
+","11","11","true","2025-08-29T05:48:41.066Z","6","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","2","What will be the output?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5, b = 2;
+    cout << a / b;
+    return 0;
+}
+","3","2","false","2025-08-29T05:48:41.066Z","6","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","3","Find the output:
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5;
+    cout << a++;
+    return 0;
+}
+","5","5","true","2025-08-29T05:48:41.066Z","6","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","4","What will be printed?
+
+#include <iostream>
+using namespace std;
+int main() {
+    for(int i = 0; i < 3; i++) {
+        cout << i << "" "";
+    }
+    return 0;
+}
+","0 1 2","0 1 2","true","2025-08-29T05:48:41.066Z","6","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","5","Predict the output:
+
+#include <iostream>
+using namespace std;
+void fun(int x){
+    cout << x * 2;
+}
+int main() {
+    fun(5);
+    return 0;
+}
+","10","10","true","2025-08-29T05:48:41.066Z","6","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","6","What will happen?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[3] = {1,2,3};
+    cout << arr;
+    return 0;
+}
+","Error","2","false","2025-08-29T05:48:41.066Z","6","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","7","Output of pointers:
+
+#include <iostream>
+using namespace std;
+int main(){
+    int a = 10;
+    int *p = &a;
+    cout << *p;
+    return 0;
+}
+","address of a","10","false","2025-08-29T05:48:41.066Z","6","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","8","What is the result?
+
+#include <iostream>
+using namespace std;
+int main(){
+    int x = 3;
+    int y = ++x * 2;
+    cout << y;
+    return 0;
+}
+","Not Answered","8","false","2025-08-29T05:48:41.066Z","6","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","9","Predict output with recursion:
+
+#include <iostream>
+using namespace std;
+int fact(int n){
+    if(n==0) return 1;
+    return n*fact(n-1);
+}
+int main(){
+    cout << fact(4);
+    return 0;
+}
+","24","24","true","2025-08-29T05:48:41.066Z","6","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","10","What will be printed?
+
+#include <iostream>
+using namespace std;
+int main(){
+    int a = 10;
+    cout << (a == 10 ? ""Yes"" : ""No"");
+    return 0;
+}
+","Yes","Yes","true","2025-08-29T05:48:41.066Z","6","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","1","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 10;
+    cout << ++x;
+    return 0;
+}
+","Not Answered","11","false","2025-08-29T05:51:12.193Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","2","What will be the output?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5, b = 2;
+    cout << a / b;
+    return 0;
+}
+","Not Answered","2","false","2025-08-29T05:51:12.193Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","3","Find the output:
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5;
+    cout << a++;
+    return 0;
+}
+","Not Answered","5","false","2025-08-29T05:51:12.193Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","4","What will be printed?
+
+#include <iostream>
+using namespace std;
+int main() {
+    for(int i = 0; i < 3; i++) {
+        cout << i << "" "";
+    }
+    return 0;
+}
+","Not Answered","0 1 2","false","2025-08-29T05:51:12.193Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","5","Predict the output:
+
+#include <iostream>
+using namespace std;
+void fun(int x){
+    cout << x * 2;
+}
+int main() {
+    fun(5);
+    return 0;
+}
+","Not Answered","10","false","2025-08-29T05:51:12.193Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","6","What will happen?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[3] = {1,2,3};
+    cout << arr;
+    return 0;
+}
+","Not Answered","2","false","2025-08-29T05:51:12.193Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","7","Output of pointers:
+
+#include <iostream>
+using namespace std;
+int main(){
+    int a = 10;
+    int *p = &a;
+    cout << *p;
+    return 0;
+}
+","Not Answered","10","false","2025-08-29T05:51:12.193Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","8","What is the result?
+
+#include <iostream>
+using namespace std;
+int main(){
+    int x = 3;
+    int y = ++x * 2;
+    cout << y;
+    return 0;
+}
+","Not Answered","8","false","2025-08-29T05:51:12.193Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","9","Predict output with recursion:
+
+#include <iostream>
+using namespace std;
+int fact(int n){
+    if(n==0) return 1;
+    return n*fact(n-1);
+}
+int main(){
+    cout << fact(4);
+    return 0;
+}
+","Not Answered","24","false","2025-08-29T05:51:12.193Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","10","What will be printed?
+
+#include <iostream>
+using namespace std;
+int main(){
+    int a = 10;
+    cout << (a == 10 ? ""Yes"" : ""No"");
+    return 0;
+}
+","Not Answered","Yes","false","2025-08-29T05:51:12.193Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","julia","1","1","What is the correct way to print Hello World in Julia?","Not Answered","println("Hello World")","false","2025-08-29T05:52:44.019Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","julia","1","2","Which file extension is used for Julia source files?","Not Answered",".jl","false","2025-08-29T05:52:44.019Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","julia","1","3","What is the result of typeof(3.14) in Julia?","Not Answered","Float64","false","2025-08-29T05:52:44.019Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","julia","1","4","How do you create a 1-to-5 range in Julia?","Not Answered","1:5","false","2025-08-29T05:52:44.019Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","julia","1","5","Which of the following creates an array of integers from 1 to 3?","Not Answered","[1,2,3]","false","2025-08-29T05:52:44.019Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","julia","1","6","What is the correct syntax to define a simple function f that returns x + y?","Not Answered","function f(x,y) x + y end","false","2025-08-29T05:52:44.019Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","julia","1","7","What will the following print?
+
+x = 10
+if x > 5
+    println(""big"")
+else
+    println(""small"")
+end","Not Answered","big","false","2025-08-29T05:52:44.019Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","julia","1","8","Which collection is immutable in Julia?","Not Answered","Tuple","false","2025-08-29T05:52:44.019Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","julia","1","9","How do you access the first element of an array a = [10,20,30] in Julia?","Not Answered","a[9]","false","2025-08-29T05:52:44.019Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","julia","1","10","Which code correctly creates a dictionary mapping ""a"" to 1 and ""b"" to 2?","Not Answered","Dict("a" => 1, "b" => 2)","false","2025-08-29T05:52:44.019Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","1","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 10;
+    cout << ++x;
+    return 0;
+}
+","Not Answered","11","false","2025-08-29T06:06:30.472Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","2","What will be the output?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5, b = 2;
+    cout << a / b;
+    return 0;
+}
+","Not Answered","2","false","2025-08-29T06:06:30.472Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","3","Find the output:
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5;
+    cout << a++;
+    return 0;
+}
+","Not Answered","5","false","2025-08-29T06:06:30.472Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","4","What will be printed?
+
+#include <iostream>
+using namespace std;
+int main() {
+    for(int i = 0; i < 3; i++) {
+        cout << i << "" "";
+    }
+    return 0;
+}
+","Not Answered","0 1 2","false","2025-08-29T06:06:30.472Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","5","Predict the output:
+
+#include <iostream>
+using namespace std;
+void fun(int x){
+    cout << x * 2;
+}
+int main() {
+    fun(5);
+    return 0;
+}
+","Not Answered","10","false","2025-08-29T06:06:30.472Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","6","What will happen?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[3] = {1,2,3};
+    cout << arr;
+    return 0;
+}
+","Not Answered","2","false","2025-08-29T06:06:30.472Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","7","Output of pointers:
+
+#include <iostream>
+using namespace std;
+int main(){
+    int a = 10;
+    int *p = &a;
+    cout << *p;
+    return 0;
+}
+","Not Answered","10","false","2025-08-29T06:06:30.472Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","8","What is the result?
+
+#include <iostream>
+using namespace std;
+int main(){
+    int x = 3;
+    int y = ++x * 2;
+    cout << y;
+    return 0;
+}
+","Not Answered","8","false","2025-08-29T06:06:30.472Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","9","Predict output with recursion:
+
+#include <iostream>
+using namespace std;
+int fact(int n){
+    if(n==0) return 1;
+    return n*fact(n-1);
+}
+int main(){
+    cout << fact(4);
+    return 0;
+}
+","Not Answered","24","false","2025-08-29T06:06:30.472Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","10","What will be printed?
+
+#include <iostream>
+using namespace std;
+int main(){
+    int a = 10;
+    cout << (a == 10 ? ""Yes"" : ""No"");
+    return 0;
+}
+","Not Answered","Yes","false","2025-08-29T06:06:30.472Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","1","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 10;
+    cout << ++x;
+    return 0;
+}
+","9","11","false","2025-08-29T06:08:44.089Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","2","What will be the output?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5, b = 2;
+    cout << a / b;
+    return 0;
+}
+","Not Answered","2","false","2025-08-29T06:08:44.089Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","3","Find the output:
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5;
+    cout << a++;
+    return 0;
+}
+","Not Answered","5","false","2025-08-29T06:08:44.089Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","4","What will be printed?
+
+#include <iostream>
+using namespace std;
+int main() {
+    for(int i = 0; i < 3; i++) {
+        cout << i << "" "";
+    }
+    return 0;
+}
+","Not Answered","0 1 2","false","2025-08-29T06:08:44.089Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","5","Predict the output:
+
+#include <iostream>
+using namespace std;
+void fun(int x){
+    cout << x * 2;
+}
+int main() {
+    fun(5);
+    return 0;
+}
+","Not Answered","10","false","2025-08-29T06:08:44.089Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","6","What will happen?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[3] = {1,2,3};
+    cout << arr;
+    return 0;
+}
+","Not Answered","2","false","2025-08-29T06:08:44.089Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","7","Output of pointers:
+
+#include <iostream>
+using namespace std;
+int main(){
+    int a = 10;
+    int *p = &a;
+    cout << *p;
+    return 0;
+}
+","Not Answered","10","false","2025-08-29T06:08:44.089Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","8","What is the result?
+
+#include <iostream>
+using namespace std;
+int main(){
+    int x = 3;
+    int y = ++x * 2;
+    cout << y;
+    return 0;
+}
+","Not Answered","8","false","2025-08-29T06:08:44.089Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","9","Predict output with recursion:
+
+#include <iostream>
+using namespace std;
+int fact(int n){
+    if(n==0) return 1;
+    return n*fact(n-1);
+}
+int main(){
+    cout << fact(4);
+    return 0;
+}
+","Not Answered","24","false","2025-08-29T06:08:44.089Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","10","What will be printed?
+
+#include <iostream>
+using namespace std;
+int main(){
+    int a = 10;
+    cout << (a == 10 ? ""Yes"" : ""No"");
+    return 0;
+}
+","Not Answered","Yes","false","2025-08-29T06:08:44.089Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","1","Which header is needed to use std::cout in C++?","Not Answered","#include <iostream>","false","2025-08-29T06:09:36.661Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","2","What is the correct way to print Hello World in C++?","Not Answered","std::cout << "Hello World" << std::endl;","false","2025-08-29T06:09:36.661Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","3","How do you declare an integer variable x initialized to 10?","Not Answered","All of the above","false","2025-08-29T06:09:36.661Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","4","Which of the following is the correct main function signature?","Not Answered","int main()","false","2025-08-29T06:09:36.661Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","5","Which line correctly reads an integer from standard input into x?","Not Answered","std::cin >> x;","false","2025-08-29T06:09:36.661Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","6","What is the correct way to include the string library?","Not Answered","#include <string>","false","2025-08-29T06:09:36.661Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","7","Which of the following creates a vector of ints named v?","Not Answered","std::vector<int> v;","false","2025-08-29T06:09:36.661Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","8","What is the correct way to write a single-line comment in C++?","Not Answered","// comment","false","2025-08-29T06:09:36.661Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","9","Which operator is used to access members of an object through a pointer?","Not Answered","->","false","2025-08-29T06:09:36.661Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","10","What does this program print?
+
+#include <iostream>
+int main(){ int a = 3, b = 4; std::cout << a + b; }
+","Not Answered","7","false","2025-08-29T06:09:36.661Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","11","Choose the correct way to define a function that returns the sum of two ints.","Not Answered","int sum(int a, int b) { return a + b; }","false","2025-08-29T06:09:36.661Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","12","Which keyword creates a constant integer named n with value 5?","Not Answered","const int n = 5;","false","2025-08-29T06:09:36.661Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","13","What is the correct way to read a full line of text into std::string s?","Not Answered","std::getline(std::cin, s);","false","2025-08-29T06:09:36.661Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","14","Which loop prints numbers 0 to 4?","Not Answered","for (int i = 0; i < 5; i++) std::cout << i;","false","2025-08-29T06:09:36.661Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","15","What is the output?
+
+#include <iostream>
+int main(){ bool ok = (5 > 2); std::cout << ok; }
+","Not Answered","1","false","2025-08-29T06:09:36.661Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","1","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 10;
+    cout << ++x;
+    return 0;
+}
+","Not Answered","11","false","2025-08-29T06:09:51.108Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","2","What will be the output?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5, b = 2;
+    cout << a / b;
+    return 0;
+}
+","Not Answered","2","false","2025-08-29T06:09:51.108Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","3","Find the output:
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5;
+    cout << a++;
+    return 0;
+}
+","Not Answered","5","false","2025-08-29T06:09:51.108Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","4","What will be printed?
+
+#include <iostream>
+using namespace std;
+int main() {
+    for(int i = 0; i < 3; i++) {
+        cout << i << "" "";
+    }
+    return 0;
+}
+","Not Answered","0 1 2","false","2025-08-29T06:09:51.108Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","5","Predict the output:
+
+#include <iostream>
+using namespace std;
+void fun(int x){
+    cout << x * 2;
+}
+int main() {
+    fun(5);
+    return 0;
+}
+","Not Answered","10","false","2025-08-29T06:09:51.108Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","6","What will happen?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[3] = {1,2,3};
+    cout << arr;
+    return 0;
+}
+","Not Answered","2","false","2025-08-29T06:09:51.108Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","7","Output of pointers:
+
+#include <iostream>
+using namespace std;
+int main(){
+    int a = 10;
+    int *p = &a;
+    cout << *p;
+    return 0;
+}
+","Not Answered","10","false","2025-08-29T06:09:51.108Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","8","What is the result?
+
+#include <iostream>
+using namespace std;
+int main(){
+    int x = 3;
+    int y = ++x * 2;
+    cout << y;
+    return 0;
+}
+","Not Answered","8","false","2025-08-29T06:09:51.108Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","9","Predict output with recursion:
+
+#include <iostream>
+using namespace std;
+int fact(int n){
+    if(n==0) return 1;
+    return n*fact(n-1);
+}
+int main(){
+    cout << fact(4);
+    return 0;
+}
+","Not Answered","24","false","2025-08-29T06:09:51.108Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","10","What will be printed?
+
+#include <iostream>
+using namespace std;
+int main(){
+    int a = 10;
+    cout << (a == 10 ? ""Yes"" : ""No"");
+    return 0;
+}
+","Not Answered","Yes","false","2025-08-29T06:09:51.108Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","1","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 10;
+    cout << ++x;
+    return 0;
+}
+","Not Answered","11","false","2025-08-29T06:15:15.074Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","2","What will be the output?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5, b = 2;
+    cout << a / b;
+    return 0;
+}
+","Not Answered","2","false","2025-08-29T06:15:15.074Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","3","Find the output:
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5;
+    cout << a++;
+    return 0;
+}
+","Not Answered","5","false","2025-08-29T06:15:15.074Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","4","What will be printed?
+
+#include <iostream>
+using namespace std;
+int main() {
+    for(int i = 0; i < 3; i++) {
+        cout << i << "" "";
+    }
+    return 0;
+}
+","Not Answered","0 1 2","false","2025-08-29T06:15:15.074Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","5","Predict the output:
+
+#include <iostream>
+using namespace std;
+void fun(int x){
+    cout << x * 2;
+}
+int main() {
+    fun(5);
+    return 0;
+}
+","Not Answered","10","false","2025-08-29T06:15:15.074Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","6","What will happen?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[3] = {1,2,3};
+    cout << arr;
+    return 0;
+}
+","Not Answered","2","false","2025-08-29T06:15:15.074Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","7","Output of pointers:
+
+#include <iostream>
+using namespace std;
+int main(){
+    int a = 10;
+    int *p = &a;
+    cout << *p;
+    return 0;
+}
+","Not Answered","10","false","2025-08-29T06:15:15.074Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","8","What is the result?
+
+#include <iostream>
+using namespace std;
+int main(){
+    int x = 3;
+    int y = ++x * 2;
+    cout << y;
+    return 0;
+}
+","Not Answered","8","false","2025-08-29T06:15:15.074Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","9","Predict output with recursion:
+
+#include <iostream>
+using namespace std;
+int fact(int n){
+    if(n==0) return 1;
+    return n*fact(n-1);
+}
+int main(){
+    cout << fact(4);
+    return 0;
+}
+","Not Answered","24","false","2025-08-29T06:15:15.074Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","10","What will be printed?
+
+#include <iostream>
+using namespace std;
+int main(){
+    int a = 10;
+    cout << (a == 10 ? ""Yes"" : ""No"");
+    return 0;
+}
+","Not Answered","Yes","false","2025-08-29T06:15:15.074Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","julia","1","1","What is the correct way to print Hello World in Julia?","println("Hello World")","println("Hello World")","true","2025-08-29T06:16:19.827Z","1","1"
+"68b131107120dad9e358d0fa","Ritika","julia","2","1","What will be the result of: [x^2 for x in 1:4]?","[1, 4, 9, 16]","[1, 4, 9, 16]","true","2025-08-29T06:16:45.010Z","1","1"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","1","Which header is needed to use std::cout in C++?","#include <iostream>","#include <iostream>","true","2025-08-29T06:19:49.595Z","1","1"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","1","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 10;
+    cout << ++x;
+    return 0;
+}
+","11","11","true","2025-08-29T06:21:21.700Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","2","What will be the output?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5, b = 2;
+    cout << a / b;
+    return 0;
+}
+","2","2","true","2025-08-29T06:21:21.700Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","3","Find the output:
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5;
+    cout << a++;
+    return 0;
+}
+","5","5","true","2025-08-29T06:21:21.700Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","4","What will be printed?
+
+#include <iostream>
+using namespace std;
+int main() {
+    for(int i = 0; i < 3; i++) {
+        cout << i << "" "";
+    }
+    return 0;
+}
+","0 1 2","0 1 2","true","2025-08-29T06:21:21.700Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","5","Predict the output:
+
+#include <iostream>
+using namespace std;
+void fun(int x){
+    cout << x * 2;
+}
+int main() {
+    fun(5);
+    return 0;
+}
+","10","10","true","2025-08-29T06:21:21.700Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","6","What will happen?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[3] = {1,2,3};
+    cout << arr;
+    return 0;
+}
+","2","2","true","2025-08-29T06:21:21.700Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","7","Output of pointers:
+
+#include <iostream>
+using namespace std;
+int main(){
+    int a = 10;
+    int *p = &a;
+    cout << *p;
+    return 0;
+}
+","address of a","10","false","2025-08-29T06:21:21.700Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","8","What is the result?
+
+#include <iostream>
+using namespace std;
+int main(){
+    int x = 3;
+    int y = ++x * 2;
+    cout << y;
+    return 0;
+}
+","8","8","true","2025-08-29T06:21:21.700Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","9","Predict output with recursion:
+
+#include <iostream>
+using namespace std;
+int fact(int n){
+    if(n==0) return 1;
+    return n*fact(n-1);
+}
+int main(){
+    cout << fact(4);
+    return 0;
+}
+","24","24","true","2025-08-29T06:21:21.700Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","10","What will be printed?
+
+#include <iostream>
+using namespace std;
+int main(){
+    int a = 10;
+    cout << (a == 10 ? ""Yes"" : ""No"");
+    return 0;
+}
+","Yes","Yes","true","2025-08-29T06:21:21.700Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","3","1","Which header is needed to use std::cout in C++?","#include <iostream>","#include <iostream>","true","2025-08-29T06:21:41.427Z","1","1"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","1","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 10;
+    cout << ++x;
+    return 0;
+}
+","11","11","true","2025-08-29T06:44:07.524Z","1","1"
+"68b131107120dad9e358d0fa","Ritika","python","1","1","What is the correct way to create a list in Python?","list = [1, 2, 3]","list = [1, 2, 3]","true","2025-08-29T06:46:01.397Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","python","1","2","Which of the following is used to define a function in Python?","def","def","true","2025-08-29T06:46:01.397Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","python","1","3","What will be the output of: print(type([]))?","<class 'list'>","<class 'list'>","true","2025-08-29T06:46:01.397Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","python","1","4","Which operator is used for exponentiation in Python?","**","**","true","2025-08-29T06:46:01.397Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","python","1","5","What is the correct syntax for a while loop in Python?","while condition:","while condition:","true","2025-08-29T06:46:01.397Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","python","1","6","Which method is used to add an element to the end of a list?","append()","append()","true","2025-08-29T06:46:01.397Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","python","1","7","What is the output of: len('Hello World')?","11","11","true","2025-08-29T06:46:01.397Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","python","1","8","Which of the following is NOT a valid Python data type?","char","char","true","2025-08-29T06:46:01.397Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","python","1","9","What is the correct way to import the math module in Python?","import math","import math","true","2025-08-29T06:46:01.397Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","python","1","10","What will be the result of: 5 // 2?","2.0","2","false","2025-08-29T06:46:01.397Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","python","2","1","What is the output?
+
+#include <iostream>
+int add(int a, int b = 2) { return a + b; }
+int main(){ std::cout << add(3); }
+","Not Answered","5","false","2025-08-29T06:46:33.548Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","2","What will this print?
+
+#include <iostream>
+void f(int &x){ x += 5; }
+int main(){ int a = 10; f(a); std::cout << a; }
+","Not Answered","15","false","2025-08-29T06:46:33.548Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","3","Which declaration correctly creates a dynamic array of 5 ints?","Not Answered","int* a = new int[5];","false","2025-08-29T06:46:33.548Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","4","Choose the correct smart pointer usage to manage a dynamic int.","Not Answered","std::unique_ptr<int> p(new int{42});","false","2025-08-29T06:46:33.548Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","5","What is the output?
+
+#include <iostream>
+int main(){ int x = 5; std::cout << ++x << "" "" << x++; }
+","Not Answered","6 6","false","2025-08-29T06:46:33.548Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","6","Which statement about references is true?","Not Answered","A reference must be initialized when declared.","false","2025-08-29T06:46:33.548Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","7","What is the effect of the const in this signature?
+
+int sum(const int a, const int b);
+","Not Answered","Prevents modifying a and b inside the function.","false","2025-08-29T06:46:33.548Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","8","Which overload will be preferred for a literal ""hello""?","Not Answered","void f(const char*)","false","2025-08-29T06:46:33.548Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","9","What will this code print?
+
+#include <iostream>
+#include <vector>
+int main(){ std::vector<int> v{1,2,3}; for(const auto& x : v) std::cout << x << ' '; }
+","Not Answered","1 2 3 ","false","2025-08-29T06:46:33.548Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","10","Which range-based for changes elements of v?","Not Answered","for (auto& x : v) x += 1;","false","2025-08-29T06:46:33.548Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","11","What is the output?
+
+#include <iostream>
+#include <string>
+int main(){ std::string s = ""abc""; s += 'd'; std::cout << s.size(); }
+","Not Answered","4","false","2025-08-29T06:46:33.548Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","12","Pick the correct function template that returns the larger of two values.","Not Answered","template<typename T> T max(T a, T b){ return a > b ? a : b; }","false","2025-08-29T06:46:33.548Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","13","What happens here?
+
+#include <iostream>
+void g(int&& x){ std::cout << x; }
+int main(){ int a = 7; g(std::move(a)); }
+","Not Answered","Binds rvalue reference parameter to moved-from a; prints 7.","false","2025-08-29T06:46:33.548Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","14","Which is a correct lambda capturing by value and returning sum?","Not Answered","auto f = [=](int x, int y) { return x + y; };","false","2025-08-29T06:46:33.548Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","15","What does this print?
+
+#include <iostream>
+struct A{ A(){ std::cout << ""A""; } ~A(){ std::cout << ""D""; } };
+int main(){ { A a; std::cout << ""M""; } std::cout << ""E""; }
+","Not Answered","AMDE","false","2025-08-29T06:46:33.548Z","0","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","1","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 10;
+    cout << ++x;
+    return 0;
+}
+","11","11","true","2025-08-29T07:01:04.872Z","1","1"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","1","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 10;
+    cout << ++x;
+    return 0;
+}
+","11","11","true","2025-08-29T07:03:46.684Z","1","1"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","1","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 10;
+    cout << ++x;
+    return 0;
+}
+","11","11","true","2025-08-29T07:16:49.604Z","1","1"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","1","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 10;
+    cout << ++x;
+    return 0;
+}
+","11","11","true","2025-08-29T07:20:49.882Z","1","1"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","1","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 10;
+    cout << ++x;
+    return 0;
+}
+","Error","11","false","2025-08-29T07:22:23.648Z","0","1"
+"68b131107120dad9e358d0fa","Ritika","java","1","1","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(""Hello Java"");
+  }
+}
+","Hello","Hello Java","false","2025-08-29T07:32:49.008Z","6","10"
+"68b131107120dad9e358d0fa","Ritika","java","1","2","Which data type is used to store whole numbers in Java?","int","int","true","2025-08-29T07:32:49.008Z","6","10"
+"68b131107120dad9e358d0fa","Ritika","java","1","3","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x++);
+  }
+}
+","5","5","true","2025-08-29T07:32:49.008Z","6","10"
+"68b131107120dad9e358d0fa","Ritika","java","1","4","Which symbol is used to start a single-line comment in Java?","#","//","false","2025-08-29T07:32:49.008Z","6","10"
+"68b131107120dad9e358d0fa","Ritika","java","1","5","What does JVM stand for in Java?","Java Virtual Machine","Java Virtual Machine","true","2025-08-29T07:32:49.008Z","6","10"
+"68b131107120dad9e358d0fa","Ritika","java","1","6","What will the following code print?
+
+public class Main {
+  public static void main(String[] args) {
+    int a = 10, b = 20;
+    System.out.println(a + b);
+  }
+}
+","10","30","false","2025-08-29T07:32:49.008Z","6","10"
+"68b131107120dad9e358d0fa","Ritika","java","1","7","Which keyword is used to create an object in Java?","init","new","false","2025-08-29T07:32:49.008Z","6","10"
+"68b131107120dad9e358d0fa","Ritika","java","1","8","Which of these is NOT a Java primitive data type?","String","String","true","2025-08-29T07:32:49.008Z","6","10"
+"68b131107120dad9e358d0fa","Ritika","java","1","9","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    boolean flag = true;
+    System.out.println(flag);
+  }
+}
+","true","true","true","2025-08-29T07:32:49.008Z","6","10"
+"68b131107120dad9e358d0fa","Ritika","java","1","10","Which of the following is used to print text in Java?","System.out.println()","System.out.println()","true","2025-08-29T07:32:49.008Z","6","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","1","Which header is needed to use std::cout in C++?","#include <iostream>","#include <iostream>","true","2025-08-29T07:34:01.254Z","1","1"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","1","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 10;
+    cout << ++x;
+    return 0;
+}
+","11","11","true","2025-08-29T07:35:33.978Z","8","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","2","Which of the following correctly declares a pointer in C++?","int *p;","int *p;","true","2025-08-29T07:35:33.978Z","8","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","3","What is the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5, b = 2;
+    cout << a / b;
+    return 0;
+}
+","2","2","true","2025-08-29T07:35:33.978Z","8","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","4","Which of the following is not a valid C++ data type?","real","real","true","2025-08-29T07:35:33.978Z","8","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","5","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    string s = ""Hello"";
+    cout << s.length();
+    return 0;
+}
+","5","5","true","2025-08-29T07:35:33.978Z","8","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","6","Which operator is used to allocate memory dynamically in C++?","malloc","new","false","2025-08-29T07:35:33.978Z","8","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","7","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[] = {1, 2, 3, 4};
+    cout << arr[2];
+    return 0;
+}
+","3","3","true","2025-08-29T07:35:33.978Z","8","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","8","Which of the following is used to define a constant in C++?","both A and B","both A and B","true","2025-08-29T07:35:33.978Z","8","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","9","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    for (int i = 0; i < 3; i++) {
+        cout << i << "" "";
+    }
+    return 0;
+}
+","0 1 2","0 1 2","true","2025-08-29T07:35:33.978Z","8","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","10","Which of the following correctly creates an object in C++?","class obj;","Class obj;","false","2025-08-29T07:35:33.978Z","8","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","1","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 10;
+    cout << ++x;
+    return 0;
+}
+","Not Answered","11","false","2025-08-29T07:38:28.252Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","2","Which of the following correctly declares a pointer in C++?","Not Answered","int *p;","false","2025-08-29T07:38:28.252Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","3","What is the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5, b = 2;
+    cout << a / b;
+    return 0;
+}
+","Not Answered","2","false","2025-08-29T07:38:28.252Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","4","Which of the following is not a valid C++ data type?","Not Answered","real","false","2025-08-29T07:38:28.252Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","5","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    string s = ""Hello"";
+    cout << s.length();
+    return 0;
+}
+","Not Answered","5","false","2025-08-29T07:38:28.252Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","6","Which operator is used to allocate memory dynamically in C++?","Not Answered","new","false","2025-08-29T07:38:28.252Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","7","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[] = {1, 2, 3, 4};
+    cout << arr[2];
+    return 0;
+}
+","Not Answered","3","false","2025-08-29T07:38:28.252Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","8","Which of the following is used to define a constant in C++?","Not Answered","both A and B","false","2025-08-29T07:38:28.252Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","9","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    for (int i = 0; i < 3; i++) {
+        cout << i << "" "";
+    }
+    return 0;
+}
+","Not Answered","0 1 2","false","2025-08-29T07:38:28.252Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","10","Which of the following correctly creates an object in C++?","Not Answered","Class obj;","false","2025-08-29T07:38:28.252Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","1","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 10;
+    cout << ++x;
+    return 0;
+}
+","Not Answered","11","false","2025-08-29T07:39:51.766Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","2","Which of the following correctly declares a pointer in C++?","Not Answered","int *p;","false","2025-08-29T07:39:51.766Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","3","What is the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5, b = 2;
+    cout << a / b;
+    return 0;
+}
+","Not Answered","2","false","2025-08-29T07:39:51.766Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","4","Which of the following is not a valid C++ data type?","Not Answered","real","false","2025-08-29T07:39:51.766Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","5","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    string s = ""Hello"";
+    cout << s.length();
+    return 0;
+}
+","Not Answered","5","false","2025-08-29T07:39:51.766Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","6","Which operator is used to allocate memory dynamically in C++?","Not Answered","new","false","2025-08-29T07:39:51.766Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","7","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[] = {1, 2, 3, 4};
+    cout << arr[2];
+    return 0;
+}
+","Not Answered","3","false","2025-08-29T07:39:51.766Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","8","Which of the following is used to define a constant in C++?","Not Answered","both A and B","false","2025-08-29T07:39:51.766Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","9","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    for (int i = 0; i < 3; i++) {
+        cout << i << "" "";
+    }
+    return 0;
+}
+","Not Answered","0 1 2","false","2025-08-29T07:39:51.766Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","10","Which of the following correctly creates an object in C++?","Not Answered","Class obj;","false","2025-08-29T07:39:51.766Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","1","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 10;
+    cout << ++x;
+    return 0;
+}
+","Not Answered","11","false","2025-08-29T07:43:05.163Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","2","Which of the following correctly declares a pointer in C++?","Not Answered","int *p;","false","2025-08-29T07:43:05.163Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","3","What is the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5, b = 2;
+    cout << a / b;
+    return 0;
+}
+","Not Answered","2","false","2025-08-29T07:43:05.163Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","4","Which of the following is not a valid C++ data type?","Not Answered","real","false","2025-08-29T07:43:05.163Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","5","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    string s = ""Hello"";
+    cout << s.length();
+    return 0;
+}
+","Not Answered","5","false","2025-08-29T07:43:05.163Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","6","Which operator is used to allocate memory dynamically in C++?","Not Answered","new","false","2025-08-29T07:43:05.163Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","7","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[] = {1, 2, 3, 4};
+    cout << arr[2];
+    return 0;
+}
+","Not Answered","3","false","2025-08-29T07:43:05.163Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","8","Which of the following is used to define a constant in C++?","Not Answered","both A and B","false","2025-08-29T07:43:05.163Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","9","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    for (int i = 0; i < 3; i++) {
+        cout << i << "" "";
+    }
+    return 0;
+}
+","Not Answered","0 1 2","false","2025-08-29T07:43:05.163Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","10","Which of the following correctly creates an object in C++?","Not Answered","Class obj;","false","2025-08-29T07:43:05.163Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","1","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 10;
+    cout << ++x;
+    return 0;
+}
+","11","11","true","2025-08-29T07:44:27.389Z","5","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","2","Which of the following correctly declares a pointer in C++?","int *p;","int *p;","true","2025-08-29T07:44:27.389Z","5","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","3","What is the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5, b = 2;
+    cout << a / b;
+    return 0;
+}
+","3","2","false","2025-08-29T07:44:27.389Z","5","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","4","Which of the following is not a valid C++ data type?","bool","real","false","2025-08-29T07:44:27.389Z","5","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","5","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    string s = ""Hello"";
+    cout << s.length();
+    return 0;
+}
+","5","5","true","2025-08-29T07:44:27.389Z","5","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","6","Which operator is used to allocate memory dynamically in C++?","new","new","true","2025-08-29T07:44:27.389Z","5","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","7","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[] = {1, 2, 3, 4};
+    cout << arr[2];
+    return 0;
+}
+","2","3","false","2025-08-29T07:44:27.389Z","5","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","8","Which of the following is used to define a constant in C++?","both A and B","both A and B","true","2025-08-29T07:44:27.389Z","5","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","9","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    for (int i = 0; i < 3; i++) {
+        cout << i << "" "";
+    }
+    return 0;
+}
+","1 2 3","0 1 2","false","2025-08-29T07:44:27.389Z","5","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","10","Which of the following correctly creates an object in C++?","class obj;","Class obj;","false","2025-08-29T07:44:27.389Z","5","10"
+"68b131107120dad9e358d0fa","Ritika","python","2","1","What is the output?
+
+#include <iostream>
+int add(int a, int b = 2) { return a + b; }
+int main(){ std::cout << add(3); }
+","3","5","false","2025-08-29T07:47:04.448Z","2","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","2","What will this print?
+
+#include <iostream>
+void f(int &x){ x += 5; }
+int main(){ int a = 10; f(a); std::cout << a; }
+","Undefined behavior","15","false","2025-08-29T07:47:04.448Z","2","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","3","Which declaration correctly creates a dynamic array of 5 ints?","int* a = new int(5);","int* a = new int[5];","false","2025-08-29T07:47:04.448Z","2","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","4","Choose the correct smart pointer usage to manage a dynamic int.","std::shared_ptr p = 42;","std::unique_ptr<int> p(new int{42});","false","2025-08-29T07:47:04.448Z","2","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","5","What is the output?
+
+#include <iostream>
+int main(){ int x = 5; std::cout << ++x << "" "" << x++; }
+","6 6","6 6","true","2025-08-29T07:47:04.448Z","2","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","6","Which statement about references is true?","A reference can be null in standard C++.","A reference must be initialized when declared.","false","2025-08-29T07:47:04.448Z","2","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","7","What is the effect of the const in this signature?
+
+int sum(const int a, const int b);
+","Makes return value constant.","Prevents modifying a and b inside the function.","false","2025-08-29T07:47:04.448Z","2","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","8","Which overload will be preferred for a literal ""hello""?","void f(std::string_view);","void f(const char*)","false","2025-08-29T07:47:04.448Z","2","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","9","What will this code print?
+
+#include <iostream>
+#include <vector>
+int main(){ std::vector<int> v{1,2,3}; for(const auto& x : v) std::cout << x << ' '; }
+","0 1 2 ","1 2 3 ","false","2025-08-29T07:47:04.448Z","2","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","10","Which range-based for changes elements of v?","for (const auto& x : v) x += 1;","for (auto& x : v) x += 1;","false","2025-08-29T07:47:04.448Z","2","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","11","What is the output?
+
+#include <iostream>
+#include <string>
+int main(){ std::string s = ""abc""; s += 'd'; std::cout << s.size(); }
+","4","4","true","2025-08-29T07:47:04.448Z","2","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","12","Pick the correct function template that returns the larger of two values.","template<typename T> auto max(T a, T b) -> void { return a > b ? a : b; }","template<typename T> T max(T a, T b){ return a > b ? a : b; }","false","2025-08-29T07:47:04.448Z","2","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","13","What happens here?
+
+#include <iostream>
+void g(int&& x){ std::cout << x; }
+int main(){ int a = 7; g(std::move(a)); }
+","Undefined behavior because a is moved.","Binds rvalue reference parameter to moved-from a; prints 7.","false","2025-08-29T07:47:04.448Z","2","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","14","Which is a correct lambda capturing by value and returning sum?","auto f = [&](int x, int y) => x + y;","auto f = [=](int x, int y) { return x + y; };","false","2025-08-29T07:47:04.448Z","2","15"
+"68b131107120dad9e358d0fa","Ritika","python","2","15","What does this print?
+
+#include <iostream>
+struct A{ A(){ std::cout << ""A""; } ~A(){ std::cout << ""D""; } };
+int main(){ { A a; std::cout << ""M""; } std::cout << ""E""; }
+","AEMD","AMDE","false","2025-08-29T07:47:04.448Z","2","15"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","1","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 10;
+    cout << ++x;
+    return 0;
+}
+","10","11","false","2025-08-29T07:49:20.602Z","4","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","2","Which of the following correctly declares a pointer in C++?","int *p;","int *p;","true","2025-08-29T07:49:20.602Z","4","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","3","What is the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5, b = 2;
+    cout << a / b;
+    return 0;
+}
+","2.5","2","false","2025-08-29T07:49:20.602Z","4","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","4","Which of the following is not a valid C++ data type?","real","real","true","2025-08-29T07:49:20.602Z","4","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","5","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    string s = ""Hello"";
+    cout << s.length();
+    return 0;
+}
+","6","5","false","2025-08-29T07:49:20.602Z","4","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","6","Which operator is used to allocate memory dynamically in C++?","new","new","true","2025-08-29T07:49:20.602Z","4","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","7","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[] = {1, 2, 3, 4};
+    cout << arr[2];
+    return 0;
+}
+","2","3","false","2025-08-29T07:49:20.602Z","4","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","8","Which of the following is used to define a constant in C++?","both A and B","both A and B","true","2025-08-29T07:49:20.602Z","4","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","9","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    for (int i = 0; i < 3; i++) {
+        cout << i << "" "";
+    }
+    return 0;
+}
+","0 1 2 3","0 1 2","false","2025-08-29T07:49:20.602Z","4","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","10","Which of the following correctly creates an object in C++?","class obj;","Class obj;","false","2025-08-29T07:49:20.602Z","4","10"
+"68b131107120dad9e358d0fa","Ritika","python","1","1","What is the correct way to create a list in Python?","list = [1, 2, 3]","list = [1, 2, 3]","true","2025-08-29T07:50:08.702Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","python","1","2","Which of the following is used to define a function in Python?","def","def","true","2025-08-29T07:50:08.702Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","python","1","3","What will be the output of: print(type([]))?","<class 'list'>","<class 'list'>","true","2025-08-29T07:50:08.702Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","python","1","4","Which operator is used for exponentiation in Python?","**","**","true","2025-08-29T07:50:08.702Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","python","1","5","What is the correct syntax for a while loop in Python?","while condition:","while condition:","true","2025-08-29T07:50:08.702Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","python","1","6","Which method is used to add an element to the end of a list?","append()","append()","true","2025-08-29T07:50:08.702Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","python","1","7","What is the output of: len('Hello World')?","11","11","true","2025-08-29T07:50:08.702Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","python","1","8","Which of the following is NOT a valid Python data type?","char","char","true","2025-08-29T07:50:08.702Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","python","1","9","What is the correct way to import the math module in Python?","import math","import math","true","2025-08-29T07:50:08.702Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","python","1","10","What will be the result of: 5 // 2?","Not Answered","2","false","2025-08-29T07:50:08.702Z","9","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","1","Which header is needed to use std::cout in C++?","#include <iostream>","#include <iostream>","true","2025-08-29T09:02:57.040Z","1","1"
+"68b131107120dad9e358d0fa","Ritika","cpp","1","1","Which header is needed to use std::cout in C++?","#include <iostream>","#include <iostream>","true","2025-08-29T09:03:24.000Z","1","1"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","1","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 10;
+    cout << ++x;
+    return 0;
+}
+","11","11","true","2025-08-29T09:03:56.521Z","4","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","2","Which of the following correctly declares a pointer in C++?","int *p;","int *p;","true","2025-08-29T09:03:56.521Z","4","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","3","What is the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5, b = 2;
+    cout << a / b;
+    return 0;
+}
+","2","2","true","2025-08-29T09:03:56.521Z","4","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","4","Which of the following is not a valid C++ data type?","bool","real","false","2025-08-29T09:03:56.521Z","4","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","5","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    string s = ""Hello"";
+    cout << s.length();
+    return 0;
+}
+","Not Answered","5","false","2025-08-29T09:03:56.521Z","4","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","6","Which operator is used to allocate memory dynamically in C++?","new","new","true","2025-08-29T09:03:56.521Z","4","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","7","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[] = {1, 2, 3, 4};
+    cout << arr[2];
+    return 0;
+}
+","1","3","false","2025-08-29T09:03:56.521Z","4","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","8","Which of the following is used to define a constant in C++?","Not Answered","both A and B","false","2025-08-29T09:03:56.521Z","4","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","9","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    for (int i = 0; i < 3; i++) {
+        cout << i << "" "";
+    }
+    return 0;
+}
+","1 2 3","0 1 2","false","2025-08-29T09:03:56.521Z","4","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","10","Which of the following correctly creates an object in C++?","class obj;","Class obj;","false","2025-08-29T09:03:56.521Z","4","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","1","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 10;
+    cout << ++x;
+    return 0;
+}
+","Not Answered","11","false","2025-08-29T09:05:11.099Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","2","Which of the following correctly declares a pointer in C++?","Not Answered","int *p;","false","2025-08-29T09:05:11.099Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","3","What is the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5, b = 2;
+    cout << a / b;
+    return 0;
+}
+","Not Answered","2","false","2025-08-29T09:05:11.099Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","4","Which of the following is not a valid C++ data type?","Not Answered","real","false","2025-08-29T09:05:11.099Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","5","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    string s = ""Hello"";
+    cout << s.length();
+    return 0;
+}
+","Not Answered","5","false","2025-08-29T09:05:11.099Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","6","Which operator is used to allocate memory dynamically in C++?","Not Answered","new","false","2025-08-29T09:05:11.099Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","7","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[] = {1, 2, 3, 4};
+    cout << arr[2];
+    return 0;
+}
+","Not Answered","3","false","2025-08-29T09:05:11.099Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","8","Which of the following is used to define a constant in C++?","Not Answered","both A and B","false","2025-08-29T09:05:11.099Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","9","What will be the output of the following code?
+
+#include <iostream>
+using namespace std;
+int main() {
+    for (int i = 0; i < 3; i++) {
+        cout << i << "" "";
+    }
+    return 0;
+}
+","Not Answered","0 1 2","false","2025-08-29T09:05:11.099Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","10","Which of the following correctly creates an object in C++?","Not Answered","Class obj;","false","2025-08-29T09:05:11.099Z","0","10"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","1","Which header is needed to use std::cout in C++?","Not Answered","#include <iostream>","false","2025-08-29T09:06:49.982Z","0","7"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","2","Which header is needed to use std::cout in C++?","Not Answered","#include <iostream>","false","2025-08-29T09:06:49.982Z","0","7"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","3","Which header is needed to use std::cout in C++?","Not Answered","#include <iostream>","false","2025-08-29T09:06:49.982Z","0","7"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","4","Which header is needed to use std::cout in C++?","Not Answered","#include <iostream>","false","2025-08-29T09:06:49.982Z","0","7"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","5","Which header is needed to use std::cout in C++?","Not Answered","#include <iostream>","false","2025-08-29T09:06:49.982Z","0","7"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","6","Which header is needed to use std::cout in C++?","Not Answered","#include <iostream>","false","2025-08-29T09:06:49.982Z","0","7"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","7","Which header is needed to use std::cout in C++?","Not Answered","#include <iostream>","false","2025-08-29T09:06:49.982Z","0","7"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","1","Which header is needed to use std::cout in C++?","#include <iostream>","#include <iostream>","true","2025-08-29T09:15:56.366Z","9","11"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","2","Which keyword prevents a variable from being modified after initialization?","const","const","true","2025-08-29T09:15:56.366Z","9","11"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","3","Which header provides std::vector?","#include <vector>","#include <vector>","true","2025-08-29T09:15:56.366Z","9","11"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","4","What does std::endl do on an output stream?","Inserts a newline and flushes","Inserts a newline and flushes","true","2025-08-29T09:15:56.366Z","9","11"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","5","Which header defines std::string?","#include <string>","#include <string>","true","2025-08-29T09:15:56.366Z","9","11"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","6","Which operator is used to output to std::cout?","<<","<<","true","2025-08-29T09:15:56.366Z","9","11"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","7","What is the correct way to include a standard header in C++?","#include <iostream>","#include <iostream>","true","2025-08-29T09:15:56.366Z","9","11"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","8","Which header provides std::sqrt and std::pow?","#include <cmath>","#include <cmath>","true","2025-08-29T09:15:56.366Z","9","11"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","9","Which container is best for fast insertion/removal at the back with dynamic resizing?","std::array","std::vector","false","2025-08-29T09:15:56.366Z","9","11"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","10","Which header is needed for formatted I/O manipulators like std::setprecision?","#include <format>","#include <iomanip>","false","2025-08-29T09:15:56.366Z","9","11"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","11","Which keyword creates an alias for a type in modern C++?","using","using","true","2025-08-29T09:15:56.366Z","9","11"
+"68b131107120dad9e358d0fa","Ritika","cpp","3","1","Which header is needed to use std::cout in C++?","#include <stdio.h>","#include <iostream>","false","2025-08-29T09:17:42.304Z","0","1"
+"68b131107120dad9e358d0fa","Ritika","cpp","3","1","Which header is needed to use std::cout in C++?","#include <stdio.h>","#include <iostream>","false","2025-08-29T09:18:58.539Z","0","1"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","1","Which header is needed to use std::cout in C++?","Not Answered","#include <iostream>","false","2025-08-29T09:19:32.260Z","0","11"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","2","Which keyword prevents a variable from being modified after initialization?","Not Answered","const","false","2025-08-29T09:19:32.260Z","0","11"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","3","Which header provides std::vector?","Not Answered","#include <vector>","false","2025-08-29T09:19:32.260Z","0","11"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","4","What does std::endl do on an output stream?","Not Answered","Inserts a newline and flushes","false","2025-08-29T09:19:32.260Z","0","11"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","5","Which header defines std::string?","Not Answered","#include <string>","false","2025-08-29T09:19:32.260Z","0","11"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","6","Which operator is used to output to std::cout?","Not Answered","<<","false","2025-08-29T09:19:32.260Z","0","11"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","7","What is the correct way to include a standard header in C++?","Not Answered","#include <iostream>","false","2025-08-29T09:19:32.260Z","0","11"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","8","Which header provides std::sqrt and std::pow?","Not Answered","#include <cmath>","false","2025-08-29T09:19:32.260Z","0","11"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","9","Which container is best for fast insertion/removal at the back with dynamic resizing?","Not Answered","std::vector","false","2025-08-29T09:19:32.260Z","0","11"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","10","Which header is needed for formatted I/O manipulators like std::setprecision?","Not Answered","#include <iomanip>","false","2025-08-29T09:19:32.260Z","0","11"
+"68b131107120dad9e358d0fa","Ritika","cpp","2","11","Which keyword creates an alias for a type in modern C++?","typedef","using","false","2025-08-29T09:19:32.260Z","0","11"
+"68b131107120dad9e358d0fa","Ritika","r","1","1","What will be the output of: print(class(5)) in R?",""integer"",""numeric"","false","2025-08-29T09:21:07.355Z","2","10"
+"68b131107120dad9e358d0fa","Ritika","r","1","2","Which operator is commonly used for assignment in R?","=","<-","false","2025-08-29T09:21:07.355Z","2","10"
+"68b131107120dad9e358d0fa","Ritika","r","1","3","What will be the output of: length(c(10, 20, 30, 40))?","4","4","true","2025-08-29T09:21:07.355Z","2","10"
+"68b131107120dad9e358d0fa","Ritika","r","1","4","How do you create a sequence from 1 to 5 in R?","seq(1:5)","1:5","false","2025-08-29T09:21:07.355Z","2","10"
+"68b131107120dad9e358d0fa","Ritika","r","1","5","What will be the value of x after: x <- c(2, 4); x[2] <- 10?","Not Answered","c(2, 10)","false","2025-08-29T09:21:07.355Z","2","10"
+"68b131107120dad9e358d0fa","Ritika","r","1","6","Which function combines values into a vector?","Not Answered","c()","false","2025-08-29T09:21:07.355Z","2","10"
+"68b131107120dad9e358d0fa","Ritika","r","1","7","What will be the output of: sum(c(1, 2, 3, 4))?","Not Answered","10","false","2025-08-29T09:21:07.355Z","2","10"
+"68b131107120dad9e358d0fa","Ritika","r","1","8","How do you check the structure of an object in R?","type()","str()","false","2025-08-29T09:21:07.355Z","2","10"
+"68b131107120dad9e358d0fa","Ritika","r","1","9","What is the correct way to create a data frame with columns a = c(1,2) and b = c(""x"",""y"")?","data.frame(a=c(1,2), b=c("x","y"))","data.frame(a=c(1,2), b=c("x","y"))","true","2025-08-29T09:21:07.355Z","2","10"
+"68b131107120dad9e358d0fa","Ritika","r","1","10","What will be the output of: typeof(TRUE)?",""boolean"",""logical"","false","2025-08-29T09:21:07.355Z","2","10"
