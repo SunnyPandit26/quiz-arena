@@ -4,7 +4,6 @@ import { GrFormPrevious } from 'react-icons/gr';
 import { MdNavigateNext } from 'react-icons/md';
 import {useNavigate} from 'react-router-dom';
 
-
 const Slider = () => {
   const slides = [
     {
@@ -55,7 +54,6 @@ const Slider = () => {
 
   const [currentSlides, setCurrentSlides] = useState(slides);
   const [isAnimating, setIsAnimating] = useState(false);
-
   const timeoutRef = useRef(null);
   const autoPlayRef = useRef(null);
 
@@ -84,14 +82,12 @@ const Slider = () => {
   const nextSlide = () => {
     if (isAnimating) return;
     setIsAnimating(true);
-
     setCurrentSlides(prev => {
       const arr = [...prev];
       const first = arr.shift();
       arr.push(first);
       return arr;
     });
-
     timeoutRef.current = setTimeout(() => {
       setIsAnimating(false);
       startAutoPlay();
@@ -101,14 +97,12 @@ const Slider = () => {
   const prevSlide = () => {
     if (isAnimating) return;
     setIsAnimating(true);
-
     setCurrentSlides(prev => {
       const arr = [...prev];
       const last = arr.pop();
       arr.unshift(last);
       return arr;
     });
-
     timeoutRef.current = setTimeout(() => {
       setIsAnimating(false);
       startAutoPlay();
@@ -119,7 +113,6 @@ const Slider = () => {
     if (isAnimating || clickedIndex === 0) return;
     setIsAnimating(true);
     stopAutoPlay();
-
     setCurrentSlides(prev => {
       const arr = [...prev];
       const clicked = arr[clickedIndex];
@@ -127,7 +120,6 @@ const Slider = () => {
       const after = arr.slice(clickedIndex + 1);
       return [clicked, ...after, ...before];
     });
-
     timeoutRef.current = setTimeout(() => {
       setIsAnimating(false);
       startAutoPlay();
@@ -168,9 +160,9 @@ const Slider = () => {
               <h1 className={styles.title}>{slide.title}</h1>
               <h2 className={styles.topic}>{slide.topic}</h2>
               <p className={styles.description}>{slide.description}</p>
+
               <div className={styles.buttonGroup}>
                 <button className={styles.primaryBtn} onClick={()=>navigate('/login')}>login/signup</button>
-                <button className={styles.secondaryBtn}>Subscribe</button>
               </div>
             </div>
           </div>

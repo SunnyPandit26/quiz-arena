@@ -54,7 +54,7 @@ useEffect(() => {
 }, [subject, location.key]);
 
 
-  const boxes = Array.from({ length: 100 }, (_, i) => ({
+  const boxes = Array.from({ length: 10 }, (_, i) => ({
     label       : `Level ${i + 1}`,
     subtitle    : `Face more questions to become Level ${i + 2}`,
     levelNumber : i + 1,

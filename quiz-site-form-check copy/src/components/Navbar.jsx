@@ -41,7 +41,7 @@ const Navbar = () => {
       <a href="#services" className={styles.navLink}>Services</a>
       <a href="#featured" className={styles.navLink}>Featured</a>
       <a href="#contact"  className={styles.navLink}>Contact Me</a>
-      <a href="history"  className={styles.navLink}>History</a>
+      <a href="http://localhost:5173/history"  className={styles.navLink}>History</a>
     </div>
 
     {/* ── 3.  RIGHT GROUP:  Icons + Logout ── */}

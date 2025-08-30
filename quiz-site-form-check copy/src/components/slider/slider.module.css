@@ -6,14 +6,12 @@
   overflow: hidden;
   background: #000;
 }
-
 /* Slider wrapper */
 .sliderWrapper {
   position: relative;
   width: 100%;
   height: 100%;
 }
-
 /* Slides */
 .slide {
   position: absolute;
@@ -28,7 +26,6 @@
   transform: scale(1);
   z-index: 2;
 }
-
 /* Media wrapper: centers content and shows letterbox background */
 .mediaBox {
   position: absolute;
@@ -40,7 +37,6 @@
   overflow: hidden;
   z-index: 1;
 }
-
 /* Fully visible image (no crop), perfectly centered */
 .slideImage {
   max-width: 100%;
@@ -51,7 +47,6 @@
   object-position: center center;
   image-rendering: auto;
 }
-
 /* Optional veil to keep text readable */
 .slide.active .mediaBox::after {
   content: '';
@@ -60,7 +55,6 @@
   background: rgba(0,0,0,0.18);
   pointer-events: none;
 }
-
 /* Content overlay */
 .slideContent {
   position: absolute;
@@ -73,7 +67,6 @@
   text-align: left;
   z-index: 3;
 }
-
 .author {
   font-size: 1.2rem;
   font-weight: 300;
@@ -83,7 +76,6 @@
   transform: translateY(30px);
   animation: slideUp 0.8s ease 0.2s forwards;
 }
-
 .title {
   font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 900;
@@ -94,7 +86,6 @@
   transform: translateY(30px);
   animation: slideUp 0.8s ease 0.4s forwards;
 }
-
 .topic {
   font-size: clamp(1.5rem, 4vw, 3rem);
   font-weight: 600;
@@ -104,7 +95,6 @@
   transform: translateY(30px);
   animation: slideUp 0.8s ease 0.6s forwards;
 }
-
 .description {
   font-size: 1.2rem;
   line-height: 1.6;
@@ -115,7 +105,6 @@
   transform: translateY(30px);
   animation: slideUp 0.8s ease 0.8s forwards;
 }
-
 /* Buttons */
 .buttonGroup {
   display: flex;
@@ -124,7 +113,6 @@
   transform: translateY(30px);
   animation: slideUp 0.8s ease 1s forwards;
 }
-
 .primaryBtn,
 .secondaryBtn {
   padding: 1rem 2rem;
@@ -137,7 +125,6 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
-
 .primaryBtn {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: #fff;
@@ -147,7 +134,6 @@
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(102,126,234,0.6);
 }
-
 .secondaryBtn {
   background: rgba(255,255,255,0.1);
   color: #fff;
@@ -159,12 +145,10 @@
   border-color: rgba(255,255,255,0.5);
   transform: translateY(-2px);
 }
-
 /* Slide up animation */
 @keyframes slideUp {
   to { opacity: 1; transform: translateY(0); }
 }
-
 /* Reset inactive animations */
 .slide:not(.active) .author,
 .slide:not(.active) .title,
@@ -175,7 +159,6 @@
   transform: translateY(30px);
   animation: none;
 }
-
 /* Thumbnails (right, above bottom) */
 .thumbnails {
   position: absolute;
@@ -188,9 +171,7 @@
   max-width: 400px;
   overflow: hidden;
 }
-
 .thumbnail:nth-child(n+4) { display: none; }
-
 .thumbnail {
   width: 150px;
   height: 220px;
@@ -202,23 +183,19 @@
   border: 2px solid transparent;
   flex-shrink: 0;
 }
-
 .thumbnail:hover {
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
-
 .activeThumbnail {
   border-color: #ffd700;
   box-shadow: 0 0 20px rgba(255,215,0,0.5);
 }
-
 .thumbnailImage {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .thumbnailContent {
   position: absolute;
   bottom: 0; left: 0; right: 0;
@@ -226,10 +203,8 @@
   padding: 0.8rem;
   color: #fff;
 }
-
 .thumbnailTitle { font-size: 0.8rem; font-weight: 600; margin: 0 0 0.25rem; }
 .thumbnailDesc  { font-size: 0.7rem; margin: 0; opacity: 0.8; }
-
 /* Navigation */
 .navigation {
   position: absolute;
@@ -241,7 +216,6 @@
   gap: 1rem;
   z-index: 15;
 }
-
 .navBtn {
   width: 50px;
   height: 50px;
@@ -264,7 +238,6 @@
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 .navBtn:disabled { opacity: 0.5; cursor: not-allowed; }
-
 /* Progress bar */
 .progressBar {
   position: absolute;
@@ -282,7 +255,6 @@
   0% { width: 0; }
   100% { width: 100%; }
 }
-
 /* Responsive */
 @media (max-width: 1200px) {
   .thumbnails { right: 40px; max-width: 350px; }
@@ -314,10 +286,19 @@
   .thumbnailTitle { font-size: 0.7rem; }
   .thumbnailDesc { font-size: 0.6rem; }
 }
-
 /* Smoothing */
 * { box-sizing: border-box; }
 .carousel * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==== AUTH VISIBILITY OVERRIDE (no JSX changes needed) ==== */
+/* When parent (e.g., body or layout wrapper) has .isAuthenticated, hide login button */
+:global(.isAuthenticated) .buttonGroup .primaryBtn {
+  display: none !important;
+}
+/* If any secondary guest-only button exists, hide it too (optional) */
+:global(.isAuthenticated) .buttonGroup .secondaryBtn {
+  display: none !important;
 }
