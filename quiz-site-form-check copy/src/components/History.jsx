@@ -252,12 +252,13 @@ export default function History() {
         <p style={{ textAlign: 'center' }}>No quiz attempts yet.</p>
       ) : (
         <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', 
+            display: 'flex',
+            flexDirection: 'column',
           gap: '20px' 
         }}>
           {history.map((attempt, index) => (
             <div key={index} style={{
+              width: '65vw',
               background: 'white',
               borderRadius: '10px',
               padding: '20px',

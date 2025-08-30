@@ -1,10 +1,16 @@
 /* src/components/start_quiz/Start.module.css */
 .grid {
-    padding: 16px;
-    display: grid;
-    gap: 16px;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 10px;
+   padding: 4vh;
+   /* background: #000; */
+   width: 65vw;
+   
   }
+
+
   
   .loading {
     padding: 16px;
@@ -14,6 +20,7 @@
   /* ---- box ---- */
   .box {
     background: #0b1220;
+    height: 15vh;
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 12px;
     padding: 16px;
@@ -22,6 +29,11 @@
     align-items: center;
     justify-content: space-between;
     gap: 12px;
+    transition: transform 0.3s ease-in-out; 
+  }
+
+  .box:hover{
+    transform: scale(1.02); 
   }
   
   .level {
@@ -47,9 +59,12 @@
   }
   
   .start {
+    height: 60%;
+    width: 7vw;
     background: #ffd700;
     color: #0b1220;
     cursor: pointer;
+    font-size: 1.1rem;
   }
   
   .locked {
