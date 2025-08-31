@@ -23,12 +23,20 @@
   margin-right: 20px;
 }
 
+.backBtn:hover {
+  background: #0056b3;
+}
+
 .detailHeading {
   display: inline-block;
   margin: 0;
 }
 
 .title {
+  font-size: 35px;
+  font-weight: 600;
+  color : rgb(58, 19, 184) ;
+  font-style: italic;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -44,19 +52,23 @@
 }
 
 .card {
-  background: white;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 50px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  border: 1px solid #e0e0e0;
   width: 65vw;
+   background: linear-gradient(90deg,  #898eec,#5258c5);/*rgb(209, 215, 248) */ 
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(121, 92, 192, 0.1);
+  border: 1px solid #e0e0e0;
   margin: 0 auto;
 }
 
 .cardTitle {
+  font-weight: 600;
   margin: 0 0 15px 0;
-  color: #2c3e50;
+  color: #232b33;
+}
+
+.cardBody {
+  margin-bottom: 15px;
 }
 
 .cardBody p {
@@ -70,24 +82,54 @@
   flex-direction: row;
 }
 
+.summaryCard {
+  background: rgb(209, 215, 248);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.graphCard {
+  background: rgb(209, 215, 248);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .graphContainer {
-  
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-
-  gap: 30px;      /* Space between Pie & Bar Chart */
+  gap: 30px;
   margin-top: 20px;
 }
 
 .graph {
-  max-width: 400px;
+  max-width: 100%;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+.graphError {
+  display: none;
+  color: #f44336;
+  background: #ffeaea;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
 
 .viewBtn {
   padding: 10px 16px;
@@ -136,12 +178,6 @@
   text-transform: uppercase;
 }
 
-.summaryGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-}
-
 .error {
   background: #f8d7da;
   color: #721c24;
@@ -159,16 +195,8 @@
   text-align: center;
 }
 
-.graph {
-  max-width: 100%;
-  height: auto;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
 .questionBox {
-  background: white;
+  background: rgb(209, 215, 248);
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 15px;
@@ -181,6 +209,14 @@
 
 .incorrect {
   border-left: 4px solid #f44336;
+}
+
+.questionText {
+  margin-bottom: 10px;
+}
+
+.answerRow {
+  margin-bottom: 8px;
 }
 
 .answerCorrect {

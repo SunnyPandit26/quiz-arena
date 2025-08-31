@@ -5,6 +5,7 @@ import ToggleSlide from "./ToggleSlide";
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import { authAPI } from "../services/api";
+import "./loginpage.css";
 
 // Popup style
 const popupStyle = {

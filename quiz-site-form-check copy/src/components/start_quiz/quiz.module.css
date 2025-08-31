@@ -4,7 +4,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 65vw;
+  margin-top: 100px;
+  width: 100vw;
   min-height: 100vh;
   padding: 40px 20px;
   background: #f5f6fa;
@@ -14,11 +15,11 @@
 
 /* ==== QUIZ CARD ==== */
 .quizCard {
-  background: #fff;
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
   padding: 32px;
-  max-width: 650px;
+  max-width: 550px;
   width: 100%;
   text-align: center;
   transition: transform 0.2s ease;
@@ -31,22 +32,25 @@
 /* ==== START SCREEN ==== */
 .startScreen h1 {
   margin-bottom: 10px;
-  color: #4e54c8;
+  color: #fff;
+  font-weight: 600;
 }
 
 .startBtn {
   padding: 12px 24px;
   border-radius: 8px;
   border: none;
-  background: linear-gradient(90deg, #4e54c8, #8f94fb);
-  color: white;
+  background: white;
+  color:  #1A2A80;
   font-weight: 600;
   cursor: pointer;
   transition: background 0.3s, transform 0.2s;
+  
 }
 
 .startBtn:hover {
-  background: linear-gradient(90deg, #3b3f9e, #6e72c8);
+  background:  #1A2A80;
+  color : white;
   transform: scale(1.05);
 }
 
@@ -56,9 +60,10 @@
 }
 
 .questionBox h2 {
-  font-size: 1.25rem;
-  color: #333;
+  font-size: 1.5rem;
+  color: #fff;
   margin-bottom: 12px;
+  font-weight: 600px;
 }
 
 /* ==== OPTIONS ==== */
@@ -74,20 +79,45 @@
   cursor: pointer;
   font-size: 1rem;
   transition: all 0.25s ease-in-out;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
-.optionBtn:hover {
+/* Hover effect ONLY for non-selected options */
+.optionBtn:hover:not(.optionSelected) {
   color: black;
   border-color: #4e54c8;
-  background: #f0f4ff;
+  background: #c0cbec;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(78, 84, 200, 0.15);
 }
 
+/* Selected option styling - no hover effects */
 .optionSelected {
-  background: #4e54c8;
-  color: white;
-  border-color: #4e54c8;
+  background: #a9b6e6 !important;
+  color: white !important;
+  border-color: #5d6cb7 !important;
   font-weight: 600;
+  transform: none;
+  box-shadow: 0 2px 8px rgba(35, 89, 181, 0.3);
 }
+
+/* Disable hover effects on selected options */
+.optionSelected:hover {
+  background: #a9b6e6 !important;
+  color: white !important;
+  border-color: #5d6cb7 !important;
+  transform: none;
+  cursor: default;
+}
+
+
+/* Active state for click feedback */
+.optionBtn:active:not(.optionSelected) {
+  transform: translateY(0);
+  transition: transform 0.1s ease;
+}
+
 
 /* ==== NAVIGATION BUTTONS ==== */
 .actions {
@@ -113,20 +143,25 @@
 }
 
 .submitBtn {
-  background: #00b894;
+  background: white;
+  color:#1A2A80;
 }
 .submitBtn:hover {
-  background: #019874;
+  background: #1A2A80;
+  color : white ;
 }
 
 /* ==== RESULT SCREEN ==== */
 .resultBox h2 {
+  font-size : 1.2 rem ;
+  font-weight: 600;
   color: #2d3436;
   margin-bottom: 8px;
 }
 
 .resultStatus {
-  font-size: 1.1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
   font-weight: bold;
   margin: 10px 0;
 }
@@ -212,7 +247,7 @@
 
 .breakdown h4 {
   margin-bottom: 15px;
-  color: #333;
+  color: #1e1d1d;
   border-bottom: 2px solid #eee;
   padding-bottom: 8px;
   font-weight: bold;
@@ -281,8 +316,8 @@
   padding: 12px 24px;
   border: none;
   border-radius: 8px;
-  background: #007bff;
-  color: white;
+  background: WHITE;
+  color: #1A2A80;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -290,7 +325,8 @@
 }
 
 .resultBtn:hover {
-  background: #0056b3;
+  color : white ;
+  background: #1A2A80;
   transform: translateY(-2px);
 }
 
@@ -316,4 +352,17 @@
   padding: 8px 16px;
   border-radius: 6px;
   display: inline-block;
+}
+
+.para{
+  color : white;
+  font-weight: 200px;
+  font-size: 18px;
+}
+@media (max-width: 400px) {
+  .startBtn {
+    min-width: 220px; /* Even larger minimum for small screens */
+    padding: 18px 36px; /* More padding for better touch target */
+    font-size: 16px;
+  }
 }

@@ -118,7 +118,7 @@ export default function Quiz() {
   };
 
   if (loading) return <h2 className={styles.loading}>Loading…</h2>;
-
+//this quiz introo..
   if (!started) {
     return (
       <div className={styles.quizWrapper}>
@@ -225,7 +225,7 @@ export default function Quiz() {
       <div className={styles.quizCard}>
         <div className={styles.questionBox}>
           <h2>Question {current + 1} of {questions.length}</h2>
-          <p>{q.question}</p>
+          <p className={styles.para}>{q.question}</p>
         </div>
         <div>
           {q.options.map((opt, i) => (

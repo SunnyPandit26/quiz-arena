@@ -1,0 +1,14 @@
+.grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 4vh;
+  /* background: #000; */
+  width: 65vw;
+}
+
+.loading {
+  padding: 16px;
+  color: #e6e9ef;
+}
