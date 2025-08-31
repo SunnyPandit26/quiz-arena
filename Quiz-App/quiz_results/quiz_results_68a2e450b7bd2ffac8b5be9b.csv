@@ -1,0 +1,598 @@
+userId,username,subject,level,questionNumber,question,userAnswer,correctAnswer,isCorrect,timestamp,totalScore,totalQuestions
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","python","1","1","What is the correct way to create a list in Python?","Not Answered","list = [1, 2, 3]","false","2025-08-29T09:49:11.256Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","python","1","2","Which of the following is used to define a function in Python?","Not Answered","def","false","2025-08-29T09:49:11.256Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","python","1","3","What will be the output of: print(type([]))?","Not Answered","<class 'list'>","false","2025-08-29T09:49:11.256Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","python","1","4","Which operator is used for exponentiation in Python?","Not Answered","**","false","2025-08-29T09:49:11.256Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","python","1","5","What is the correct syntax for a while loop in Python?","Not Answered","while condition:","false","2025-08-29T09:49:11.256Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","python","1","6","Which method is used to add an element to the end of a list?","Not Answered","append()","false","2025-08-29T09:49:11.256Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","python","1","7","What is the output of: len('Hello World')?","Not Answered","11","false","2025-08-29T09:49:11.256Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","python","1","8","Which of the following is NOT a valid Python data type?","Not Answered","char","false","2025-08-29T09:49:11.256Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","python","1","9","What is the correct way to import the math module in Python?","Not Answered","import math","false","2025-08-29T09:49:11.256Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","python","1","10","What will be the result of: 5 // 2?","Not Answered","2","false","2025-08-29T09:49:11.256Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","cpp","1","1","Which header is needed to use std::cout in C++?","Not Answered","#include <iostream>","false","2025-08-29T09:56:14.231Z","0","1"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","cpp","1","1","Which header is needed to use std::cout in C++?","#include <iostream>","#include <iostream>","true","2025-08-29T10:01:08.003Z","1","1"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","cpp","1","1","Which header is needed to use std::cout in C++?","#include <iostream>","#include <iostream>","true","2025-08-29T10:03:40.384Z","1","1"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","1","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(""Hello Java"");
+  }
+}
+","Not Answered","Hello Java","false","2025-08-30T18:46:38.849Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","2","Which data type is used to store whole numbers in Java?","Not Answered","int","false","2025-08-30T18:46:38.849Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","3","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x++);
+  }
+}
+","Not Answered","5","false","2025-08-30T18:46:38.849Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","4","Which symbol is used to start a single-line comment in Java?","Not Answered","//","false","2025-08-30T18:46:38.849Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","5","What does JVM stand for in Java?","Not Answered","Java Virtual Machine","false","2025-08-30T18:46:38.849Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","6","What will the following code print?
+
+public class Main {
+  public static void main(String[] args) {
+    int a = 10, b = 20;
+    System.out.println(a + b);
+  }
+}
+","Not Answered","30","false","2025-08-30T18:46:38.849Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","7","Which keyword is used to create an object in Java?","Not Answered","new","false","2025-08-30T18:46:38.849Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","8","Which of these is NOT a Java primitive data type?","Not Answered","String","false","2025-08-30T18:46:38.849Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","9","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    boolean flag = true;
+    System.out.println(flag);
+  }
+}
+","Not Answered","true","false","2025-08-30T18:46:38.849Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","10","Which of the following is used to print text in Java?","Not Answered","System.out.println()","false","2025-08-30T18:46:38.849Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","1","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(""Hello Java"");
+  }
+}
+","Not Answered","Hello Java","false","2025-08-30T18:46:50.377Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","2","Which data type is used to store whole numbers in Java?","Not Answered","int","false","2025-08-30T18:46:50.377Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","3","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x++);
+  }
+}
+","Not Answered","5","false","2025-08-30T18:46:50.377Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","4","Which symbol is used to start a single-line comment in Java?","Not Answered","//","false","2025-08-30T18:46:50.377Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","5","What does JVM stand for in Java?","Not Answered","Java Virtual Machine","false","2025-08-30T18:46:50.377Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","6","What will the following code print?
+
+public class Main {
+  public static void main(String[] args) {
+    int a = 10, b = 20;
+    System.out.println(a + b);
+  }
+}
+","Not Answered","30","false","2025-08-30T18:46:50.377Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","7","Which keyword is used to create an object in Java?","Not Answered","new","false","2025-08-30T18:46:50.377Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","8","Which of these is NOT a Java primitive data type?","Not Answered","String","false","2025-08-30T18:46:50.377Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","9","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    boolean flag = true;
+    System.out.println(flag);
+  }
+}
+","Not Answered","true","false","2025-08-30T18:46:50.377Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","10","Which of the following is used to print text in Java?","Not Answered","System.out.println()","false","2025-08-30T18:46:50.377Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","1","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(""Hello Java"");
+  }
+}
+","Hello Java","Hello Java","true","2025-08-30T18:47:55.246Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","2","Which data type is used to store whole numbers in Java?","double","int","false","2025-08-30T18:47:55.246Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","3","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x++);
+  }
+}
+","6","5","false","2025-08-30T18:47:55.246Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","4","Which symbol is used to start a single-line comment in Java?","#","//","false","2025-08-30T18:47:55.246Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","5","What does JVM stand for in Java?","Java Visual Module","Java Virtual Machine","false","2025-08-30T18:47:55.246Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","6","What will the following code print?
+
+public class Main {
+  public static void main(String[] args) {
+    int a = 10, b = 20;
+    System.out.println(a + b);
+  }
+}
+","Error","30","false","2025-08-30T18:47:55.246Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","7","Which keyword is used to create an object in Java?","new","new","true","2025-08-30T18:47:55.246Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","8","Which of these is NOT a Java primitive data type?","Not Answered","String","false","2025-08-30T18:47:55.246Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","9","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    boolean flag = true;
+    System.out.println(flag);
+  }
+}
+","Not Answered","true","false","2025-08-30T18:47:55.246Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","10","Which of the following is used to print text in Java?","Not Answered","System.out.println()","false","2025-08-30T18:47:55.246Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","1","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(""Hello Java"");
+  }
+}
+","Hello","Hello Java","false","2025-08-30T18:51:45.165Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","2","Which data type is used to store whole numbers in Java?","Not Answered","int","false","2025-08-30T18:51:45.165Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","3","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x++);
+  }
+}
+","Not Answered","5","false","2025-08-30T18:51:45.165Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","4","Which symbol is used to start a single-line comment in Java?","Not Answered","//","false","2025-08-30T18:51:45.165Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","5","What does JVM stand for in Java?","Not Answered","Java Virtual Machine","false","2025-08-30T18:51:45.165Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","6","What will the following code print?
+
+public class Main {
+  public static void main(String[] args) {
+    int a = 10, b = 20;
+    System.out.println(a + b);
+  }
+}
+","Not Answered","30","false","2025-08-30T18:51:45.165Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","7","Which keyword is used to create an object in Java?","Not Answered","new","false","2025-08-30T18:51:45.165Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","8","Which of these is NOT a Java primitive data type?","Not Answered","String","false","2025-08-30T18:51:45.165Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","9","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    boolean flag = true;
+    System.out.println(flag);
+  }
+}
+","Not Answered","true","false","2025-08-30T18:51:45.165Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","10","Which of the following is used to print text in Java?","Not Answered","System.out.println()","false","2025-08-30T18:51:45.165Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","1","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(""Hello Java"");
+  }
+}
+","Hello","Hello Java","false","2025-08-30T18:54:07.706Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","2","Which data type is used to store whole numbers in Java?","float","int","false","2025-08-30T18:54:07.706Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","3","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x++);
+  }
+}
+","6","5","false","2025-08-30T18:54:07.706Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","4","Which symbol is used to start a single-line comment in Java?","--","//","false","2025-08-30T18:54:07.706Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","5","What does JVM stand for in Java?","Java Visual Module","Java Virtual Machine","false","2025-08-30T18:54:07.706Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","6","What will the following code print?
+
+public class Main {
+  public static void main(String[] args) {
+    int a = 10, b = 20;
+    System.out.println(a + b);
+  }
+}
+","Not Answered","30","false","2025-08-30T18:54:07.706Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","7","Which keyword is used to create an object in Java?","Not Answered","new","false","2025-08-30T18:54:07.706Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","8","Which of these is NOT a Java primitive data type?","Not Answered","String","false","2025-08-30T18:54:07.706Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","9","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    boolean flag = true;
+    System.out.println(flag);
+  }
+}
+","Not Answered","true","false","2025-08-30T18:54:07.706Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","10","Which of the following is used to print text in Java?","Not Answered","System.out.println()","false","2025-08-30T18:54:07.706Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","1","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(""Hello Java"");
+  }
+}
+","Not Answered","Hello Java","false","2025-08-30T18:54:57.056Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","2","Which data type is used to store whole numbers in Java?","Not Answered","int","false","2025-08-30T18:54:57.056Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","3","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x++);
+  }
+}
+","Not Answered","5","false","2025-08-30T18:54:57.056Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","4","Which symbol is used to start a single-line comment in Java?","Not Answered","//","false","2025-08-30T18:54:57.056Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","5","What does JVM stand for in Java?","Not Answered","Java Virtual Machine","false","2025-08-30T18:54:57.056Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","6","What will the following code print?
+
+public class Main {
+  public static void main(String[] args) {
+    int a = 10, b = 20;
+    System.out.println(a + b);
+  }
+}
+","Not Answered","30","false","2025-08-30T18:54:57.056Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","7","Which keyword is used to create an object in Java?","Not Answered","new","false","2025-08-30T18:54:57.056Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","8","Which of these is NOT a Java primitive data type?","Not Answered","String","false","2025-08-30T18:54:57.056Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","9","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    boolean flag = true;
+    System.out.println(flag);
+  }
+}
+","Not Answered","true","false","2025-08-30T18:54:57.056Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","10","Which of the following is used to print text in Java?","Not Answered","System.out.println()","false","2025-08-30T18:54:57.056Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","1","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(""Hello Java"");
+  }
+}
+","Hello Java","Hello Java","true","2025-08-31T07:55:59.739Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","2","Which data type is used to store whole numbers in Java?","double","int","false","2025-08-31T07:55:59.739Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","3","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x++);
+  }
+}
+","Error","5","false","2025-08-31T07:55:59.739Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","4","Which symbol is used to start a single-line comment in Java?","--","//","false","2025-08-31T07:55:59.739Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","5","What does JVM stand for in Java?","Java Visual Module","Java Virtual Machine","false","2025-08-31T07:55:59.739Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","6","What will the following code print?
+
+public class Main {
+  public static void main(String[] args) {
+    int a = 10, b = 20;
+    System.out.println(a + b);
+  }
+}
+","Error","30","false","2025-08-31T07:55:59.739Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","7","Which keyword is used to create an object in Java?","new","new","true","2025-08-31T07:55:59.739Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","8","Which of these is NOT a Java primitive data type?","boolean","String","false","2025-08-31T07:55:59.739Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","9","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    boolean flag = true;
+    System.out.println(flag);
+  }
+}
+","0","true","false","2025-08-31T07:55:59.739Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","10","Which of the following is used to print text in Java?","Not Answered","System.out.println()","false","2025-08-31T07:55:59.739Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","1","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(""Hello Java"");
+  }
+}
+","Not Answered","Hello Java","false","2025-08-31T07:57:03.875Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","2","Which data type is used to store whole numbers in Java?","Not Answered","int","false","2025-08-31T07:57:03.875Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","3","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x++);
+  }
+}
+","Not Answered","5","false","2025-08-31T07:57:03.875Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","4","Which symbol is used to start a single-line comment in Java?","Not Answered","//","false","2025-08-31T07:57:03.875Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","5","What does JVM stand for in Java?","Not Answered","Java Virtual Machine","false","2025-08-31T07:57:03.875Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","6","What will the following code print?
+
+public class Main {
+  public static void main(String[] args) {
+    int a = 10, b = 20;
+    System.out.println(a + b);
+  }
+}
+","Not Answered","30","false","2025-08-31T07:57:03.875Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","7","Which keyword is used to create an object in Java?","Not Answered","new","false","2025-08-31T07:57:03.875Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","8","Which of these is NOT a Java primitive data type?","Not Answered","String","false","2025-08-31T07:57:03.875Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","9","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    boolean flag = true;
+    System.out.println(flag);
+  }
+}
+","Not Answered","true","false","2025-08-31T07:57:03.875Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","10","Which of the following is used to print text in Java?","Not Answered","System.out.println()","false","2025-08-31T07:57:03.875Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","1","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(""Hello Java"");
+  }
+}
+","Hello","Hello Java","false","2025-08-31T07:59:42.913Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","2","Which data type is used to store whole numbers in Java?","int","int","true","2025-08-31T07:59:42.913Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","3","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x++);
+  }
+}
+","Error","5","false","2025-08-31T07:59:42.913Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","4","Which symbol is used to start a single-line comment in Java?","--","//","false","2025-08-31T07:59:42.913Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","5","What does JVM stand for in Java?","Java Visual Module","Java Virtual Machine","false","2025-08-31T07:59:42.913Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","6","What will the following code print?
+
+public class Main {
+  public static void main(String[] args) {
+    int a = 10, b = 20;
+    System.out.println(a + b);
+  }
+}
+","Error","30","false","2025-08-31T07:59:42.913Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","7","Which keyword is used to create an object in Java?","new","new","true","2025-08-31T07:59:42.913Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","8","Which of these is NOT a Java primitive data type?","boolean","String","false","2025-08-31T07:59:42.913Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","9","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    boolean flag = true;
+    System.out.println(flag);
+  }
+}
+","0","true","false","2025-08-31T07:59:42.913Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","10","Which of the following is used to print text in Java?","echo","System.out.println()","false","2025-08-31T07:59:42.913Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","1","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(""Hello Java"");
+  }
+}
+","Hello","Hello Java","false","2025-08-31T08:04:28.197Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","2","Which data type is used to store whole numbers in Java?","int","int","true","2025-08-31T08:04:28.197Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","3","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x++);
+  }
+}
+","Error","5","false","2025-08-31T08:04:28.197Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","4","Which symbol is used to start a single-line comment in Java?","--","//","false","2025-08-31T08:04:28.197Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","5","What does JVM stand for in Java?","Java Visual Module","Java Virtual Machine","false","2025-08-31T08:04:28.197Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","6","What will the following code print?
+
+public class Main {
+  public static void main(String[] args) {
+    int a = 10, b = 20;
+    System.out.println(a + b);
+  }
+}
+","Error","30","false","2025-08-31T08:04:28.197Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","7","Which keyword is used to create an object in Java?","new","new","true","2025-08-31T08:04:28.197Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","8","Which of these is NOT a Java primitive data type?","boolean","String","false","2025-08-31T08:04:28.197Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","9","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    boolean flag = true;
+    System.out.println(flag);
+  }
+}
+","0","true","false","2025-08-31T08:04:28.197Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","10","Which of the following is used to print text in Java?","echo","System.out.println()","false","2025-08-31T08:04:28.197Z","2","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","1","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(""Hello Java"");
+  }
+}
+","Hello","Hello Java","false","2025-08-31T08:07:15.384Z","1","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","2","Which data type is used to store whole numbers in Java?","double","int","false","2025-08-31T08:07:15.384Z","1","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","3","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x++);
+  }
+}
+","Error","5","false","2025-08-31T08:07:15.384Z","1","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","4","Which symbol is used to start a single-line comment in Java?","--","//","false","2025-08-31T08:07:15.384Z","1","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","5","What does JVM stand for in Java?","Java Visual Module","Java Virtual Machine","false","2025-08-31T08:07:15.384Z","1","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","6","What will the following code print?
+
+public class Main {
+  public static void main(String[] args) {
+    int a = 10, b = 20;
+    System.out.println(a + b);
+  }
+}
+","Error","30","false","2025-08-31T08:07:15.384Z","1","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","7","Which keyword is used to create an object in Java?","new","new","true","2025-08-31T08:07:15.384Z","1","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","8","Which of these is NOT a Java primitive data type?","boolean","String","false","2025-08-31T08:07:15.384Z","1","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","9","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    boolean flag = true;
+    System.out.println(flag);
+  }
+}
+","Not Answered","true","false","2025-08-31T08:07:15.384Z","1","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","10","Which of the following is used to print text in Java?","Not Answered","System.out.println()","false","2025-08-31T08:07:15.384Z","1","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","1","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(""Hello Java"");
+  }
+}
+","Not Answered","Hello Java","false","2025-08-31T08:08:53.779Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","2","Which data type is used to store whole numbers in Java?","Not Answered","int","false","2025-08-31T08:08:53.779Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","3","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x++);
+  }
+}
+","Not Answered","5","false","2025-08-31T08:08:53.779Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","4","Which symbol is used to start a single-line comment in Java?","Not Answered","//","false","2025-08-31T08:08:53.779Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","5","What does JVM stand for in Java?","Not Answered","Java Virtual Machine","false","2025-08-31T08:08:53.779Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","6","What will the following code print?
+
+public class Main {
+  public static void main(String[] args) {
+    int a = 10, b = 20;
+    System.out.println(a + b);
+  }
+}
+","Not Answered","30","false","2025-08-31T08:08:53.779Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","7","Which keyword is used to create an object in Java?","Not Answered","new","false","2025-08-31T08:08:53.779Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","8","Which of these is NOT a Java primitive data type?","Not Answered","String","false","2025-08-31T08:08:53.779Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","9","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    boolean flag = true;
+    System.out.println(flag);
+  }
+}
+","Not Answered","true","false","2025-08-31T08:08:53.779Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","10","Which of the following is used to print text in Java?","Not Answered","System.out.println()","false","2025-08-31T08:08:53.779Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","1","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(""Hello Java"");
+  }
+}
+","Not Answered","Hello Java","false","2025-08-31T08:10:17.904Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","2","Which data type is used to store whole numbers in Java?","Not Answered","int","false","2025-08-31T08:10:17.904Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","3","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x++);
+  }
+}
+","Not Answered","5","false","2025-08-31T08:10:17.904Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","4","Which symbol is used to start a single-line comment in Java?","Not Answered","//","false","2025-08-31T08:10:17.904Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","5","What does JVM stand for in Java?","Not Answered","Java Virtual Machine","false","2025-08-31T08:10:17.904Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","6","What will the following code print?
+
+public class Main {
+  public static void main(String[] args) {
+    int a = 10, b = 20;
+    System.out.println(a + b);
+  }
+}
+","Not Answered","30","false","2025-08-31T08:10:17.904Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","7","Which keyword is used to create an object in Java?","Not Answered","new","false","2025-08-31T08:10:17.904Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","8","Which of these is NOT a Java primitive data type?","Not Answered","String","false","2025-08-31T08:10:17.904Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","9","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    boolean flag = true;
+    System.out.println(flag);
+  }
+}
+","Not Answered","true","false","2025-08-31T08:10:17.904Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","10","Which of the following is used to print text in Java?","Not Answered","System.out.println()","false","2025-08-31T08:10:17.904Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","1","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(""Hello Java"");
+  }
+}
+","Not Answered","Hello Java","false","2025-08-31T08:12:45.062Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","2","Which data type is used to store whole numbers in Java?","Not Answered","int","false","2025-08-31T08:12:45.062Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","3","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x++);
+  }
+}
+","Not Answered","5","false","2025-08-31T08:12:45.062Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","4","Which symbol is used to start a single-line comment in Java?","Not Answered","//","false","2025-08-31T08:12:45.062Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","5","What does JVM stand for in Java?","Not Answered","Java Virtual Machine","false","2025-08-31T08:12:45.062Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","6","What will the following code print?
+
+public class Main {
+  public static void main(String[] args) {
+    int a = 10, b = 20;
+    System.out.println(a + b);
+  }
+}
+","Not Answered","30","false","2025-08-31T08:12:45.062Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","7","Which keyword is used to create an object in Java?","Not Answered","new","false","2025-08-31T08:12:45.062Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","8","Which of these is NOT a Java primitive data type?","Not Answered","String","false","2025-08-31T08:12:45.062Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","9","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    boolean flag = true;
+    System.out.println(flag);
+  }
+}
+","Not Answered","true","false","2025-08-31T08:12:45.062Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","java","1","10","Which of the following is used to print text in Java?","Not Answered","System.out.println()","false","2025-08-31T08:12:45.062Z","0","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","webdev","1","1","What does HTML stand for?","Hyper Trainer Marking Language","HyperText Markup Language","false","2025-08-31T08:42:54.597Z","1","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","webdev","1","2","Which tag is used to create a hyperlink in HTML?","<img>","<a>","false","2025-08-31T08:42:54.597Z","1","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","webdev","1","3","Which of the following is used to apply styles to a web page?","HTML","CSS","false","2025-08-31T08:42:54.597Z","1","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","webdev","1","4","Inside which HTML element do we put JavaScript code?","Not Answered","<script>","false","2025-08-31T08:42:54.597Z","1","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","webdev","1","5","Which CSS property is used to change the text color?","Not Answered","color","false","2025-08-31T08:42:54.597Z","1","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","webdev","1","6","What is the correct HTML tag for the largest heading?","Not Answered","<h1>","false","2025-08-31T08:42:54.597Z","1","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","webdev","1","7","Which symbol is used for IDs in CSS selectors?","Not Answered","#","false","2025-08-31T08:42:54.597Z","1","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","webdev","1","8","Which of these is a JavaScript data type?","Character","Boolean","false","2025-08-31T08:42:54.597Z","1","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","webdev","1","9","Which HTML tag is used to display an image?","<img>","<img>","true","2025-08-31T08:42:54.597Z","1","10"
+"68a2e450b7bd2ffac8b5be9b","priyasidhu363@gmail.com","webdev","1","10","In JavaScript, what will typeof [] return?","'list'","'object'","false","2025-08-31T08:42:54.597Z","1","10"

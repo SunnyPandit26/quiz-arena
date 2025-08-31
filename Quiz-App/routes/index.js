@@ -162,7 +162,7 @@ except Exception as e:
     fs.writeFileSync(scriptPath, testScript);
 
     const { spawn } = require('child_process');
-    const python = spawn('python', [scriptPath]);
+    const python = spawn('python3', [scriptPath]);
     
     let output = '';
     let error = '';
@@ -663,7 +663,7 @@ except Exception as e:
     console.log('✅ Python script created');
     
     const { spawn } = require('child_process');
-    const python = spawn('python', [scriptPath]);
+    const python = spawn('python3', [scriptPath]);
     
     let output = '';
     let error = '';
@@ -1065,7 +1065,7 @@ except Exception as e:
     console.log('✅ ULTIMATE: Python script created');
     
     const { spawn } = require('child_process');
-    const python = spawn('python', [scriptPath]);
+    const python = spawn('python3', [scriptPath]);
     
     let output = '';
     let error = '';

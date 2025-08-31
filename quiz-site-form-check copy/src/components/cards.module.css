@@ -145,23 +145,23 @@
 .filterBtn {
   padding: 8px 20px;
   border-radius: 30px;
-  border: 2px solid #1e90ff;
+  border: 2px solid #4e54c8;
   background: transparent;
-  color: #a0cfff;
+  color: #4e54c8;
   cursor: pointer;
   font-weight: 600;
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .filterBtn:hover {
-  background-color: #1e90ff;
+  background-color: #4e54c8;
   color: #fff;
-  border-color: #1e90ff;
+  border-color: #4e54c8;
 }
 
 .activeFilterBtn {
-  background-color: #1e90ff;
+  background-color: #4e54c8;
   color: #fff;
-  border-color: #0a66c2;
-  box-shadow: 0 0 8px #1e90ffaa;
+  border-color: #4e54c8;
+  box-shadow: 0 0 9px #4e54c8;
 }

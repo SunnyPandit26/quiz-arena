@@ -1,0 +1,176 @@
+userId,username,subject,level,questionNumber,question,userAnswer,correctAnswer,isCorrect,timestamp,totalScore,totalQuestions
+"68a5bc335a49d8e04b9179ae","priya","webdev","1","1","What does HTML stand for?","HyperText Markup Language","HyperText Markup Language","true","2025-08-29T09:38:21.342Z","8","10"
+"68a5bc335a49d8e04b9179ae","priya","webdev","1","2","Which tag is used to create a hyperlink in HTML?","<a>","<a>","true","2025-08-29T09:38:21.342Z","8","10"
+"68a5bc335a49d8e04b9179ae","priya","webdev","1","3","Which of the following is used to apply styles to a web page?","CSS","CSS","true","2025-08-29T09:38:21.342Z","8","10"
+"68a5bc335a49d8e04b9179ae","priya","webdev","1","4","Inside which HTML element do we put JavaScript code?","<script>","<script>","true","2025-08-29T09:38:21.342Z","8","10"
+"68a5bc335a49d8e04b9179ae","priya","webdev","1","5","Which CSS property is used to change the text color?","color","color","true","2025-08-29T09:38:21.342Z","8","10"
+"68a5bc335a49d8e04b9179ae","priya","webdev","1","6","What is the correct HTML tag for the largest heading?","<h1>","<h1>","true","2025-08-29T09:38:21.342Z","8","10"
+"68a5bc335a49d8e04b9179ae","priya","webdev","1","7","Which symbol is used for IDs in CSS selectors?","#","#","true","2025-08-29T09:38:21.342Z","8","10"
+"68a5bc335a49d8e04b9179ae","priya","webdev","1","8","Which of these is a JavaScript data type?","Double","Boolean","false","2025-08-29T09:38:21.342Z","8","10"
+"68a5bc335a49d8e04b9179ae","priya","webdev","1","9","Which HTML tag is used to display an image?","<img>","<img>","true","2025-08-29T09:38:21.342Z","8","10"
+"68a5bc335a49d8e04b9179ae","priya","webdev","1","10","In JavaScript, what will typeof [] return?","'list'","'object'","false","2025-08-29T09:38:21.342Z","8","10"
+"68a5bc335a49d8e04b9179ae","priya","cpp","1","1","Which header is needed to use std::cout in C++?","#include <iostream>","#include <iostream>","true","2025-08-30T10:26:34.724Z","1","1"
+"68a5bc335a49d8e04b9179ae","priya","webdev","1","1","What does HTML stand for?","HyperText Markup Language","HyperText Markup Language","true","2025-08-30T10:55:27.096Z","1","10"
+"68a5bc335a49d8e04b9179ae","priya","webdev","1","2","Which tag is used to create a hyperlink in HTML?","Not Answered","<a>","false","2025-08-30T10:55:27.096Z","1","10"
+"68a5bc335a49d8e04b9179ae","priya","webdev","1","3","Which of the following is used to apply styles to a web page?","Java","CSS","false","2025-08-30T10:55:27.096Z","1","10"
+"68a5bc335a49d8e04b9179ae","priya","webdev","1","4","Inside which HTML element do we put JavaScript code?","<js>","<script>","false","2025-08-30T10:55:27.096Z","1","10"
+"68a5bc335a49d8e04b9179ae","priya","webdev","1","5","Which CSS property is used to change the text color?","background-color","color","false","2025-08-30T10:55:27.096Z","1","10"
+"68a5bc335a49d8e04b9179ae","priya","webdev","1","6","What is the correct HTML tag for the largest heading?","<header>","<h1>","false","2025-08-30T10:55:27.096Z","1","10"
+"68a5bc335a49d8e04b9179ae","priya","webdev","1","7","Which symbol is used for IDs in CSS selectors?","$","#","false","2025-08-30T10:55:27.096Z","1","10"
+"68a5bc335a49d8e04b9179ae","priya","webdev","1","8","Which of these is a JavaScript data type?","Double","Boolean","false","2025-08-30T10:55:27.096Z","1","10"
+"68a5bc335a49d8e04b9179ae","priya","webdev","1","9","Which HTML tag is used to display an image?","<src>","<img>","false","2025-08-30T10:55:27.096Z","1","10"
+"68a5bc335a49d8e04b9179ae","priya","webdev","1","10","In JavaScript, what will typeof [] return?","Not Answered","'object'","false","2025-08-30T10:55:27.096Z","1","10"
+"68a5bc335a49d8e04b9179ae","priya","java","1","1","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(""Hello Java"");
+  }
+}
+","Hello","Hello Java","false","2025-08-30T11:04:18.698Z","1","10"
+"68a5bc335a49d8e04b9179ae","priya","java","1","2","Which data type is used to store whole numbers in Java?","String","int","false","2025-08-30T11:04:18.698Z","1","10"
+"68a5bc335a49d8e04b9179ae","priya","java","1","3","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x++);
+  }
+}
+","6","5","false","2025-08-30T11:04:18.698Z","1","10"
+"68a5bc335a49d8e04b9179ae","priya","java","1","4","Which symbol is used to start a single-line comment in Java?","Not Answered","//","false","2025-08-30T11:04:18.698Z","1","10"
+"68a5bc335a49d8e04b9179ae","priya","java","1","5","What does JVM stand for in Java?","Java Visual Module","Java Virtual Machine","false","2025-08-30T11:04:18.698Z","1","10"
+"68a5bc335a49d8e04b9179ae","priya","java","1","6","What will the following code print?
+
+public class Main {
+  public static void main(String[] args) {
+    int a = 10, b = 20;
+    System.out.println(a + b);
+  }
+}
+","30","30","true","2025-08-30T11:04:18.698Z","1","10"
+"68a5bc335a49d8e04b9179ae","priya","java","1","7","Which keyword is used to create an object in Java?","create","new","false","2025-08-30T11:04:18.698Z","1","10"
+"68a5bc335a49d8e04b9179ae","priya","java","1","8","Which of these is NOT a Java primitive data type?","int","String","false","2025-08-30T11:04:18.698Z","1","10"
+"68a5bc335a49d8e04b9179ae","priya","java","1","9","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    boolean flag = true;
+    System.out.println(flag);
+  }
+}
+","1","true","false","2025-08-30T11:04:18.698Z","1","10"
+"68a5bc335a49d8e04b9179ae","priya","java","1","10","Which of the following is used to print text in Java?","echo","System.out.println()","false","2025-08-30T11:04:18.698Z","1","10"
+"68a5bc335a49d8e04b9179ae","priya","cpp","2","1","Which header is needed to use std::cout in C++?","#include <stdio.h>","#include <iostream>","false","2025-08-30T11:12:43.652Z","3","11"
+"68a5bc335a49d8e04b9179ae","priya","cpp","2","2","Which keyword prevents a variable from being modified after initialization?","static","const","false","2025-08-30T11:12:43.652Z","3","11"
+"68a5bc335a49d8e04b9179ae","priya","cpp","2","3","Which header provides std::vector?","#include <vector>","#include <vector>","true","2025-08-30T11:12:43.652Z","3","11"
+"68a5bc335a49d8e04b9179ae","priya","cpp","2","4","What does std::endl do on an output stream?","Inserts a newline and flushes","Inserts a newline and flushes","true","2025-08-30T11:12:43.652Z","3","11"
+"68a5bc335a49d8e04b9179ae","priya","cpp","2","5","Which header defines std::string?","#include <text>","#include <string>","false","2025-08-30T11:12:43.652Z","3","11"
+"68a5bc335a49d8e04b9179ae","priya","cpp","2","6","Which operator is used to output to std::cout?","::","<<","false","2025-08-30T11:12:43.652Z","3","11"
+"68a5bc335a49d8e04b9179ae","priya","cpp","2","7","What is the correct way to include a standard header in C++?","#include <iostream>","#include <iostream>","true","2025-08-30T11:12:43.652Z","3","11"
+"68a5bc335a49d8e04b9179ae","priya","cpp","2","8","Which header provides std::sqrt and std::pow?","#include <maths>","#include <cmath>","false","2025-08-30T11:12:43.652Z","3","11"
+"68a5bc335a49d8e04b9179ae","priya","cpp","2","9","Which container is best for fast insertion/removal at the back with dynamic resizing?","std::deque","std::vector","false","2025-08-30T11:12:43.652Z","3","11"
+"68a5bc335a49d8e04b9179ae","priya","cpp","2","10","Which header is needed for formatted I/O manipulators like std::setprecision?","Not Answered","#include <iomanip>","false","2025-08-30T11:12:43.652Z","3","11"
+"68a5bc335a49d8e04b9179ae","priya","cpp","2","11","Which keyword creates an alias for a type in modern C++?","Not Answered","using","false","2025-08-30T11:12:43.652Z","3","11"
+"68a5bc335a49d8e04b9179ae","priya","python","1","1","What is the correct way to create a list in Python?","list = [1, 2, 3]","list = [1, 2, 3]","true","2025-08-30T17:47:50.387Z","4","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","2","Which of the following is used to define a function in Python?","function","def","false","2025-08-30T17:47:50.387Z","4","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","3","What will be the output of: print(type([]))?","<class 'list'>","<class 'list'>","true","2025-08-30T17:47:50.387Z","4","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","4","Which operator is used for exponentiation in Python?","pow","**","false","2025-08-30T17:47:50.387Z","4","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","5","What is the correct syntax for a while loop in Python?","while (condition) { }","while condition:","false","2025-08-30T17:47:50.387Z","4","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","6","Which method is used to add an element to the end of a list?","push()","append()","false","2025-08-30T17:47:50.387Z","4","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","7","What is the output of: len('Hello World')?","11","11","true","2025-08-30T17:47:50.387Z","4","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","8","Which of the following is NOT a valid Python data type?","char","char","true","2025-08-30T17:47:50.387Z","4","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","9","What is the correct way to import the math module in Python?","include math","import math","false","2025-08-30T17:47:50.387Z","4","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","10","What will be the result of: 5 // 2?","2.5","2","false","2025-08-30T17:47:50.387Z","4","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","1","What is the correct way to create a list in Python?","list = [1, 2, 3]","list = [1, 2, 3]","true","2025-08-30T17:49:36.519Z","10","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","2","Which of the following is used to define a function in Python?","def","def","true","2025-08-30T17:49:36.519Z","10","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","3","What will be the output of: print(type([]))?","<class 'list'>","<class 'list'>","true","2025-08-30T17:49:36.519Z","10","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","4","Which operator is used for exponentiation in Python?","**","**","true","2025-08-30T17:49:36.519Z","10","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","5","What is the correct syntax for a while loop in Python?","while condition:","while condition:","true","2025-08-30T17:49:36.519Z","10","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","6","Which method is used to add an element to the end of a list?","append()","append()","true","2025-08-30T17:49:36.519Z","10","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","7","What is the output of: len('Hello World')?","11","11","true","2025-08-30T17:49:36.519Z","10","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","8","Which of the following is NOT a valid Python data type?","char","char","true","2025-08-30T17:49:36.519Z","10","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","9","What is the correct way to import the math module in Python?","import math","import math","true","2025-08-30T17:49:36.519Z","10","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","10","What will be the result of: 5 // 2?","2","2","true","2025-08-30T17:49:36.519Z","10","10"
+"68a5bc335a49d8e04b9179ae","priya","python","2","1","What is the output?
+
+#include <iostream>
+int add(int a, int b = 2) { return a + b; }
+int main(){ std::cout << add(3); }
+","2","5","false","2025-08-30T17:50:12.132Z","1","15"
+"68a5bc335a49d8e04b9179ae","priya","python","2","2","What will this print?
+
+#include <iostream>
+void f(int &x){ x += 5; }
+int main(){ int a = 10; f(a); std::cout << a; }
+","Not Answered","15","false","2025-08-30T17:50:12.132Z","1","15"
+"68a5bc335a49d8e04b9179ae","priya","python","2","3","Which declaration correctly creates a dynamic array of 5 ints?","int* a = new int[5];","int* a = new int[5];","true","2025-08-30T17:50:12.132Z","1","15"
+"68a5bc335a49d8e04b9179ae","priya","python","2","4","Choose the correct smart pointer usage to manage a dynamic int.","unique_ptr<int> p = make_unique(42);","std::unique_ptr<int> p(new int{42});","false","2025-08-30T17:50:12.132Z","1","15"
+"68a5bc335a49d8e04b9179ae","priya","python","2","5","What is the output?
+
+#include <iostream>
+int main(){ int x = 5; std::cout << ++x << "" "" << x++; }
+","6 5","6 6","false","2025-08-30T17:50:12.132Z","1","15"
+"68a5bc335a49d8e04b9179ae","priya","python","2","6","Which statement about references is true?","A reference can be null in standard C++.","A reference must be initialized when declared.","false","2025-08-30T17:50:12.132Z","1","15"
+"68a5bc335a49d8e04b9179ae","priya","python","2","7","What is the effect of the const in this signature?
+
+int sum(const int a, const int b);
+","Forces pass-by-reference.","Prevents modifying a and b inside the function.","false","2025-08-30T17:50:12.132Z","1","15"
+"68a5bc335a49d8e04b9179ae","priya","python","2","8","Which overload will be preferred for a literal ""hello""?","void f(std::string);","void f(const char*)","false","2025-08-30T17:50:12.132Z","1","15"
+"68a5bc335a49d8e04b9179ae","priya","python","2","9","What will this code print?
+
+#include <iostream>
+#include <vector>
+int main(){ std::vector<int> v{1,2,3}; for(const auto& x : v) std::cout << x << ' '; }
+","Undefined","1 2 3 ","false","2025-08-30T17:50:12.132Z","1","15"
+"68a5bc335a49d8e04b9179ae","priya","python","2","10","Which range-based for changes elements of v?","for (auto&& x : v) { const int y = x; x = y + 1; } // always ok","for (auto& x : v) x += 1;","false","2025-08-30T17:50:12.132Z","1","15"
+"68a5bc335a49d8e04b9179ae","priya","python","2","11","What is the output?
+
+#include <iostream>
+#include <string>
+int main(){ std::string s = ""abc""; s += 'd'; std::cout << s.size(); }
+","Compilation error","4","false","2025-08-30T17:50:12.132Z","1","15"
+"68a5bc335a49d8e04b9179ae","priya","python","2","12","Pick the correct function template that returns the larger of two values.","template<typename T> auto max(T a, T b) -> void { return a > b ? a : b; }","template<typename T> T max(T a, T b){ return a > b ? a : b; }","false","2025-08-30T17:50:12.132Z","1","15"
+"68a5bc335a49d8e04b9179ae","priya","python","2","13","What happens here?
+
+#include <iostream>
+void g(int&& x){ std::cout << x; }
+int main(){ int a = 7; g(std::move(a)); }
+","Compilation error: cannot bind rvalue ref.","Binds rvalue reference parameter to moved-from a; prints 7.","false","2025-08-30T17:50:12.132Z","1","15"
+"68a5bc335a49d8e04b9179ae","priya","python","2","14","Which is a correct lambda capturing by value and returning sum?","auto f = [x,y]{ x + y; }; // without parameters","auto f = [=](int x, int y) { return x + y; };","false","2025-08-30T17:50:12.132Z","1","15"
+"68a5bc335a49d8e04b9179ae","priya","python","2","15","What does this print?
+
+#include <iostream>
+struct A{ A(){ std::cout << ""A""; } ~A(){ std::cout << ""D""; } };
+int main(){ { A a; std::cout << ""M""; } std::cout << ""E""; }
+","Not Answered","AMDE","false","2025-08-30T17:50:12.132Z","1","15"
+"68a5bc335a49d8e04b9179ae","priya","python","1","1","What is the correct way to create a list in Python?","list = {1, 2, 3}","list = [1, 2, 3]","false","2025-08-31T07:32:32.713Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","2","Which of the following is used to define a function in Python?","func","def","false","2025-08-31T07:32:32.713Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","3","What will be the output of: print(type([]))?","Not Answered","<class 'list'>","false","2025-08-31T07:32:32.713Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","4","Which operator is used for exponentiation in Python?","Not Answered","**","false","2025-08-31T07:32:32.713Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","5","What is the correct syntax for a while loop in Python?","Not Answered","while condition:","false","2025-08-31T07:32:32.713Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","6","Which method is used to add an element to the end of a list?","Not Answered","append()","false","2025-08-31T07:32:32.713Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","7","What is the output of: len('Hello World')?","Not Answered","11","false","2025-08-31T07:32:32.713Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","8","Which of the following is NOT a valid Python data type?","Not Answered","char","false","2025-08-31T07:32:32.713Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","9","What is the correct way to import the math module in Python?","Not Answered","import math","false","2025-08-31T07:32:32.713Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","10","What will be the result of: 5 // 2?","Not Answered","2","false","2025-08-31T07:32:32.713Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","1","What is the correct way to create a list in Python?","Not Answered","list = [1, 2, 3]","false","2025-08-31T07:33:59.155Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","2","Which of the following is used to define a function in Python?","Not Answered","def","false","2025-08-31T07:33:59.155Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","3","What will be the output of: print(type([]))?","Not Answered","<class 'list'>","false","2025-08-31T07:33:59.155Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","4","Which operator is used for exponentiation in Python?","Not Answered","**","false","2025-08-31T07:33:59.155Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","5","What is the correct syntax for a while loop in Python?","Not Answered","while condition:","false","2025-08-31T07:33:59.155Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","6","Which method is used to add an element to the end of a list?","Not Answered","append()","false","2025-08-31T07:33:59.155Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","7","What is the output of: len('Hello World')?","Not Answered","11","false","2025-08-31T07:33:59.155Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","8","Which of the following is NOT a valid Python data type?","Not Answered","char","false","2025-08-31T07:33:59.155Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","9","What is the correct way to import the math module in Python?","Not Answered","import math","false","2025-08-31T07:33:59.155Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","10","What will be the result of: 5 // 2?","Not Answered","2","false","2025-08-31T07:33:59.155Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","1","What is the correct way to create a list in Python?","Not Answered","list = [1, 2, 3]","false","2025-08-31T09:26:32.798Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","2","Which of the following is used to define a function in Python?","Not Answered","def","false","2025-08-31T09:26:32.798Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","3","What will be the output of: print(type([]))?","Not Answered","<class 'list'>","false","2025-08-31T09:26:32.798Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","4","Which operator is used for exponentiation in Python?","Not Answered","**","false","2025-08-31T09:26:32.798Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","5","What is the correct syntax for a while loop in Python?","Not Answered","while condition:","false","2025-08-31T09:26:32.798Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","6","Which method is used to add an element to the end of a list?","Not Answered","append()","false","2025-08-31T09:26:32.798Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","7","What is the output of: len('Hello World')?","Not Answered","11","false","2025-08-31T09:26:32.798Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","8","Which of the following is NOT a valid Python data type?","Not Answered","char","false","2025-08-31T09:26:32.798Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","9","What is the correct way to import the math module in Python?","Not Answered","import math","false","2025-08-31T09:26:32.798Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","python","1","10","What will be the result of: 5 // 2?","Not Answered","2","false","2025-08-31T09:26:32.798Z","0","10"

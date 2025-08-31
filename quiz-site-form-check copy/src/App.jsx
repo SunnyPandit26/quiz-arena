@@ -9,8 +9,8 @@ import './App.css';
 
 import LoginPage from './components/LoginPage';
 import Cards from './components/Cards';
-import Quiz from './components/quiz/Quiz';
-import Start from './components/start_quiz/Start';
+import Quiz from './components/start_quiz/Quiz';
+import Levelpage from './components/start_quiz/levelpage';
 import LoginDialog from './components/loginDialog';
 import Dashboard from './components/Dashboard';
 import History from './components/History';
@@ -37,7 +37,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Dashboard/>} />
             <Route path="/login" element={<LoginPage />} />
-            <Route path="/start/:subject" element={<Start />} />
+            <Route path="/start/:subject" element={<Levelpage />} />
             <Route path="/quiz/:subject" element={<Quiz />} />
             <Route path="/history" element={<History />} />
             <Route path="*" element={<Navigate to="/" replace />} />

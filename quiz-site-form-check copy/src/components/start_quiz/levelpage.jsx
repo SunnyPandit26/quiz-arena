@@ -1,28 +1,11 @@
 // src/components/start_quiz/Start.jsx
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams, useLocation } from 'react-router-dom';
-import styles from './Start.module.css';
+import styles from './levelpage.module.css';
+import LevelCard from './levelcard';
 
-function Box({ level, types, onStart, locked = false }) {
-  return (
-    <div className={styles.box}>
-      <div>
-        <div className={styles.level}>{level}</div>
-        <div className={styles.subtitle}>{types}</div>
-      </div>
 
-      <button
-        className={`${styles.button} ${locked ? styles.locked : styles.start}`}
-        disabled={locked}
-        onClick={onStart}
-      >
-        {locked ? 'Locked' : 'Start'}
-      </button>
-    </div>
-  );
-}
-
-export default function Start() {
+export default function Levelpage() {
   const navigate  = useNavigate();
   const { subject } = useParams();
   const location  = useLocation();
@@ -70,13 +53,13 @@ useEffect(() => {
   return (
     <div className={styles.grid}>
       {boxes.map(({ levelNumber, label, subtitle }) => (
-        <Box
-          key={levelNumber}
-          level={label}
-          types={subtitle}
-          onStart={() => goToQuiz(levelNumber)}
-          locked={levelNumber > highest}
-        />
+        <LevelCard  // Use LevelCard instead of Box
+        key={levelNumber}
+        level={label}
+        types={subtitle}
+        onStart={() => goToQuiz(levelNumber)}
+        locked={levelNumber > highest}
+      />
       ))}
     </div>
   );
