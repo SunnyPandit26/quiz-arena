@@ -24,7 +24,7 @@ const Navbar = () => {
     {/* ── 1.  LEFT GROUP:  Logo + Welcome ── */}
     <div className={styles.leftGroup}>
       <div className={styles.navbarLogo}>
-        <span>MyBrand</span>
+        <img src='./images/logo2.png' className={styles.logo}/>
       </div>
 
       {user && (

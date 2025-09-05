@@ -97,7 +97,7 @@
 
 /* Cards container */
 .cardsWrap {
-  background: #ffffff;
+  background: #fff;
   border: 1px solid rgba(15, 23, 42, 0.06);
   border-radius: 16px;
   padding: clamp(14px, 3vw, 24px);

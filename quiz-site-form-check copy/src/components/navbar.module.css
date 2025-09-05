@@ -19,14 +19,19 @@
 }
 
 /* ===== Logo ===== */
-.navbarLogo span {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #fff;
-  cursor: pointer;
+.logo{
+  
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgb(21, 21, 108);
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+
 }
 
-.navbarLogo span:hover { transform: scale(1.05); }
+.logo:hover { transform: scale(1.05); }
 
 /* ===== Desktop links ===== */
 .navbarLinks {
@@ -62,8 +67,7 @@
 .welcomeText {
   color: #ffffff;
   font-size: 1.2rem;
-  color: black;
-  font-weight: 500;
+ font-weight: 600;
   white-space: nowrap;
 }
 
@@ -191,3 +195,4 @@
 @media (max-width: 768px) {
   .welcomeText { font-size: 0.8rem; }
 }
+

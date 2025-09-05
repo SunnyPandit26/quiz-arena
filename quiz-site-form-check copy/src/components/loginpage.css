@@ -1,16 +1,13 @@
 
-
 .login-page {
     width: 100vw;
-    min-height: 100vh;
+    min-height: 91vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(90deg, #cf8b8b, #768fe0);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
 }
-
 .container {
     position: relative;
     width: 850px;
@@ -20,7 +17,6 @@
     box-shadow: 0 0 30px rgb(0, 0, 0.2);
     overflow: hidden;
 }
-
 .form-box {
     position: absolute;
     right: 0;
@@ -35,33 +31,26 @@
     border-radius: 30px;
     transition: 0.6s ease-in-out 0.6s, visibility 0s 1s;
 }
-
 .container.active .form-box {
     right: 50%;
 }
-
 .form-box.create-account {
     visibility: hidden;
 }
-
 .container.active .form-box.create-account {
     visibility: visible;
 }
-
 form {
     width: 100%;
 }
-
 .title {
     font-size: 36px;
     margin: 10px 0;
 }
-
 .input-box {
     position: relative;
     margin: 30px 0;
 }
-
 input {
     width: 80%;
     min-height: 30px;
@@ -74,11 +63,9 @@ input {
     font-weight: 500;
     box-shadow: 0 0 10px rgb(158, 146, 146);
 }
-
 .forgot-link {
     margin: 15px 0 15px;
 }
-
 .submitBtn {
     width: 40%;
     height: 30px;
@@ -90,12 +77,10 @@ input {
     font-size: 15px;
     font-weight: 600;
 }
-
 p {
     font-size: 15px;
     margin: 15px 0;
 }
-
 .social {
     border: none;
     display: inline-flex;
@@ -112,39 +97,32 @@ p {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-
 .social:hover {
     background-color: #f5f5f5;
     border-color: #999;
     transform: translateY(-2px);
 }
-
 .social:active {
     transform: translateY(0);
 }
-
 .social:disabled {
     opacity: 0.6;
     cursor: not-allowed;
     transform: none;
 }
-
 /* Individual social button hover effects */
 .google-btn:hover {
     background-color: #f8f9fa;
     border-color: #ea4335;
 }
-
 .facebook-btn:hover {
     background-color: #f8f9fa;
     border-color: #1877f2;
 }
-
 .linkedin-btn:hover {
     background-color: #f8f9fa;
     border-color: #0077b5;
 }
-
 /* Toggle sliding animation */
 .toggle-box::before {
     content: "";
@@ -157,17 +135,14 @@ p {
     z-index: 1;
     transition: 1.2s ease-in-out;
 }
-
 .toggle-box {
     position: absolute;
     width: 100%;
     height: 100%;
 }
-
 .container.active .toggle-box::before {
     left: 50%;
 }
-
 .toggle-panel {
     position: absolute;
     width: 50%;
@@ -179,27 +154,22 @@ p {
     z-index: 10;
     transition-delay: 0.6s ease-in-out;
 }
-
 .toggle-panel.toggle-left {
     left: 0;
     transition-delay: 1.2s;
 }
-
 .container.active .toggle-panel.toggle-left {
     left: -50%;
     transition-delay: 0.6s;
 }
-
 .toggle-panel.toggle-right {
     right: -50%;
     transition-delay: 0.6s;
 }
-
 .container.active .toggle-panel.toggle-right {
     right: 0;
     transition-delay: 1.2s;
 }
-
 .btn {
     width: 40%;
     height: 30px;
@@ -210,4 +180,110 @@ p {
     cursor: pointer;
     font-size: 15px;
     font-weight: 600;
+}
+
+/* Responsive Design - 650px breakpoint */
+@media screen and (max-width: 650px) {
+    .login-page {
+        min-height: 100vh;
+        padding: 10px;
+        align-items: flex-start;
+        left: 10px;
+        padding-top: 60px; /* Account for navbar space */
+    
+    }
+
+    .container {
+         height: calc(100vh - 70px);
+         width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgb(0, 0, 0.2);
+        
+    }
+    .form-box {
+        bottom: 0;
+        width: 100%;
+        height: 65%;
+        padding: 25px 20px;
+        border-radius: 0 0 20px 20px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .container.active .form-box {
+        right: 0;
+        bottom: 35%;
+        height: 65%;
+    }
+    .toggle-box::before {
+        left: 0;
+        top: -270%;
+        width: 100%;
+        height : 300%;
+        border-radius: 20vw;
+    }
+    .container.active .toggle-box::before {
+        left: 0;
+        top: 70%;
+    }
+    .toggle-panel {
+       padding: 20px;
+        width: 100%;
+        height: 30%;
+        
+    }
+    .toggle-panel.toggle-left {
+    
+        top: 0;
+        left : 0;
+    }
+    .container.active .toggle-panel.toggle-left {
+        left: 0;
+        top: -30%;
+    }
+    .toggle-panel.toggle-right {
+        right: 0;
+        bottom: -30%;
+    }
+    .container.active .toggle-panel.toggle-right {
+        bottom: 0;
+    }
+    .title {
+        padding-top: 7px;
+        font-size: 28px;
+        margin: 10px 0 25px 0;
+        font-weight: bold;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .social {
+        height: 45px;
+        width: 45px;
+        margin: 2px;
+        font-size: 20px;
+        border-radius: 12px;
+        border: 2px solid #e0e0e0;
+        background: white;
+        transition: all 0.3s ease;
+    }
+}
+
+/* Responsive Design - 400px breakpoint */
+@media screen and (max-width: 400px) {
+    .login-page {
+        padding-top: 70px;
+    }
+    .container {
+        max-width: 350px;
+        height: calc(100vh - 90px);
+    }
+    .form-box {
+        padding: 20px 15px;
+    }
+    .toggle-panel h1 {
+        font-size: 30px;
+    }
 }
