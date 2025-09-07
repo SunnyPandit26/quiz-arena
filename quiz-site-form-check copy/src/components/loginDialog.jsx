@@ -34,9 +34,15 @@ const LoginDialog = () => {
         
         <div className={styles.actions}>
           <button onClick={handleLogin} className={styles.loginBtn}>
-            Log In
+            Sign In
           </button>
-          <button onClick={() => navigate('/login?signup=true')} className={styles.signupBtn}>
+          <button
+              onClick={() => {
+               navigate('/login?signup=true');
+              setShowLoginDialog(false);
+               }}
+            className={styles.signupBtn}
+              >
             Sign Up
           </button>
           <button onClick={handleClose} className={styles.cancelBtn}>

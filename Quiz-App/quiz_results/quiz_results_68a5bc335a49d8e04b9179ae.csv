@@ -174,3 +174,56 @@ int main(){ { A a; std::cout << ""M""; } std::cout << ""E""; }
 "68a5bc335a49d8e04b9179ae","priya","python","1","8","Which of the following is NOT a valid Python data type?","Not Answered","char","false","2025-08-31T09:26:32.798Z","0","10"
 "68a5bc335a49d8e04b9179ae","priya","python","1","9","What is the correct way to import the math module in Python?","Not Answered","import math","false","2025-08-31T09:26:32.798Z","0","10"
 "68a5bc335a49d8e04b9179ae","priya","python","1","10","What will be the result of: 5 // 2?","Not Answered","2","false","2025-08-31T09:26:32.798Z","0","10"
+"68a5bc335a49d8e04b9179ae","priya","java","1","1","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(""Hello Java"");
+  }
+}
+","Hello Java","Hello Java","true","2025-09-01T14:42:17.710Z","4","10"
+"68a5bc335a49d8e04b9179ae","priya","java","1","2","Which data type is used to store whole numbers in Java?","String","int","false","2025-09-01T14:42:17.710Z","4","10"
+"68a5bc335a49d8e04b9179ae","priya","java","1","3","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x++);
+  }
+}
+","6","5","false","2025-09-01T14:42:17.710Z","4","10"
+"68a5bc335a49d8e04b9179ae","priya","java","1","4","Which symbol is used to start a single-line comment in Java?","//","//","true","2025-09-01T14:42:17.710Z","4","10"
+"68a5bc335a49d8e04b9179ae","priya","java","1","5","What does JVM stand for in Java?","Java Virtual Machine","Java Virtual Machine","true","2025-09-01T14:42:17.710Z","4","10"
+"68a5bc335a49d8e04b9179ae","priya","java","1","6","What will the following code print?
+
+public class Main {
+  public static void main(String[] args) {
+    int a = 10, b = 20;
+    System.out.println(a + b);
+  }
+}
+","30","30","true","2025-09-01T14:42:17.710Z","4","10"
+"68a5bc335a49d8e04b9179ae","priya","java","1","7","Which keyword is used to create an object in Java?","object","new","false","2025-09-01T14:42:17.710Z","4","10"
+"68a5bc335a49d8e04b9179ae","priya","java","1","8","Which of these is NOT a Java primitive data type?","boolean","String","false","2025-09-01T14:42:17.710Z","4","10"
+"68a5bc335a49d8e04b9179ae","priya","java","1","9","What will be the output?
+
+public class Main {
+  public static void main(String[] args) {
+    boolean flag = true;
+    System.out.println(flag);
+  }
+}
+","1","true","false","2025-09-01T14:42:17.710Z","4","10"
+"68a5bc335a49d8e04b9179ae","priya","java","1","10","Which of the following is used to print text in Java?","print()","System.out.println()","false","2025-09-01T14:42:17.710Z","4","10"
+"68a5bc335a49d8e04b9179ae","priya","cpp","2","1","Which header is needed to use std::cout in C++?","#include <iostream>","#include <iostream>","true","2025-09-01T14:45:45.386Z","8","11"
+"68a5bc335a49d8e04b9179ae","priya","cpp","2","2","Which keyword prevents a variable from being modified after initialization?","Not Answered","const","false","2025-09-01T14:45:45.386Z","8","11"
+"68a5bc335a49d8e04b9179ae","priya","cpp","2","3","Which header provides std::vector?","#include <vector>","#include <vector>","true","2025-09-01T14:45:45.386Z","8","11"
+"68a5bc335a49d8e04b9179ae","priya","cpp","2","4","What does std::endl do on an output stream?","Inserts a newline and flushes","Inserts a newline and flushes","true","2025-09-01T14:45:45.386Z","8","11"
+"68a5bc335a49d8e04b9179ae","priya","cpp","2","5","Which header defines std::string?","#include <string>","#include <string>","true","2025-09-01T14:45:45.386Z","8","11"
+"68a5bc335a49d8e04b9179ae","priya","cpp","2","6","Which operator is used to output to std::cout?","<<","<<","true","2025-09-01T14:45:45.386Z","8","11"
+"68a5bc335a49d8e04b9179ae","priya","cpp","2","7","What is the correct way to include a standard header in C++?","#include <iostream>","#include <iostream>","true","2025-09-01T14:45:45.386Z","8","11"
+"68a5bc335a49d8e04b9179ae","priya","cpp","2","8","Which header provides std::sqrt and std::pow?","#include <cmath>","#include <cmath>","true","2025-09-01T14:45:45.386Z","8","11"
+"68a5bc335a49d8e04b9179ae","priya","cpp","2","9","Which container is best for fast insertion/removal at the back with dynamic resizing?","std::array","std::vector","false","2025-09-01T14:45:45.386Z","8","11"
+"68a5bc335a49d8e04b9179ae","priya","cpp","2","10","Which header is needed for formatted I/O manipulators like std::setprecision?","#include <iomanip>","#include <iomanip>","true","2025-09-01T14:45:45.386Z","8","11"
+"68a5bc335a49d8e04b9179ae","priya","cpp","2","11","Which keyword creates an alias for a type in modern C++?","typedef","using","false","2025-09-01T14:45:45.386Z","8","11"
+"68a5bc335a49d8e04b9179ae","priya","cpp","3","1","Which header is needed to use std::cout in C++?","#include <iostream>","#include <iostream>","true","2025-09-01T14:46:31.370Z","1","1"
