@@ -483,3 +483,67 @@ int main(){ { A a; std::cout << ""M""; } std::cout << ""E""; }
 "68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","8","Which of the following is NOT a valid Python data type?","Not Answered","char","false","2025-08-30T08:54:15.134Z","1","10"
 "68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","9","What is the correct way to import the math module in Python?","Not Answered","import math","false","2025-08-30T08:54:15.134Z","1","10"
 "68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","10","What will be the result of: 5 // 2?","Not Answered","2","false","2025-08-30T08:54:15.134Z","1","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","1","Which header is needed to use std::cout in C++?","Not Answered","#include <iostream>","false","2025-08-31T15:11:47.558Z","0","1"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","cpp","1","1","Which header is needed to use std::cout in C++?","#include <string>","#include <iostream>","false","2025-08-31T16:00:48.395Z","0","1"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","1","What is the output?
+
+#include <iostream>
+int add(int a, int b = 2) { return a + b; }
+int main(){ std::cout << add(3); }
+","2","5","false","2025-09-08T06:40:07.916Z","1","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","2","What will this print?
+
+#include <iostream>
+void f(int &x){ x += 5; }
+int main(){ int a = 10; f(a); std::cout << a; }
+","Compilation error","15","false","2025-09-08T06:40:07.916Z","1","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","3","Which declaration correctly creates a dynamic array of 5 ints?","int* a = new int[5];","int* a = new int[5];","true","2025-09-08T06:40:07.916Z","1","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","4","Choose the correct smart pointer usage to manage a dynamic int.","unique_ptr<int> p = make_unique(42);","std::unique_ptr<int> p(new int{42});","false","2025-09-08T06:40:07.916Z","1","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","5","What is the output?
+
+#include <iostream>
+int main(){ int x = 5; std::cout << ++x << "" "" << x++; }
+","6 6 (UB)","6 6","false","2025-09-08T06:40:07.916Z","1","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","6","Which statement about references is true?","References require explicit delete.","A reference must be initialized when declared.","false","2025-09-08T06:40:07.916Z","1","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","7","What is the effect of the const in this signature?
+
+int sum(const int a, const int b);
+","Forces pass-by-reference.","Prevents modifying a and b inside the function.","false","2025-09-08T06:40:07.916Z","1","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","8","Which overload will be preferred for a literal ""hello""?","Ambiguous","void f(const char*)","false","2025-09-08T06:40:07.916Z","1","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","9","What will this code print?
+
+#include <iostream>
+#include <vector>
+int main(){ std::vector<int> v{1,2,3}; for(const auto& x : v) std::cout << x << ' '; }
+","Not Answered","1 2 3 ","false","2025-09-08T06:40:07.916Z","1","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","10","Which range-based for changes elements of v?","for (const auto& x : v) x += 1;","for (auto& x : v) x += 1;","false","2025-09-08T06:40:07.916Z","1","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","11","What is the output?
+
+#include <iostream>
+#include <string>
+int main(){ std::string s = ""abc""; s += 'd'; std::cout << s.size(); }
+","Compilation error","4","false","2025-09-08T06:40:07.916Z","1","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","12","Pick the correct function template that returns the larger of two values.","template<typename T> T max(T& a, T& b) = delete;","template<typename T> T max(T a, T b){ return a > b ? a : b; }","false","2025-09-08T06:40:07.916Z","1","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","13","What happens here?
+
+#include <iostream>
+void g(int&& x){ std::cout << x; }
+int main(){ int a = 7; g(std::move(a)); }
+","Compilation error: cannot bind rvalue ref.","Binds rvalue reference parameter to moved-from a; prints 7.","false","2025-09-08T06:40:07.916Z","1","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","14","Which is a correct lambda capturing by value and returning sum?","auto f = [&](int x, int y) => x + y;","auto f = [=](int x, int y) { return x + y; };","false","2025-09-08T06:40:07.916Z","1","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","2","15","What does this print?
+
+#include <iostream>
+struct A{ A(){ std::cout << ""A""; } ~A(){ std::cout << ""D""; } };
+int main(){ { A a; std::cout << ""M""; } std::cout << ""E""; }
+","AEMD","AMDE","false","2025-09-08T06:40:07.916Z","1","15"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","1","What is the correct way to create a list in Python?","list = (1, 2, 3)","list = [1, 2, 3]","false","2026-03-11T08:53:43.884Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","2","Which of the following is used to define a function in Python?","function","def","false","2026-03-11T08:53:43.884Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","3","What will be the output of: print(type([]))?","<class 'tuple'>","<class 'list'>","false","2026-03-11T08:53:43.884Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","4","Which operator is used for exponentiation in Python?","^","**","false","2026-03-11T08:53:43.884Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","5","What is the correct syntax for a while loop in Python?","while: condition","while condition:","false","2026-03-11T08:53:43.884Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","6","Which method is used to add an element to the end of a list?","push()","append()","false","2026-03-11T08:53:43.884Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","7","What is the output of: len('Hello World')?","9","11","false","2026-03-11T08:53:43.884Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","8","Which of the following is NOT a valid Python data type?","bool","char","false","2026-03-11T08:53:43.884Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","9","What is the correct way to import the math module in Python?","require math","import math","false","2026-03-11T08:53:43.884Z","0","10"
+"68a085a178951ca129eab121","gamingwithalone446@gmail.com","python","1","10","What will be the result of: 5 // 2?","Not Answered","2","false","2026-03-11T08:53:43.884Z","0","10"

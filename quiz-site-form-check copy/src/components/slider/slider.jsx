@@ -2,7 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import styles from './Slider.module.css';
 import { GrFormPrevious } from 'react-icons/gr';
 import { MdNavigateNext } from 'react-icons/md';
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+// Path fix ke sath AuthContext import
+import { useAuth } from '../../contexts/AuthContext'; 
 
 const Slider = () => {
   const slides = [
@@ -12,8 +14,7 @@ const Slider = () => {
       author: 'John Smith',
       title: 'Python Programming',
       topic: 'Learn Coding',
-      description:
-        'Master Python from basics to advanced concepts. Build real projects and gain practical experience.',
+      description: 'Master Python from basics to advanced concepts. Build real projects and gain practical experience.',
       thumbnailTitle: 'Python Course',
       thumbnailDesc: 'Beginner to Advanced',
     },
@@ -23,8 +24,7 @@ const Slider = () => {
       author: 'Sarah Johnson',
       title: 'Web Development',
       topic: 'Frontend Skills',
-      description:
-        'Create stunning websites with HTML, CSS, JavaScript and modern frameworks like React.',
+      description: 'Create stunning websites with HTML, CSS, JavaScript and modern frameworks like React.',
       thumbnailTitle: 'Web Dev Course',
       thumbnailDesc: 'Full Stack Focus',
     },
@@ -34,8 +34,7 @@ const Slider = () => {
       author: 'Mike Wilson',
       title: 'Data Science',
       topic: 'Analytics & AI',
-      description:
-        'Dive deep into data analysis, machine learning, and artificial intelligence concepts.',
+      description: 'Dive deep into data analysis, machine learning, and artificial intelligence concepts.',
       thumbnailTitle: 'Data Science',
       thumbnailDesc: 'ML & Analytics',
     },
@@ -45,8 +44,7 @@ const Slider = () => {
       author: 'Emma Davis',
       title: 'Mobile Apps',
       topic: 'React Native',
-      description:
-        'Build cross-platform mobile applications for iOS and Android using React Native.',
+      description: 'Build cross-platform mobile applications for iOS and Android using React Native.',
       thumbnailTitle: 'Mobile Dev',
       thumbnailDesc: 'Cross Platform',
     },
@@ -56,6 +54,10 @@ const Slider = () => {
   const [isAnimating, setIsAnimating] = useState(false);
   const timeoutRef = useRef(null);
   const autoPlayRef = useRef(null);
+  const navigate = useNavigate();
+  
+  // Auth state access
+  const { user } = useAuth();
 
   const ANIMATION_DURATION = 600;
   const AUTO_PLAY_DELAY = 5000;
@@ -126,25 +128,14 @@ const Slider = () => {
     }, ANIMATION_DURATION);
   };
 
-  useEffect(() => {
-    return () => {
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
-      if (autoPlayRef.current) clearTimeout(autoPlayRef.current);
-    };
-  }, []);
-
-  const navigate = useNavigate();
-
   return (
     <div className={styles.carousel}>
-      {/* Main slider */}
       <div className={styles.sliderWrapper}>
         {currentSlides.map((slide, index) => (
           <div
             key={`${slide.id}-${index}`}
             className={`${styles.slide} ${index === 0 ? styles.active : ''}`}
           >
-            {/* Centered, fully visible image */}
             <div className={styles.mediaBox}>
               <img
                 src={slide.image}
@@ -154,22 +145,25 @@ const Slider = () => {
               />
             </div>
 
-            {/* Overlay content */}
             <div className={styles.slideContent}>
               <div className={styles.author}>{slide.author}</div>
               <h1 className={styles.title}>{slide.title}</h1>
               <h2 className={styles.topic}>{slide.topic}</h2>
               <p className={styles.description}>{slide.description}</p>
 
-              <div className={styles.buttonGroup}>
-                <button className={styles.primaryBtn} onClick={()=>navigate('/login')}>login/signup</button>
-              </div>
+              {/* FIXED: Agar user login HAI, to ye pura section hi nahi dikhega */}
+              {!user && (
+                <div className={styles.buttonGroup}>
+                  <button className={styles.primaryBtn} onClick={() => navigate('/login')}>
+                    Login/Signup
+                  </button>
+                </div>
+              )}
             </div>
           </div>
         ))}
       </div>
 
-      {/* Thumbnails */}
       <div className={styles.thumbnails}>
         {currentSlides.slice(0, 3).map((slide, index) => (
           <div
@@ -189,36 +183,19 @@ const Slider = () => {
               <h4 className={styles.thumbnailTitle}>{slide.thumbnailTitle}</h4>
               <p className={styles.thumbnailDesc}>{slide.thumbnailDesc}</p>
             </div>
-            {index !== 0 && !isAnimating && (
-              <div className={styles.clickIndicator}>
-                <span>Click to view</span>
-              </div>
-            )}
           </div>
         ))}
       </div>
 
-      {/* Navigation */}
       <div className={styles.navigation}>
-        <button
-          className={styles.navBtn}
-          onClick={prevSlide}
-          disabled={isAnimating}
-          aria-label="Previous slide"
-        >
+        <button className={styles.navBtn} onClick={prevSlide} disabled={isAnimating}>
           <GrFormPrevious />
         </button>
-        <button
-          className={styles.navBtn}
-          onClick={nextSlide}
-          disabled={isAnimating}
-          aria-label="Next slide"
-        >
+        <button className={styles.navBtn} onClick={nextSlide} disabled={isAnimating}>
           <MdNavigateNext />
         </button>
       </div>
 
-      {/* Progress */}
       <div className={styles.progressBar}>
         <div className={styles.progress}></div>
       </div>

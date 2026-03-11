@@ -14,7 +14,7 @@ const LevelCard = ({ level, types, onStart, locked = false }) => {
         disabled={locked}
         onClick={onStart}
       >
-        {locked ? 'Locked' : 'Start'}
+        {locked ? 'LOCKED' : 'START'}
       </button>
     </div>
   );

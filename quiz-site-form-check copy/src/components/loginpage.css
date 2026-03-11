@@ -136,7 +136,7 @@ p {
     transition: 1.2s ease-in-out;
 }
 .toggle-box {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
 }
@@ -269,6 +269,18 @@ p {
         background: white;
         transition: all 0.3s ease;
     }
+    .btn{
+         display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 0.8rem;
+    }
+    .submitBtn{
+  
+  white-space: nowrap;
+  font-size: 0.8rem;
+    }
 }
 
 /* Responsive Design - 400px breakpoint */
@@ -286,4 +298,9 @@ p {
     .toggle-panel h1 {
         font-size: 30px;
     }
+    
 }
+
+
+
+

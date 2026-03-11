@@ -1,3 +1,4 @@
+// Quiz.jsx - Updated with 70% unlock + Next Level button
 import React, { useEffect, useMemo, useState } from 'react';
 import { useParams, useSearchParams, useNavigate, useLocation } from 'react-router-dom';
 import styles from './quiz.module.css';
@@ -14,28 +15,21 @@ export default function Quiz() {
   const [current, setCurrent] = useState(0);
   const [answers, setAnswers] = useState({});
   const [submitted, setSubmitted] = useState(false);
+  const [showReview, setShowReview] = useState(false);
   const [score, setScore] = useState(0);
   const [started, setStarted] = useState(false);
   const [loading, setLoading] = useState(true);
-  const [unlocking, setUnlocking] = useState(false);
   const [passed, setPassed] = useState(false);
-  
-  // New state for results
-  const [quizResults, setQuizResults] = useState(null);
-
-  const PASS_THRESHOLD = 0.7;
+  const [unlocking, setUnlocking] = useState(false); // NEW: Loading state
 
   useEffect(() => {
     setQuestions([]);
     setCurrent(0);
     setAnswers({});
     setSubmitted(false);
-    setScore(0);
+    setShowReview(false);
     setStarted(false);
     setLoading(true);
-    setUnlocking(false);
-    setPassed(false);
-    setQuizResults(null);
   }, [subject, level]);
 
   useEffect(() => {
@@ -51,207 +45,190 @@ export default function Quiz() {
   const nextQuestion = () => current < questions.length - 1 && setCurrent(c => c + 1);
   const prevQuestion = () => current > 0 && setCurrent(c => c - 1);
 
+  // UPDATED: submitQuiz with 70% unlock logic
   const submitQuiz = async () => {
     let correct = 0;
     questions.forEach((q, idx) => { if (answers[idx] === q.correct) correct++; });
-
     const total = questions.length || 1;
-    const ratio = correct / total;
-    const didPass = ratio >= PASS_THRESHOLD;
+    const didPass = (correct / total) >= 0.7; // 70% PASS THRESHOLD
 
     setScore(correct);
     setPassed(didPass);
     setSubmitted(true);
 
-    console.log('Quiz passed:', didPass);
-    console.log('Current level:', level);
-    console.log('Should unlock level:', level + 1);
-
-    // ALWAYS SUBMIT FOR CSV AND GRAPH - NO CONDITION CHECK
-    setTimeout(() => {
-      fetch('http://localhost:3000/submit-quiz', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        credentials: 'include',
-        body: JSON.stringify({
-          subject,
-          level,
-          answers,
-          questions,
-          score: correct,
-          totalQuestions: total
-        })
-      }).then(response => response.json())
-        .then(result => {
-          if (result.success) {
-            console.log('✅ Quiz submitted, graph data:', result);
-            setQuizResults(result);
-          }
-        })
-        .catch(error => console.log('❌ CSV submission failed:', error));
-    }, 100);
-
-    // ORIGINAL PROGRESS LOGIC - ONLY FOR UNLOCKING LEVELS
+    // UNLOCK NEXT LEVEL if passed (70%+)
     if (didPass) {
+      setUnlocking(true);
       try {
-        setUnlocking(true);
-        const progressResponse = await fetch('http://localhost:3000/progress', {
+        const response = await fetch('http://localhost:3000/progress', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
           credentials: 'include',
-          body: JSON.stringify({ subject, highestUnlocked: level + 1 })
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            subject: subject,
+            highestUnlocked: level + 1  // Unlock next level
+          })
         });
-        const progressResult = await progressResponse.json();
-        console.log('Progress update result:', progressResult);
+        
+        if (response.ok) {
+          console.log('✅ Next level unlocked successfully!');
+        }
       } catch (error) {
-        console.error('Progress update failed:', error);
+        console.error('❌ Unlock failed:', error);
       } finally {
         setUnlocking(false);
       }
     }
   };
 
-  const goNextLevel = () => {
-    const nextLevel = Number(level) + 1;
-    const nextUrl = `/quiz/${encodeURIComponent(subject)}?level=${nextLevel}`;
-    navigate(nextUrl, { replace: false, state: { ts: Date.now() } });
+  const goToReview = () => {
+    setShowReview(true);
   };
 
-  if (loading) return <h2 className={styles.loading}>Loading…</h2>;
-//this quiz introo..
+  if (loading) return <div className={styles.quizWrapper}><h2 className={styles.loading}>Loading...</h2></div>;
+
   if (!started) {
     return (
       <div className={styles.quizWrapper}>
         <div className={`${styles.quizCard} ${styles.startScreen}`}>
-          <h1>Subject: {subject}</h1>
+          <h1>{subject.toUpperCase()}</h1>
           <p>Level: {level}</p>
-          <button onClick={() => setStarted(true)} className={styles.startBtn}>
-            Start Quiz
-          </button>
+          <button onClick={() => setStarted(true)} className={styles.startBtn}>Start Quiz</button>
         </div>
       </div>
     );
   }
 
-  if (submitted) {
-    const total = questions.length;
-    const ratio = total ? score / total : 0;
-
+  // RESULT SCREEN - 70% pass = Next Level button
+  if (submitted && !showReview) {
     return (
       <div className={styles.quizWrapper}>
         <div className={`${styles.quizCard} ${styles.resultBox}`}>
           <h2>Quiz Finished!</h2>
-          <p>Score: {score} / {total} ({Math.round(ratio * 100)}%)</p>
-          <p className={`${styles.resultStatus} ${passed ? styles.pass : styles.fail}`}>
-            Status: {passed ? 'Passed ✅ (Next level unlocked)' : 'Failed ❌ (Try Again)'}
-          </p>
-
-          {/* ALWAYS SHOW GRAPH - NO CONDITION */}
-          {quizResults && quizResults.plotPath && (
-            <div className={styles.graphSection}>
-              <h3>Your Performance Analysis:</h3>
-              <img 
-                src={`http://localhost:3000/quiz_results/${quizResults.plotPath}`} 
-                alt="Quiz Results Graph" 
-                className={styles.resultGraph}
-                onLoad={() => console.log('✅ Graph loaded successfully')}
-                onError={(e) => {
-                  console.error('❌ Graph failed to load:', e);
-                  console.error('Image URL:', e.target.src);
-                }}
-              />
-            </div>
-          )}
-
-          {/* Show loading message while graph is being generated */}
-          {!quizResults && (
-            <div className={styles.graphSection}>
-              <h3>Generating your performance graph...</h3>
-              <p>Please wait...</p>
-            </div>
-          )}
-
-          {/* Question-wise breakdown - ALWAYS SHOW */}
-          <div className={styles.breakdown}>
-            <h4>Question Breakdown:</h4>
-            <div className={styles.questionList}>
-              {questions.map((q, idx) => (
-                <div key={idx} className={styles.questionResult}>
-                  <p><strong>Q{idx + 1}:</strong> {q.question}</p>
-                  <p>Your Answer: <span className={answers[idx] === q.correct ? styles.correct : styles.incorrect}>
-                    {answers[idx] || 'Not Answered'}
-                  </span></p>
-                  <p>Correct Answer: <span className={styles.correct}>{q.correct}</span></p>
-                </div>
-              ))}
-            </div>
+          <p className={styles.scoreText}>Score: {score} / {questions.length}</p>
+          <div className={`${styles.status} ${passed ? styles.pass : styles.fail}`}>
+            {passed ? 'Passed ✅' : 'Failed ❌'}
           </div>
-
+          
+          {/* NEW: Next Level Button if Passed */}
+          {passed && (
+            <div className={styles.nextLevelSection}>
+              <button 
+                onClick={() => navigate(`/start/${subject}`)} 
+                disabled={unlocking}
+                className={styles.nextLevelBtn}
+              >
+                {unlocking ? 'Unlocking...' : `Go to Level ${level + 1} →`}
+              </button>
+            </div>
+          )}
+          
           <div className={styles.resultActions}>
-            <button
-              onClick={() => navigate(`/start/${encodeURIComponent(subject)}`, { state: { refresh: true } })}
-              className={styles.resultBtn}
-            >
-              Back to Levels
-            </button>
-            
-            {/* Show different buttons based on pass/fail */}
-            {passed ? (
-              <button disabled={unlocking} onClick={goNextLevel} className={styles.resultBtn}>
-                {unlocking ? 'Unlocking…' : `Go to Level ${Number(level) + 1}`}
-              </button>
-            ) : (
-              <button onClick={() => window.location.reload()} className={styles.resultBtn}>
-                Try Again
-              </button>
-            )}
-            
-            <button 
-              onClick={() => navigate('/history')} 
-              className={styles.resultBtn}
-            >
-              View All History
-            </button>
+            <button onClick={goToReview} className={styles.reviewBtn}>Review Answers</button>
+            <button onClick={() => navigate(`/start/${subject}`)} className={styles.resultBtn}>Back</button>
+            {!passed && <button onClick={() => window.location.reload()} className={styles.resultBtn}>Retry</button>}
           </div>
         </div>
       </div>
     );
   }
 
+  // REVIEW SCREEN (same as before)
+  if (submitted && showReview) {
+    return (
+      <div className={styles.quizWrapper}>
+        <div className={styles.quizCard}>
+          <div className={styles.reviewHeader}>
+            <h2>📝 Review Your Answers</h2>
+            <p>Score: {score}/{questions.length} • {passed ? 'Passed ✅' : 'Failed ❌'}</p>
+          </div>
+
+          <div className={styles.reviewQuestions}>
+            {questions.map((q, qIndex) => {
+              const userAnswer = answers[qIndex];
+              const correctAnswer = q.correct;
+              const isCorrect = userAnswer === correctAnswer;
+              const answered = !!userAnswer;
+
+              return (
+                <div key={qIndex} className={`${styles.reviewQuestion} ${isCorrect ? styles.reviewCorrect : ''} ${!answered ? styles.reviewUnanswered : ''}`}>
+                  <div className={styles.reviewQNumber}>
+                    Q{qIndex + 1}
+                    {answered && (
+                      <span className={`${styles.reviewQStatus} ${isCorrect ? styles.correct : styles.wrong}`}>
+                        {isCorrect ? '✅ Correct' : '❌ Wrong'}
+                      </span>
+                    )}
+                    {!answered && <span className={styles.reviewQStatus}>⚪ Not Answered</span>}
+                  </div>
+                  
+                  <div className={styles.reviewQText}>{q.question}</div>
+
+                  <div className={styles.reviewOptions}>
+                    {q.options.map((opt, optIndex) => {
+                      const isUserAnswer = opt === userAnswer;
+                      const isCorrectAnswer = opt === correctAnswer;
+                      let status = '';
+
+                      if (isCorrectAnswer) status = 'correct';
+                      else if (isUserAnswer && !isCorrectAnswer) status = 'wrong';
+                      else if (isUserAnswer) status = 'selected';
+
+                      return (
+                        <div key={optIndex} className={`${styles.reviewOption} ${styles[status]}`}>
+                          <span>{opt}</span>
+                          {isCorrectAnswer && <span className={styles.correctTag}>✅ Correct Answer</span>}
+                          {isUserAnswer && !isCorrectAnswer && <span className={styles.yourTag}>👆 Your Answer</span>}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className={styles.resultActions}>
+            <button onClick={() => navigate(`/start/${subject}`)} className={styles.resultBtn}>Back to Start</button>
+            <button onClick={() => window.location.reload()} className={styles.retryBtn}>Retry Quiz</button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ACTIVE QUIZ SCREEN (unchanged)
   const q = questions[current] || { question: '', options: [] };
 
   return (
     <div className={styles.quizWrapper}>
       <div className={styles.quizCard}>
         <div className={styles.questionBox}>
-          <h2>Question {current + 1} of {questions.length}</h2>
-          <p className={styles.para}>{q.question}</p>
+          <span className={styles.qHeader}>Question {current + 1} of {questions.length}</span>
+          <p className={styles.questionText}>{q.question}</p>
         </div>
-        <div>
+
+        <div className={styles.optionsList}>
           {q.options.map((opt, i) => (
-            <button
-              key={i}
-              onClick={() => handleAnswer(opt)}
-              className={`${styles.optionBtn} ${answers[current] === opt ? styles.optionSelected : ''}`}
-            >
-              {opt}
-            </button>
+            <label key={i} className={styles.optionLabel}>
+              <input 
+                type="radio" 
+                name="quiz-option" 
+                checked={answers[current] === opt} 
+                onChange={() => handleAnswer(opt)} 
+                className={styles.radioInput}
+              />
+              <span className={styles.optionText}>{opt}</span>
+            </label>
           ))}
         </div>
+
         <div className={styles.actions}>
-          {current > 0 && (
-            <button onClick={prevQuestion} className={styles.navBtn}>Previous</button>
-          )}
-          {current < questions.length - 1 && (
+          <button disabled={current === 0} onClick={prevQuestion} className={styles.navBtn}>Previous</button>
+          {current < questions.length - 1 ? (
             <button onClick={nextQuestion} className={styles.navBtn}>Next</button>
-          )}
-          {current === questions.length - 1 && (
-            <button 
-              onClick={submitQuiz} 
-              className={`${styles.navBtn} ${styles.submitBtn}`}
-            >
-              Submit
-            </button>
+          ) : (
+            <button onClick={submitQuiz} className={styles.submitBtn}>Submit</button>
           )}
         </div>
       </div>

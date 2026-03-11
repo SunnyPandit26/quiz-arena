@@ -16,8 +16,6 @@ const Login = ({ onLogin, formData, setFormData, loading }) => {
   };
 
   const handleGoogleLogin = () => {
-    // This should trigger window.location to your backend /auth/google
-    // Ensure authAPI.googleLogin() does that internally
     authAPI.googleLogin();
   };
 

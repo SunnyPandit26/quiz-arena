@@ -1,4 +1,3 @@
-// src/components/Cards.jsx
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
@@ -9,13 +8,11 @@ const courses = [
   {
     id: "python",
     title: "Python",
-    description:
-      "Learn programming fundamentals such as variables, control flow, and loops with the...",
+    description: "Learn programming fundamentals such as variables, control flow, and loops...",
     level: "Programming Language",
     imageUrl: "./images/pythonlogo.jpg",
-    backgroundImage:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMZZ5wz4Dxzc0mXLqyt0ysPMPr3fjcospbvcSuBpKLt-z5Kcf10qyfD-XE6VTOC3yWCFc&usqp=CAU",
-    category: ["Popular", "Tools","All"],
+    backgroundImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMZZ5wz4Dxzc0mXLqyt0ysPMPr3fjcospbvcSuBpKLt-z5Kcf10qyfD-XE6VTOC3yWCFc&usqp=CAU",
+    category: ["Popular", "Tools", "All"],
   },
   {
     id: "java",
@@ -24,7 +21,7 @@ const courses = [
     level: "Programming Language",
     imageUrl: "./images/javalogo.jpeg",
     backgroundImage: "./images/java.png",
-    category: ["Popular","All"],
+    category: ["Popular", "All"],
   },
   {
     id: "webdev",
@@ -33,7 +30,7 @@ const courses = [
     level: "Full Stack Development",
     imageUrl: "./images/web dev.jpg",
     backgroundImage: "./images/photo1.jpg",
-    category: ["Web Development","All"],
+    category: ["Web Development", "All"],
   },
   {
     id: "r",
@@ -42,7 +39,7 @@ const courses = [
     level: "Data Science",
     imageUrl: "./images/R.jpeg",
     backgroundImage: "./images/photo2.jpg",
-    category: ["Data Science","All"],
+    category: ["Data Science", "All"],
   },
   {
     id: "julia",
@@ -51,7 +48,7 @@ const courses = [
     level: "Scientific Computing",
     imageUrl: "./images/julia.gif",
     backgroundImage: "./images/photo3.jpg",
-    category: ["Data Science","All"],
+    category: ["Data Science", "All"],
   },
   {
     id: "cpp",
@@ -60,11 +57,11 @@ const courses = [
     level: "System Programming",
     imageUrl: "./images/c++.jpg",
     backgroundImage: "./images/photo4.jpg",
-    category: ["Tools","All"],
+    category: ["Tools", "All"],
   },
 ];
 
-const categories = ["All","Popular", "Web Development", "Data Science", "Tools"];
+const categories = ["All", "Popular", "Web Development", "Data Science", "Tools"];
 
 export default function Cards() {
   const navigate = useNavigate();
@@ -82,7 +79,7 @@ export default function Cards() {
   );
 
   return (
-    <>
+    <div className={styles.container}>
       <div className={styles.filterButtons}>
         {categories.map((category) => (
           <button
@@ -110,6 +107,6 @@ export default function Cards() {
           />
         ))}
       </section>
-    </>
+    </div>
   );
 }
