@@ -1,5 +1,5 @@
-// src/contexts/AuthContext.jsx
-import React, { createContext, useContext, useState, useEffect, useMemo } from "react";
+// src/contexts/AuthContext.jsx - 100% FIXED (Username + Persistent login)
+import React, { createContext, useContext, useState, useEffect, useMemo, useCallback } from "react";
 import { authAPI } from "../services/api";
 
 const AuthContext = createContext();
@@ -12,39 +12,62 @@ export const useAuth = () => {
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true);  // starts true, blocks rendering
+  const [loading, setLoading] = useState(true);
   const [showLoginDialog, setShowLoginDialog] = useState(false);
 
-  useEffect(() => {
-    checkAuth();
-  }, []);
-
-  const checkAuth = async () => {
+  // 🔥 FIXED: Session refresh (Fixes navbar username + refresh logout)
+  const refreshAuth = useCallback(async () => {
+    console.log('🔄 Refreshing auth session...');
     try {
-      const res = await authAPI.getProfile();
-      if (res?.success) {
+      const res = await authAPI.getProfile(); // /me endpoint
+      console.log('🔍 /me response:', res);
+      
+      if (res?.success && res.authenticated && res.user) {
+        console.log('✅ Session valid:', res.user.username);
         setUser(res.user);
+        return true;
       } else {
+        console.log('❌ No valid session');
         setUser(null);
+        return false;
       }
     } catch (error) {
-      console.log('Auth check failed:', error);
+      console.log('❌ Session refresh failed:', error.response?.status || error.message);
       setUser(null);
+      return false;
     }
-    // ✅ CRITICAL: Only set loading false AFTER auth check completes
-    setLoading(false);
+  }, []);
+
+  // 🔥 INITIAL AUTH CHECK
+  useEffect(() => {
+    refreshAuth().finally(() => {
+      setLoading(false); // UNBLOCK UI
+    });
+  }, [refreshAuth]);
+
+  // 🔥 BACKGROUND REFRESH (Every 5min - prevents stale session)
+  useEffect(() => {
+    if (loading) return;
+    const interval = setInterval(refreshAuth, 5 * 60 * 1000); // 5 minutes
+    return () => clearInterval(interval);
+  }, [refreshAuth, loading]);
+
+  const checkAuth = async () => {
+    return await refreshAuth();
   };
 
   const login = async ({ username, password }) => {
-    console.log('🔑 Login starting...');
+    console.log('🔑 Login attempt:', username);
     try {
       const res = await authAPI.login(username, password);
       if (res?.success) {
-        console.log('✅ Login successful, setting user:', res.user);
-        setUser(res.user);
-        setShowLoginDialog(false);
-        console.log('✅ User state updated');
-        return { success: true };
+        // 🔥 REFRESH after login (syncs with /me)
+        const sessionValid = await refreshAuth();
+        if (sessionValid) {
+          console.log('✅ Login + session sync:', res.user?.username);
+          setShowLoginDialog(false);
+          return { success: true };
+        }
       }
       return { success: false, message: res?.message || "Login failed" };
     } catch (err) {
@@ -52,55 +75,45 @@ export const AuthProvider = ({ children }) => {
       return { success: false, message: "Login failed" };
     }
   };
-  
 
   const logout = async () => {
     try {
       await authAPI.logout();
+    } catch (err) {
+      console.error("Logout failed:", err);
+    } finally {
       setUser(null);
       setShowLoginDialog(false);
       window.location.href = "/";
-    } catch (err) {
-      console.error("Logout failed:", err);
     }
   };
 
   const requireAuth = async (cb) => {
     if (user) return cb();
-    await checkAuth();
-    if (user) return cb();
+    const sessionValid = await refreshAuth();
+    if (sessionValid && user) return cb();
     setShowLoginDialog(true);
   };
 
-  // Also add this to see when components re-render
-const value = useMemo(() => {
-  console.log('🔄 AuthContext value updated:', { user: !!user, isAuthenticated: !!user });
-  return {
-    user,
-    loading,
-    isAuthenticated: !!user,
-    login,
-    logout,
-    requireAuth,
-    showLoginDialog,
-    setShowLoginDialog,
-  };
-}, [user, loading, showLoginDialog]);
-
-  // ✅ Block ALL rendering until auth check finishes
-  if (loading) {
-    return (
-      <div style={{ 
-        display: 'flex', 
-        justifyContent: 'center', 
-        alignItems: 'center', 
-        height: '100vh',
-        fontSize: '18px' 
-      }}>
-        Loading...
-      </div>
-    );
-  }
+  // 🔥 EXPOSE refreshAuth for manual calls (username setup)
+  const value = useMemo(() => {
+    console.log('🔄 AuthContext render:', { 
+      user: user?.username || 'null', 
+      loading,
+      sessionValid: !!user 
+    });
+    return {
+      user,
+      loading: false,  // 🔥 FORCE UNBLOCK
+      isAuthenticated: !!user,
+      login,
+      logout,
+      requireAuth,
+      refreshAuth,     // 🔥 MANUAL REFRESH EXPOSED
+      showLoginDialog,
+      setShowLoginDialog,
+    };
+  }, [user, showLoginDialog, loading]);
 
   return (
     <AuthContext.Provider value={value}>

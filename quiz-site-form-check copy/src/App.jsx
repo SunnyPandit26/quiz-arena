@@ -1,4 +1,3 @@
-// src/App.jsx
 import React, { useEffect } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { GoogleOAuthProvider } from '@react-oauth/google';
@@ -8,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 import LoginPage from './components/LoginPage';
+import UsernameSetup from './components/UsernameSetup';  // 👈 NEW!
 import Cards from './components/Cards';
 import Quiz from './components/start_quiz/Quiz';
 import Levelpage from './components/start_quiz/levelpage';
@@ -27,7 +27,7 @@ function BodyAuthClassSync() {
 }
 
 export default function App() {
-  const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID; // from .env
+  const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID;
   return (
     <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>
       <AuthProvider>
@@ -37,6 +37,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Dashboard/>} />
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/username-setup" element={<UsernameSetup />} />  {/* 👈 NEW ROUTE */}
             <Route path="/start/:subject" element={<Levelpage />} />
             <Route path="/quiz/:subject" element={<Quiz />} />
             <Route path="/history" element={<History />} />

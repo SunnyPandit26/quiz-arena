@@ -1,7 +1,10 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';  // 👈 Added
 import { authAPI } from "../services/api";
 
 const CreateAccount = ({ onCreateAccount, formData, setFormData, loading }) => {
+  const navigate = useNavigate();  // 👈 For Google redirect
+
   const handleInputChange = (e) => {
     setFormData({
       ...formData,
@@ -15,6 +18,7 @@ const CreateAccount = ({ onCreateAccount, formData, setFormData, loading }) => {
   };
 
   const handleGoogleLogin = () => {
+    // Google login triggers AuthContext → Backend → UsernameSetup if needed
     authAPI.googleLogin();
   };
 
@@ -22,6 +26,7 @@ const CreateAccount = ({ onCreateAccount, formData, setFormData, loading }) => {
     <div className="form-box create-account" style={{ zIndex: 3, pointerEvents: 'auto' }}>
       <form onSubmit={handleSubmit} style={{ pointerEvents: 'auto' }}>
         <h2 className="title">CREATE ACCOUNT</h2>
+        
         <div className="input-box">
           <input
             type="text"
@@ -34,6 +39,7 @@ const CreateAccount = ({ onCreateAccount, formData, setFormData, loading }) => {
             disabled={loading}
           />
         </div>
+        
         <div className="input-box">
           <input
             type="email"
@@ -46,6 +52,7 @@ const CreateAccount = ({ onCreateAccount, formData, setFormData, loading }) => {
             disabled={loading}
           />
         </div>
+        
         <div className="input-box">
           <input
             type="password"
@@ -56,8 +63,10 @@ const CreateAccount = ({ onCreateAccount, formData, setFormData, loading }) => {
             style={{ pointerEvents: 'auto', zIndex: 10 }}
             required
             disabled={loading}
+            minLength={6}
           />
         </div>
+        
         <button 
           type="submit" 
           className="submitBtn"
@@ -71,9 +80,9 @@ const CreateAccount = ({ onCreateAccount, formData, setFormData, loading }) => {
         >
           {loading ? 'CREATING ACCOUNT...' : 'CREATE ACCOUNT'}
         </button>
+        
         <p>or make account with...</p>
-         <div className="social-icons">
-          {/* Google Button */}
+        <div className="social-icons">
           <button 
             type="button"
             className="social google-btn"
@@ -84,6 +93,7 @@ const CreateAccount = ({ onCreateAccount, formData, setFormData, loading }) => {
               opacity: loading ? 0.6 : 1,
               cursor: loading ? 'not-allowed' : 'pointer'
             }}
+            title="Continue with Google (Username setup next)"
           >
             <img 
               src="/images/google.png" 
@@ -95,10 +105,6 @@ const CreateAccount = ({ onCreateAccount, formData, setFormData, loading }) => {
               }}
             />
           </button>
-          
-         
-          
-        
         </div>
       </form>
     </div>

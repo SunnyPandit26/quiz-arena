@@ -7,7 +7,6 @@ import { useNavigate } from 'react-router-dom';
 import { authAPI } from "../services/api";
 import "./loginpage.css";
 
-// Popup style
 const popupStyle = {
   position: "fixed",
   top: "30px",
@@ -40,6 +39,14 @@ const LoginPage = () => {
     email: "",
     newPassword: ""
   });
+  
+  // 🔥 FIXED: All Password Reset States
+  const [showForgotPassword, setShowForgotPassword] = useState(false);
+  const [resetEmail, setResetEmail] = useState('');
+  const [showOTPFields, setShowOTPFields] = useState(false);  // 👈 MISSING STATE
+  const [resetOTP, setResetOTP] = useState('');
+  const [newPassword, setNewPassword] = useState('');
+  
   const [message, setMessage] = useState("");
   const [messageType, setMessageType] = useState("success");
   const [loading, setLoading] = useState(false);
@@ -72,6 +79,72 @@ const LoginPage = () => {
       }
     } catch (error) {
       showMessage("Login failed", "error");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // 🔥 FIXED: Send OTP (Show OTP fields after success)
+  const handleSendOTP = async (email) => {
+    if (!email) {
+      showMessage("Please enter your email", "error");
+      return;
+    }
+
+    setLoading(true);
+    try {
+      const response = await fetch('http://localhost:3000/api/password-reset/send-otp', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email })
+      });
+
+      const result = await response.json();
+      
+      if (result.success) {
+        showMessage(result.message, "success");
+        setShowOTPFields(true);  // 👈 THIS SHOWS OTP FIELDS!
+        setResetEmail(email);    // 👈 Keep email for reset
+      } else {
+        showMessage(result.message || "Failed to send OTP", "error");
+      }
+    } catch (error) {
+      showMessage("Network error. Please try again.", "error");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // 🔥 Reset Password
+  const handleResetPassword = async (email, otp, password) => {
+    if (!email || otp.length !== 6 || !password || password.length < 6) {
+      showMessage("OTP must be 6 digits & password min 6 chars", "error");
+      return;
+    }
+
+    setLoading(true);
+    try {
+      const response = await fetch('http://localhost:3000/api/password-reset/verify-reset', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, otp, newPassword: password })
+      });
+
+      const result = await response.json();
+      
+      if (result.success) {
+        showMessage(result.message, "success");
+        // Reset ALL fields
+        setShowForgotPassword(false);
+        setShowOTPFields(false);
+        setResetEmail('');
+        setResetOTP('');
+        setNewPassword('');
+      } else {
+        showMessage(result.message || "Password reset failed", "error");
+      }
+    } catch (error) {
+      showMessage("Network error. Please try again.", "error");
     } finally {
       setLoading(false);
     }
@@ -127,6 +200,17 @@ const LoginPage = () => {
               formData={formData}
               setFormData={setFormData}
               loading={loading}
+              showForgotPassword={showForgotPassword}
+              setShowForgotPassword={setShowForgotPassword}
+              resetEmail={resetEmail}
+              setResetEmail={setResetEmail}
+              showOTPFields={showOTPFields}        // 👈 ADDED!
+              resetOTP={resetOTP}
+              setResetOTP={setResetOTP}
+              newPassword={newPassword}
+              setNewPassword={setNewPassword}
+              handleSendOTP={handleSendOTP}
+              handleResetPassword={handleResetPassword}
             />
             <CreateAccount
               onCreateAccount={handleCreateAccount}

@@ -301,6 +301,38 @@ p {
     
 }
 
+.reset-form-overlay {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #e9ecef;
+}
+
+.reset-form-overlay h3 {
+  margin: 0 0 15px 0;
+  color: #495057;
+  font-size: 20px;
+}
+
+.reset-form-overlay .input-box {
+  margin: 15px 0;
+}
+
+.reset-form-overlay input {
+  width: 90% !important;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (max-width: 650px) {
+  .reset-form-overlay {
+    padding: 15px;
+  }
+  
+  .reset-form-overlay input {
+    width: 95% !important;
+  }
+}
 
 
 
